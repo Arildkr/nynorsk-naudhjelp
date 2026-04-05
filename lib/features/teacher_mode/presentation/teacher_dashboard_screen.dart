@@ -76,18 +76,18 @@ class TeacherDashboardScreen extends ConsumerWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Card(
-            color: Colors.blueGrey.shade100,
+            color: Colors.black,
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
             child: Padding(
               padding: const EdgeInsets.all(32.0),
               child: Column(
                 children: [
-                  const Text('Romkode:', style: TextStyle(fontSize: 24)),
+                  const Text('Romkode:', style: TextStyle(fontSize: 24, color: Colors.white70)),
                   Text(
                     roomCode,
-                    style: const TextStyle(fontSize: 100, fontWeight: FontWeight.w900, letterSpacing: 16),
+                    style: const TextStyle(fontSize: 100, fontWeight: FontWeight.w900, letterSpacing: 16, color: Colors.white),
                   ),
-                  const Text('Skriv denne på tavla!', style: TextStyle(color: Colors.blueGrey, fontSize: 18)),
+                  const Text('Skriv denne på tavla!', style: TextStyle(color: Colors.white60, fontSize: 18)),
                 ],
               ),
             ),
