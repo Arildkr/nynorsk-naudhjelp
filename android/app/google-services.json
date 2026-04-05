@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "22193740927",
+    "project_id": "nynorsk-kartlegger",
+    "storage_bucket": "nynorsk-kartlegger.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22193740927:android:59d13d30921f9de7d1b34a",
+        "android_client_info": {
+          "package_name": "com.nynorsk.nynorsk_kartlegger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYHbwXKa2uADXNwkI4kByaHkkmqvcTCbc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

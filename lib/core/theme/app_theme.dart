@@ -1,0 +1,111 @@
+import 'package:flex_color_scheme/flex_color_scheme.dart';
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+class AppTheme {
+  static ThemeData get light {
+    return FlexThemeData.light(
+      scheme: FlexScheme.indigo,
+      surfaceMode: FlexSurfaceMode.highScaffoldLowSurface,
+      blendLevel: 10,
+      appBarStyle: FlexAppBarStyle.primary,
+      appBarOpacity: 0.95,
+      appBarElevation: 0,
+      transparentStatusBar: true,
+      tabBarStyle: FlexTabBarStyle.forAppBar,
+      tooltipsMatchBackground: true,
+      swapColors: false,
+      lightIsWhite: false,
+      visualDensity: FlexColorScheme.comfortablePlatformDensity,
+      fontFamily: GoogleFonts.nunito().fontFamily,
+      subThemesData: const FlexSubThemesData(
+        blendOnLevel: 20,
+        blendOnColors: false,
+        useTextTheme: true,
+        useM2StyleDividerInM3: false,
+        defaultRadius: 24.0, // Meget gamifisert mykhet
+        elevatedButtonSchemeColor: SchemeColor.onPrimary,
+        elevatedButtonSecondarySchemeColor: SchemeColor.primary,
+        outlinedButtonOutlineSchemeColor: SchemeColor.primary,
+        toggleButtonsBorderSchemeColor: SchemeColor.primary,
+        segmentedButtonSchemeColor: SchemeColor.primary,
+        segmentedButtonBorderSchemeColor: SchemeColor.primary,
+        sliderValueTinted: true,
+        inputDecoratorSchemeColor: SchemeColor.primary,
+        inputDecoratorBackgroundAlpha: 20,
+        inputDecoratorUnfocusedHasBorder: false,
+        inputDecoratorFocusedBorderWidth: 2.0,
+        inputDecoratorPrefixIconSchemeColor: SchemeColor.primary,
+        fabUseShape: true,
+        fabAlwaysCircular: true,
+        fabSchemeColor: SchemeColor.secondary,
+        popupMenuRadius: 8.0,
+        popupMenuElevation: 6.0,
+        alignedDropdown: true,
+        tooltipRadius: 4,
+        tooltipSchemeColor: SchemeColor.inverseSurface,
+        tooltipOpacity: 0.9,
+        snackBarElevation: 6,
+        snackBarBackgroundSchemeColor: SchemeColor.inverseSurface,
+      ),
+      keyColors: const FlexKeyColors(
+        useSecondary: true,
+        useTertiary: true,
+        keepPrimary: true,
+      ),
+      tones: FlexTones.jolly(Brightness.light),
+    );
+  }
+
+  static ThemeData get dark {
+    // Tilsvarende gamifisert
+    return FlexThemeData.dark(
+      scheme: FlexScheme.indigo,
+      surfaceMode: FlexSurfaceMode.highScaffoldLowSurface,
+      blendLevel: 15,
+      appBarStyle: FlexAppBarStyle.background,
+      appBarOpacity: 0.90,
+      appBarElevation: 0,
+      transparentStatusBar: true,
+      tabBarStyle: FlexTabBarStyle.forAppBar,
+      tooltipsMatchBackground: true,
+      swapColors: false,
+      visualDensity: FlexColorScheme.comfortablePlatformDensity,
+      fontFamily: GoogleFonts.nunito().fontFamily,
+      subThemesData: const FlexSubThemesData(
+        blendOnLevel: 30,
+        useTextTheme: true,
+        useM2StyleDividerInM3: false,
+        defaultRadius: 24.0,
+        elevatedButtonSchemeColor: SchemeColor.onPrimary,
+        elevatedButtonSecondarySchemeColor: SchemeColor.primary,
+        outlinedButtonOutlineSchemeColor: SchemeColor.primary,
+        toggleButtonsBorderSchemeColor: SchemeColor.primary,
+        segmentedButtonSchemeColor: SchemeColor.primary,
+        segmentedButtonBorderSchemeColor: SchemeColor.primary,
+        sliderValueTinted: true,
+        inputDecoratorSchemeColor: SchemeColor.primary,
+        inputDecoratorBackgroundAlpha: 43,
+        inputDecoratorUnfocusedHasBorder: false,
+        inputDecoratorFocusedBorderWidth: 2.0,
+        inputDecoratorPrefixIconSchemeColor: SchemeColor.primary,
+        fabUseShape: true,
+        fabAlwaysCircular: true,
+        fabSchemeColor: SchemeColor.secondary,
+        popupMenuRadius: 8.0,
+        popupMenuElevation: 6.0,
+        alignedDropdown: true,
+        tooltipRadius: 4,
+        tooltipSchemeColor: SchemeColor.inverseSurface,
+        tooltipOpacity: 0.9,
+        snackBarElevation: 6,
+        snackBarBackgroundSchemeColor: SchemeColor.inverseSurface,
+      ),
+      keyColors: const FlexKeyColors(
+        useSecondary: true,
+        useTertiary: true,
+      ),
+      tones: FlexTones.jolly(Brightness.dark),
+    );
+  }
+}

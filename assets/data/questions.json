@@ -1,0 +1,3221 @@
+{
+  "questions": [
+    {
+      "id": "sub_100",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'jente'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei jente."
+    },
+    {
+      "id": "sub_101",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'bok'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei bok."
+    },
+    {
+      "id": "sub_102",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'sol'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei sol."
+    },
+    {
+      "id": "sub_103",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'tid'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei tid."
+    },
+    {
+      "id": "sub_104",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'seng'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei seng."
+    },
+    {
+      "id": "sub_105",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'klokke'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei klokke."
+    },
+    {
+      "id": "sub_106",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'dør'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei dør."
+    },
+    {
+      "id": "sub_107",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'øy'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei øy."
+    },
+    {
+      "id": "sub_108",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'hytte'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei hytte."
+    },
+    {
+      "id": "sub_109",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'bygd'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei bygd."
+    },
+    {
+      "id": "sub_110",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'elv'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei elv."
+    },
+    {
+      "id": "sub_111",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'bru'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei bru."
+    },
+    {
+      "id": "sub_112",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'vik'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei vik."
+    },
+    {
+      "id": "sub_113",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'strand'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei strand."
+    },
+    {
+      "id": "sub_114",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'sjel'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei sjel."
+    },
+    {
+      "id": "sub_115",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'verd'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei verd."
+    },
+    {
+      "id": "sub_116",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'sanning'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei sanning."
+    },
+    {
+      "id": "sub_117",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'tru'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei tru."
+    },
+    {
+      "id": "sub_118",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'lov'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei lov."
+    },
+    {
+      "id": "sub_119",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'høne'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei høne."
+    },
+    {
+      "id": "sub_120",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'ku'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei ku."
+    },
+    {
+      "id": "sub_121",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'stjerne'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei stjerne."
+    },
+    {
+      "id": "sub_122",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'flaske'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei flaske."
+    },
+    {
+      "id": "sub_123",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'kasse'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei kasse."
+    },
+    {
+      "id": "sub_124",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'jakke'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei jakke."
+    },
+    {
+      "id": "sub_125",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'bukse'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei bukse."
+    },
+    {
+      "id": "sub_126",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'vogn'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei vogn."
+    },
+    {
+      "id": "sub_127",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'vugge'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei vugge."
+    },
+    {
+      "id": "sub_128",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'bokhylle'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei bokhylle."
+    },
+    {
+      "id": "sub_129",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'kake'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei kake."
+    },
+    {
+      "id": "sub_130",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'stove'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei stove."
+    },
+    {
+      "id": "sub_131",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'pipe'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei pipe."
+    },
+    {
+      "id": "sub_132",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'avis'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei avis."
+    },
+    {
+      "id": "sub_133",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'saks'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei saks."
+    },
+    {
+      "id": "sub_134",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'lue'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei lue."
+    },
+    {
+      "id": "sub_135",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'mus'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei mus."
+    },
+    {
+      "id": "sub_136",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'tann'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei tann."
+    },
+    {
+      "id": "sub_137",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'leppe'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei leppe."
+    },
+    {
+      "id": "sub_138",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'maske'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei maske."
+    },
+    {
+      "id": "sub_139",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'ferje'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei ferje."
+    },
+    {
+      "id": "sub_140",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'glede'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei glede."
+    },
+    {
+      "id": "sub_141",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'sorg'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei sorg."
+    },
+    {
+      "id": "sub_142",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'natt'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei natt."
+    },
+    {
+      "id": "sub_143",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'makt'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei makt."
+    },
+    {
+      "id": "sub_144",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'kraft'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei kraft."
+    },
+    {
+      "id": "sub_145",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'gut'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein gut."
+    },
+    {
+      "id": "sub_146",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'bil'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein bil."
+    },
+    {
+      "id": "sub_147",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'dag'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein dag."
+    },
+    {
+      "id": "sub_148",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'veg'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein veg."
+    },
+    {
+      "id": "sub_149",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'båt'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein båt."
+    },
+    {
+      "id": "sub_150",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'skule'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein skule."
+    },
+    {
+      "id": "sub_151",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'lærar'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein lærar."
+    },
+    {
+      "id": "sub_152",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'stol'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein stol."
+    },
+    {
+      "id": "sub_153",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'vegg'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein vegg."
+    },
+    {
+      "id": "sub_154",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'hund'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein hund."
+    },
+    {
+      "id": "sub_155",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'katt'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein katt."
+    },
+    {
+      "id": "sub_156",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'fisk'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein fisk."
+    },
+    {
+      "id": "sub_157",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'hest'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein hest."
+    },
+    {
+      "id": "sub_158",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'hage'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein hage."
+    },
+    {
+      "id": "sub_159",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'skog'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein skog."
+    },
+    {
+      "id": "sub_160",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'draume'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein draume."
+    },
+    {
+      "id": "sub_161",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'tanke'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein tanke."
+    },
+    {
+      "id": "sub_162",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'song'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein song."
+    },
+    {
+      "id": "sub_163",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'lyd'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein lyd."
+    },
+    {
+      "id": "sub_164",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'far'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein far."
+    },
+    {
+      "id": "sub_165",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'bror'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein bror."
+    },
+    {
+      "id": "sub_166",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'son'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein son."
+    },
+    {
+      "id": "sub_167",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'onkel'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein onkel."
+    },
+    {
+      "id": "sub_168",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'bestefar'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein bestefar."
+    },
+    {
+      "id": "sub_169",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'ven'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein ven."
+    },
+    {
+      "id": "sub_170",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'fjelltopp'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein fjelltopp."
+    },
+    {
+      "id": "sub_171",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'stein'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein stein."
+    },
+    {
+      "id": "sub_172",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'bekk'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein bekk."
+    },
+    {
+      "id": "sub_173",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'fot'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein fot."
+    },
+    {
+      "id": "sub_174",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'arm'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein arm."
+    },
+    {
+      "id": "sub_175",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'rygg'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein rygg."
+    },
+    {
+      "id": "sub_176",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'mage'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein mage."
+    },
+    {
+      "id": "sub_177",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'hals'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein hals."
+    },
+    {
+      "id": "sub_178",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'munn'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein munn."
+    },
+    {
+      "id": "sub_179",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'banan'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein banan."
+    },
+    {
+      "id": "sub_180",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'appelsin'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein appelsin."
+    },
+    {
+      "id": "sub_181",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'leik'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein leik."
+    },
+    {
+      "id": "sub_182",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'draum'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein draum."
+    },
+    {
+      "id": "sub_183",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'sjø'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein sjø."
+    },
+    {
+      "id": "sub_184",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'vind'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein vind."
+    },
+    {
+      "id": "sub_185",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'storm'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein storm."
+    },
+    {
+      "id": "sub_186",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'snø'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein snø."
+    },
+    {
+      "id": "sub_187",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'regnboge'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein regnboge."
+    },
+    {
+      "id": "sub_188",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'frosk'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein frosk."
+    },
+    {
+      "id": "sub_189",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'fugl'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein fugl."
+    },
+    {
+      "id": "sub_190",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'hus'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit hus."
+    },
+    {
+      "id": "sub_191",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'fjell'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit fjell."
+    },
+    {
+      "id": "sub_192",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'eple'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit eple."
+    },
+    {
+      "id": "sub_193",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'tre'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit tre."
+    },
+    {
+      "id": "sub_194",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'dyr'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit dyr."
+    },
+    {
+      "id": "sub_195",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'bord'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit bord."
+    },
+    {
+      "id": "sub_196",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'skap'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit skap."
+    },
+    {
+      "id": "sub_197",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'glas'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit glas."
+    },
+    {
+      "id": "sub_198",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'bilete'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit bilete."
+    },
+    {
+      "id": "sub_199",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'land'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit land."
+    },
+    {
+      "id": "sub_200",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'vatn'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit vatn."
+    },
+    {
+      "id": "sub_201",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'hav'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit hav."
+    },
+    {
+      "id": "sub_202",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'ord'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit ord."
+    },
+    {
+      "id": "sub_203",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'språk'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit språk."
+    },
+    {
+      "id": "sub_204",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'menneske'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit menneske."
+    },
+    {
+      "id": "sub_205",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'blad'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit blad."
+    },
+    {
+      "id": "sub_206",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'hår'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit hår."
+    },
+    {
+      "id": "sub_207",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'auga'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit auga."
+    },
+    {
+      "id": "sub_208",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'øyre'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit øyre."
+    },
+    {
+      "id": "sub_209",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'problem'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit problem."
+    },
+    {
+      "id": "sub_210",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'barn'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit barn."
+    },
+    {
+      "id": "sub_211",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'sysken'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit sysken."
+    },
+    {
+      "id": "sub_212",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'tak'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit tak."
+    },
+    {
+      "id": "sub_213",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'golv'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit golv."
+    },
+    {
+      "id": "sub_214",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'vindauge'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit vindauge."
+    },
+    {
+      "id": "sub_215",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'teppe'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit teppe."
+    },
+    {
+      "id": "sub_216",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'skjørt'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit skjørt."
+    },
+    {
+      "id": "sub_217",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'belte'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit belte."
+    },
+    {
+      "id": "sub_218",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'slips'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit slips."
+    },
+    {
+      "id": "sub_219",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'smykke'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit smykke."
+    },
+    {
+      "id": "sub_220",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'skjerf'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit skjerf."
+    },
+    {
+      "id": "sub_221",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'tog'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit tog."
+    },
+    {
+      "id": "sub_222",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'fly'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit fly."
+    },
+    {
+      "id": "sub_223",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'skip'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit skip."
+    },
+    {
+      "id": "sub_224",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'kort'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit kort."
+    },
+    {
+      "id": "sub_225",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'brev'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit brev."
+    },
+    {
+      "id": "sub_226",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'merke'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit merke."
+    },
+    {
+      "id": "sub_227",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'namn'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit namn."
+    },
+    {
+      "id": "sub_228",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'svar'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit svar."
+    },
+    {
+      "id": "sub_229",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'spørsmål'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit spørsmål."
+    },
+    {
+      "id": "sub_230",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'skritt'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit skritt."
+    },
+    {
+      "id": "sub_231",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'smil'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit smil."
+    },
+    {
+      "id": "sub_232",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'kinn'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit kinn."
+    },
+    {
+      "id": "sub_233",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'spel'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit spel."
+    },
+    {
+      "id": "sub_234",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kva kjønn er 'badekar'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Både på bokmål og nynorsk fell dette i inkjekjønn: eit badekar."
+    },
+    {
+      "id": "sub_m_235",
+      "type": "FILL_IN",
+      "category": "substantiv_boying",
+      "difficulty": 2,
+      "text": "Bøy ordet: Ein gut - guten - fleire gutar - alle ___.",
+      "correctAnswer": "gutane",
+      "explanation": "Hankjønnsord får som regel -ane i bestemt form flertall."
+    },
+    {
+      "id": "sub_m_236",
+      "type": "FILL_IN",
+      "category": "substantiv_boying",
+      "difficulty": 2,
+      "text": "Bøy ordet: Ei jente - jenta - fleire jenter - alle ___.",
+      "correctAnswer": "jentene",
+      "explanation": "Hokjønnsord som endar på -e får som regel -ene i bestemt form flertall."
+    },
+    {
+      "id": "sub_m_237",
+      "type": "FILL_IN",
+      "category": "substantiv_boying",
+      "difficulty": 3,
+      "text": "Bøy ordet: Eit hus - huset - fleire hus - alle ___.",
+      "correctAnswer": "husa",
+      "explanation": "Einstava inkjekjønnsord får inga ending i ubestemt flertall, og alltid -a i bestemt flertall (alle husa)."
+    },
+    {
+      "id": "sub_m_238",
+      "type": "FILL_IN",
+      "category": "substantiv_boying",
+      "difficulty": 3,
+      "text": "Bøy ordet: Eit eple - eplet - fleire eple - alle ___.",
+      "correctAnswer": "epla",
+      "explanation": "Alle inkjekjønnsord (sjølv tostava) får endinga -a i bestemt form flertall."
+    },
+    {
+      "id": "verb_a_239",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er preteritum (fortid) av å kaste?",
+      "options": [
+        "kasta",
+        "kastet",
+        "kastte",
+        "kaste"
+      ],
+      "correctAnswer": "kasta",
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å kaste - kastear - kasta - har kasta)."
+    },
+    {
+      "id": "verb_a_240",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er preteritum (fortid) av å hoppe?",
+      "options": [
+        "hoppa",
+        "hoppet",
+        "hoppte",
+        "hoppe"
+      ],
+      "correctAnswer": "hoppa",
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å hoppe - hoppear - hoppa - har hoppa)."
+    },
+    {
+      "id": "verb_a_241",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er preteritum (fortid) av å danse?",
+      "options": [
+        "dansa",
+        "danset",
+        "danste",
+        "danse"
+      ],
+      "correctAnswer": "dansa",
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å danse - dansear - dansa - har dansa)."
+    },
+    {
+      "id": "verb_a_242",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er preteritum (fortid) av å fiske?",
+      "options": [
+        "fiska",
+        "fisket",
+        "fiskte",
+        "fiske"
+      ],
+      "correctAnswer": "fiska",
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å fiske - fiskear - fiska - har fiska)."
+    },
+    {
+      "id": "verb_a_243",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er preteritum (fortid) av å sykle?",
+      "options": [
+        "sykla",
+        "syklet",
+        "syklte",
+        "sykle"
+      ],
+      "correctAnswer": "sykla",
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å sykle - syklear - sykla - har sykla)."
+    },
+    {
+      "id": "verb_a_244",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er preteritum (fortid) av å bade?",
+      "options": [
+        "bada",
+        "badet",
+        "badte",
+        "bade"
+      ],
+      "correctAnswer": "bada",
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å bade - badear - bada - har bada)."
+    },
+    {
+      "id": "verb_a_245",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er preteritum (fortid) av å snakke?",
+      "options": [
+        "snakka",
+        "snakket",
+        "snakkte",
+        "snakke"
+      ],
+      "correctAnswer": "snakka",
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å snakke - snakkear - snakka - har snakka)."
+    },
+    {
+      "id": "verb_a_246",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er preteritum (fortid) av å hugse?",
+      "options": [
+        "hugsa",
+        "hugset",
+        "hugste",
+        "hugse"
+      ],
+      "correctAnswer": "hugsa",
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å hugse - hugsear - hugsa - har hugsa)."
+    },
+    {
+      "id": "verb_a_247",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er preteritum (fortid) av å hate?",
+      "options": [
+        "hata",
+        "hatet",
+        "hatte",
+        "hate"
+      ],
+      "correctAnswer": "hata",
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å hate - hatear - hata - har hata)."
+    },
+    {
+      "id": "verb_a_248",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er preteritum (fortid) av å elske?",
+      "options": [
+        "elska",
+        "elsket",
+        "elskte",
+        "elske"
+      ],
+      "correctAnswer": "elska",
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å elske - elskear - elska - har elska)."
+    },
+    {
+      "id": "verb_a_249",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er preteritum (fortid) av å klatre?",
+      "options": [
+        "klatra",
+        "klatret",
+        "klatrte",
+        "klatre"
+      ],
+      "correctAnswer": "klatra",
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å klatre - klatrear - klatra - har klatra)."
+    },
+    {
+      "id": "verb_a_250",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er preteritum (fortid) av å vaske?",
+      "options": [
+        "vaska",
+        "vasket",
+        "vaskte",
+        "vaske"
+      ],
+      "correctAnswer": "vaska",
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å vaske - vaskear - vaska - har vaska)."
+    },
+    {
+      "id": "verb_a_251",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er preteritum (fortid) av å sparke?",
+      "options": [
+        "sparka",
+        "sparket",
+        "sparkte",
+        "sparke"
+      ],
+      "correctAnswer": "sparka",
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å sparke - sparkear - sparka - har sparka)."
+    },
+    {
+      "id": "verb_a_252",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er preteritum (fortid) av å male?",
+      "options": [
+        "mala",
+        "malet",
+        "malte",
+        "male"
+      ],
+      "correctAnswer": "mala",
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å male - malear - mala - har mala)."
+    },
+    {
+      "id": "verb_a_253",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er preteritum (fortid) av å teikne?",
+      "options": [
+        "teikna",
+        "teiknet",
+        "teiknte",
+        "teikne"
+      ],
+      "correctAnswer": "teikna",
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å teikne - teiknear - teikna - har teikna)."
+    },
+    {
+      "id": "verb_a_254",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er preteritum (fortid) av å smile?",
+      "options": [
+        "smila",
+        "smilet",
+        "smilte",
+        "smile"
+      ],
+      "correctAnswer": "smila",
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å smile - smilear - smila - har smila)."
+    },
+    {
+      "id": "verb_a_255",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er preteritum (fortid) av å puste?",
+      "options": [
+        "pusta",
+        "pustet",
+        "pustte",
+        "puste"
+      ],
+      "correctAnswer": "pusta",
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å puste - pustear - pusta - har pusta)."
+    },
+    {
+      "id": "verb_a_256",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er preteritum (fortid) av å kviskre?",
+      "options": [
+        "kviskra",
+        "kviskret",
+        "kviskrte",
+        "kviskre"
+      ],
+      "correctAnswer": "kviskra",
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å kviskre - kviskrear - kviskra - har kviskra)."
+    },
+    {
+      "id": "verb_a_257",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er preteritum (fortid) av å lytte?",
+      "options": [
+        "lytta",
+        "lyttet",
+        "lyttte",
+        "lytte"
+      ],
+      "correctAnswer": "lytta",
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å lytte - lyttear - lytta - har lytta)."
+    },
+    {
+      "id": "verb_a_258",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er preteritum (fortid) av å rope?",
+      "options": [
+        "ropa",
+        "ropet",
+        "ropte",
+        "rope"
+      ],
+      "correctAnswer": "ropa",
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å rope - ropear - ropa - har ropa)."
+    },
+    {
+      "id": "verb_a_259",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er preteritum (fortid) av å leike?",
+      "options": [
+        "leika",
+        "leiket",
+        "leikte",
+        "leike"
+      ],
+      "correctAnswer": "leika",
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å leike - leikear - leika - har leika)."
+    },
+    {
+      "id": "verb_a_260",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er preteritum (fortid) av å svara?",
+      "options": [
+        "svaraa",
+        "svaraet",
+        "svarate",
+        "svara"
+      ],
+      "correctAnswer": "svaraa",
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å svara - svaraar - svaraa - har svaraa)."
+    },
+    {
+      "id": "verb_a_261",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er preteritum (fortid) av å rydde?",
+      "options": [
+        "rydda",
+        "ryddet",
+        "ryddte",
+        "rydde"
+      ],
+      "correctAnswer": "rydda",
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å rydde - ryddear - rydda - har rydda)."
+    },
+    {
+      "id": "verb_a_262",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er preteritum (fortid) av å dusje?",
+      "options": [
+        "dusja",
+        "dusjet",
+        "dusjte",
+        "dusje"
+      ],
+      "correctAnswer": "dusja",
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å dusje - dusjear - dusja - har dusja)."
+    },
+    {
+      "id": "verb_a_263",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er preteritum (fortid) av å hente?",
+      "options": [
+        "henta",
+        "hentet",
+        "hentte",
+        "hente"
+      ],
+      "correctAnswer": "henta",
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å hente - hentear - henta - har henta)."
+    },
+    {
+      "id": "verb_e_264",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Kva er preteritum (fortid) av å kjøpe?",
+      "options": [
+        "kjøpte",
+        "kjøpea",
+        "kjøpeet",
+        "kjøpe"
+      ],
+      "correctAnswer": "kjøpte",
+      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å kjøpe - kjøper - kjøpte)."
+    },
+    {
+      "id": "verb_e_265",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Kva er preteritum (fortid) av å lyse?",
+      "options": [
+        "lyste",
+        "lysea",
+        "lyseet",
+        "lyse"
+      ],
+      "correctAnswer": "lyste",
+      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å lyse - lyser - lyste)."
+    },
+    {
+      "id": "verb_e_266",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Kva er preteritum (fortid) av å høyre?",
+      "options": [
+        "høyrde",
+        "høyrea",
+        "høyreet",
+        "høyre"
+      ],
+      "correctAnswer": "høyrde",
+      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å høyre - høyrer - høyrde)."
+    },
+    {
+      "id": "verb_e_267",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Kva er preteritum (fortid) av å køyre?",
+      "options": [
+        "køyrde",
+        "køyrea",
+        "køyreet",
+        "køyre"
+      ],
+      "correctAnswer": "køyrde",
+      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å køyre - køyrer - køyrde)."
+    },
+    {
+      "id": "verb_e_268",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Kva er preteritum (fortid) av å dømme?",
+      "options": [
+        "dømde",
+        "dømmea",
+        "dømmeet",
+        "dømme"
+      ],
+      "correctAnswer": "dømde",
+      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å dømme - dømmer - dømde)."
+    },
+    {
+      "id": "verb_e_269",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Kva er preteritum (fortid) av å gløyme?",
+      "options": [
+        "gløymde",
+        "gløymea",
+        "gløymeet",
+        "gløyme"
+      ],
+      "correctAnswer": "gløymde",
+      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å gløyme - gløymer - gløymde)."
+    },
+    {
+      "id": "verb_e_270",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Kva er preteritum (fortid) av å lære?",
+      "options": [
+        "lærte",
+        "lærea",
+        "læreet",
+        "lære"
+      ],
+      "correctAnswer": "lærte",
+      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å lære - lærer - lærte)."
+    },
+    {
+      "id": "verb_e_271",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Kva er preteritum (fortid) av å leve?",
+      "options": [
+        "levde",
+        "levea",
+        "leveet",
+        "leve"
+      ],
+      "correctAnswer": "levde",
+      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å leve - lever - levde)."
+    },
+    {
+      "id": "verb_e_272",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Kva er preteritum (fortid) av å kjenne?",
+      "options": [
+        "kjende",
+        "kjennea",
+        "kjenneet",
+        "kjenne"
+      ],
+      "correctAnswer": "kjende",
+      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å kjenne - kjenner - kjende)."
+    },
+    {
+      "id": "verb_e_273",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Kva er preteritum (fortid) av å drøyme?",
+      "options": [
+        "drøymde",
+        "drøymea",
+        "drøymeet",
+        "drøyme"
+      ],
+      "correctAnswer": "drøymde",
+      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å drøyme - drøymer - drøymde)."
+    },
+    {
+      "id": "verb_e_274",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Kva er preteritum (fortid) av å vise?",
+      "options": [
+        "viste",
+        "visea",
+        "viseet",
+        "vise"
+      ],
+      "correctAnswer": "viste",
+      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å vise - viser - viste)."
+    },
+    {
+      "id": "verb_e_275",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Kva er preteritum (fortid) av å reise?",
+      "options": [
+        "reiste",
+        "reisea",
+        "reiseet",
+        "reise"
+      ],
+      "correctAnswer": "reiste",
+      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å reise - reiser - reiste)."
+    },
+    {
+      "id": "verb_e_276",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Kva er preteritum (fortid) av å bygge?",
+      "options": [
+        "bygde",
+        "byggea",
+        "byggeet",
+        "bygge"
+      ],
+      "correctAnswer": "bygde",
+      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å bygge - bygger - bygde)."
+    },
+    {
+      "id": "verb_e_277",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Kva er preteritum (fortid) av å sende?",
+      "options": [
+        "sende",
+        "sendea",
+        "sendeet",
+        "sende"
+      ],
+      "correctAnswer": "sende",
+      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å sende - sender - sende)."
+    },
+    {
+      "id": "ord_278",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva betyr det nynorske ordet 'kvifor'?",
+      "options": [
+        "hvorfor",
+        "hvordan",
+        "hvilken",
+        "når"
+      ],
+      "correctAnswer": "hvorfor",
+      "explanation": "'kvifor' oversettast primært til 'hvorfor' på bokmål."
+    },
+    {
+      "id": "ord_279",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva betyr det nynorske ordet 'korleis'?",
+      "options": [
+        "hvordan",
+        "hvorfor",
+        "kanskje",
+        "aldri"
+      ],
+      "correctAnswer": "hvordan",
+      "explanation": "'korleis' oversettast primært til 'hvordan' på bokmål."
+    },
+    {
+      "id": "ord_280",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva betyr det nynorske ordet 'kven'?",
+      "options": [
+        "hvem",
+        "kan",
+        "hva",
+        "når"
+      ],
+      "correctAnswer": "hvem",
+      "explanation": "'kven' oversettast primært til 'hvem' på bokmål."
+    },
+    {
+      "id": "ord_281",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva betyr det nynorske ordet 'kvar'?",
+      "options": [
+        "hvor",
+        "hver",
+        "hvordan",
+        "kveles"
+      ],
+      "correctAnswer": "hvor",
+      "explanation": "'kvar' oversettast primært til 'hvor' på bokmål."
+    },
+    {
+      "id": "ord_282",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva betyr det nynorske ordet 'kva'?",
+      "options": [
+        "hva",
+        "hvor",
+        "hvordan",
+        "kaos"
+      ],
+      "correctAnswer": "hva",
+      "explanation": "'kva' oversettast primært til 'hva' på bokmål."
+    },
+    {
+      "id": "ord_283",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva betyr det nynorske ordet 'alltid'?",
+      "options": [
+        "alltid",
+        "aldri",
+        "kanskje",
+        "ofte"
+      ],
+      "correctAnswer": "alltid",
+      "explanation": "'alltid' oversettast primært til 'alltid' på bokmål."
+    },
+    {
+      "id": "ord_284",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva betyr det nynorske ordet 'særskild'?",
+      "options": [
+        "spesiell / spesielt",
+        "rask",
+        "selvfølgelig",
+        "aldri"
+      ],
+      "correctAnswer": "spesiell / spesielt",
+      "explanation": "'særskild' oversettast primært til 'spesiell / spesielt' på bokmål."
+    },
+    {
+      "id": "ord_285",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva betyr det nynorske ordet 'vonleg'?",
+      "options": [
+        "forhåpentligvis",
+        "vanligvis",
+        "vondt",
+        "kanskje"
+      ],
+      "correctAnswer": "forhåpentligvis",
+      "explanation": "'vonleg' oversettast primært til 'forhåpentligvis' på bokmål."
+    },
+    {
+      "id": "ord_286",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva betyr det nynorske ordet 'røyndom'?",
+      "options": [
+        "virkelighet",
+        "røyk",
+        "kunnskap",
+        "drøm"
+      ],
+      "correctAnswer": "virkelighet",
+      "explanation": "'røyndom' oversettast primært til 'virkelighet' på bokmål."
+    },
+    {
+      "id": "ord_287",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva betyr det nynorske ordet 'løyndom'?",
+      "options": [
+        "hemmelighet",
+        "løgn",
+        "latter",
+        "rom"
+      ],
+      "correctAnswer": "hemmelighet",
+      "explanation": "'løyndom' oversettast primært til 'hemmelighet' på bokmål."
+    },
+    {
+      "id": "ord_288",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva betyr det nynorske ordet 'kjærleik'?",
+      "options": [
+        "kjærlighet",
+        "kjæreste",
+        "vennskap",
+        "hat"
+      ],
+      "correctAnswer": "kjærlighet",
+      "explanation": "'kjærleik' oversettast primært til 'kjærlighet' på bokmål."
+    },
+    {
+      "id": "ord_289",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva betyr det nynorske ordet 'byrje'?",
+      "options": [
+        "begynne",
+        "bygge",
+        "bryte",
+        "brøle"
+      ],
+      "correctAnswer": "begynne",
+      "explanation": "'byrje' oversettast primært til 'begynne' på bokmål."
+    },
+    {
+      "id": "ord_290",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva betyr det nynorske ordet 'høve'?",
+      "options": [
+        "anledning/mulighet",
+        "hode",
+        "bakke",
+        "hatt"
+      ],
+      "correctAnswer": "anledning/mulighet",
+      "explanation": "'høve' oversettast primært til 'anledning/mulighet' på bokmål."
+    },
+    {
+      "id": "ord_291",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva betyr det nynorske ordet 'av di'?",
+      "options": [
+        "fordi",
+        "hvis ikke",
+        "aldri",
+        "kanskje"
+      ],
+      "correctAnswer": "fordi",
+      "explanation": "'av di' oversettast primært til 'fordi' på bokmål."
+    },
+    {
+      "id": "ord_292",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva betyr det nynorske ordet 'medan'?",
+      "options": [
+        "mens",
+        "mellom",
+        "midt i",
+        "mat"
+      ],
+      "correctAnswer": "mens",
+      "explanation": "'medan' oversettast primært til 'mens' på bokmål."
+    },
+    {
+      "id": "ord_293",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva betyr det nynorske ordet 'òg'?",
+      "options": [
+        "også",
+        "å",
+        "og",
+        "aldri"
+      ],
+      "correctAnswer": "også",
+      "explanation": "'òg' oversettast primært til 'også' på bokmål."
+    },
+    {
+      "id": "ord_294",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva betyr det nynorske ordet 'eigentleg'?",
+      "options": [
+        "egentlig",
+        "egen",
+        "selv",
+        "alltid"
+      ],
+      "correctAnswer": "egentlig",
+      "explanation": "'eigentleg' oversettast primært til 'egentlig' på bokmål."
+    },
+    {
+      "id": "ord_295",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva betyr det nynorske ordet 'skilnad'?",
+      "options": [
+        "forskjell",
+        "skilsmisse",
+        "skilt",
+        "likhet"
+      ],
+      "correctAnswer": "forskjell",
+      "explanation": "'skilnad' oversettast primært til 'forskjell' på bokmål."
+    },
+    {
+      "id": "ord_296",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva betyr det nynorske ordet 'likskap'?",
+      "options": [
+        "likhet",
+        "skap",
+        "forskjell",
+        "lykke"
+      ],
+      "correctAnswer": "likhet",
+      "explanation": "'likskap' oversettast primært til 'likhet' på bokmål."
+    },
+    {
+      "id": "pron_297",
+      "type": "FILL_IN",
+      "category": "pronomen",
+      "difficulty": 1,
+      "text": "Heiar du på ___ (eg)?",
+      "correctAnswer": "meg",
+      "explanation": "Dette er objektsforma av pronomenet på nynorsk."
+    },
+    {
+      "id": "pron_298",
+      "type": "FILL_IN",
+      "category": "pronomen",
+      "difficulty": 1,
+      "text": "Eg ser ___ (du).",
+      "correctAnswer": "deg",
+      "explanation": "Dette er objektsforma av pronomenet på nynorsk."
+    },
+    {
+      "id": "pron_299",
+      "type": "FILL_IN",
+      "category": "pronomen",
+      "difficulty": 1,
+      "text": "Snakkar ho til ___ (han)?",
+      "correctAnswer": "han",
+      "explanation": "Dette er objektsforma av pronomenet på nynorsk."
+    },
+    {
+      "id": "pron_300",
+      "type": "FILL_IN",
+      "category": "pronomen",
+      "difficulty": 1,
+      "text": "Me likar ___ (ho).",
+      "correctAnswer": "henne",
+      "explanation": "Dette er objektsforma av pronomenet på nynorsk."
+    },
+    {
+      "id": "pron_301",
+      "type": "FILL_IN",
+      "category": "pronomen",
+      "difficulty": 1,
+      "text": "Likar de ___ (dei)?",
+      "correctAnswer": "dei",
+      "explanation": "Dette er objektsforma av pronomenet på nynorsk."
+    },
+    {
+      "id": "pron_302",
+      "type": "FILL_IN",
+      "category": "pronomen",
+      "difficulty": 1,
+      "text": "Gi boka til ___ (vi)!",
+      "correctAnswer": "oss",
+      "explanation": "Dette er objektsforma av pronomenet på nynorsk."
+    },
+    {
+      "id": "pron_303",
+      "type": "FILL_IN",
+      "category": "pronomen",
+      "difficulty": 1,
+      "text": "Vi gler ___ (vi).",
+      "correctAnswer": "oss",
+      "explanation": "Dette er objektsforma av pronomenet på nynorsk."
+    },
+    {
+      "id": "pron_304",
+      "type": "FILL_IN",
+      "category": "pronomen",
+      "difficulty": 1,
+      "text": "Kven ropte på ___ (ho)?",
+      "correctAnswer": "henne",
+      "explanation": "Dette er objektsforma av pronomenet på nynorsk."
+    },
+    {
+      "id": "pron_305",
+      "type": "FILL_IN",
+      "category": "pronomen",
+      "difficulty": 1,
+      "text": "Vil du ha ___ (han)?",
+      "correctAnswer": "han",
+      "explanation": "Dette er objektsforma av pronomenet på nynorsk."
+    },
+    {
+      "id": "eie_306",
+      "type": "MULTIPLE_CHOICE",
+      "category": "eiendomsord",
+      "difficulty": 2,
+      "text": "Kva er den mest naturlege og korrekte måten å seie dette på nynorsk?",
+      "options": [
+        "Boka mi er fin.",
+        "Min bok er fin.",
+        "Mi bok er fin.",
+        "Boka min er fin."
+      ],
+      "correctAnswer": "Boka mi er fin.",
+      "explanation": "På nynorsk står eigedomsordet normalt etter substantivet, og substantivet skal ha bestemt form (Boka mi er fin.)."
+    },
+    {
+      "id": "eie_307",
+      "type": "MULTIPLE_CHOICE",
+      "category": "eiendomsord",
+      "difficulty": 2,
+      "text": "Kva er den mest naturlege og korrekte måten å seie dette på nynorsk?",
+      "options": [
+        "Huset mitt er raudt",
+        "Mitt hus er raudt",
+        "Huset min er raud",
+        "Husa mi er raud"
+      ],
+      "correctAnswer": "Huset mitt er raudt",
+      "explanation": "På nynorsk står eigedomsordet normalt etter substantivet, og substantivet skal ha bestemt form (Huset mitt er raudt)."
+    },
+    {
+      "id": "eie_308",
+      "type": "MULTIPLE_CHOICE",
+      "category": "eiendomsord",
+      "difficulty": 2,
+      "text": "Kva er den mest naturlege og korrekte måten å seie dette på nynorsk?",
+      "options": [
+        "Bøkene mine er tunge",
+        "Mine bøker er tunge",
+        "Mine bøkene er tunge",
+        "Bøkene min er tung"
+      ],
+      "correctAnswer": "Bøkene mine er tunge",
+      "explanation": "På nynorsk står eigedomsordet normalt etter substantivet, og substantivet skal ha bestemt form (Bøkene mine er tunge)."
+    },
+    {
+      "id": "eie_309",
+      "type": "MULTIPLE_CHOICE",
+      "category": "eiendomsord",
+      "difficulty": 2,
+      "text": "Kva er den mest naturlege og korrekte måten å seie dette på nynorsk?",
+      "options": [
+        "Søstera di er grei",
+        "Di søster er grei",
+        "Søstera din er grei",
+        "Søsteren di er grei"
+      ],
+      "correctAnswer": "Søstera di er grei",
+      "explanation": "På nynorsk står eigedomsordet normalt etter substantivet, og substantivet skal ha bestemt form (Søstera di er grei)."
+    },
+    {
+      "id": "eie_310",
+      "type": "MULTIPLE_CHOICE",
+      "category": "eiendomsord",
+      "difficulty": 2,
+      "text": "Kva er den mest naturlege og korrekte måten å seie dette på nynorsk?",
+      "options": [
+        "Rommet hans er reint",
+        "Hans rom er reint",
+        "Hans rommet er reint",
+        "Rommet han er reint"
+      ],
+      "correctAnswer": "Rommet hans er reint",
+      "explanation": "På nynorsk står eigedomsordet normalt etter substantivet, og substantivet skal ha bestemt form (Rommet hans er reint)."
+    },
+    {
+      "id": "tf_001",
+      "type": "TRUE_FALSE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "\"Ei sol\" er korrekt nynorsk — sol er hokjønn.",
+      "options": [
+        "Sant",
+        "Usant"
+      ],
+      "correctAnswer": "Sant",
+      "explanation": "Sol er eit hokjønnsord i nynorsk: ei sol, sola."
+    },
+    {
+      "id": "tf_002",
+      "type": "TRUE_FALSE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "\"Ein hus\" er korrekt nynorsk — hus er hankjønn.",
+      "options": [
+        "Sant",
+        "Usant"
+      ],
+      "correctAnswer": "Usant",
+      "explanation": "Hus er inkjekjønn: eit hus, huset. Ikkje \"ein hus\"."
+    },
+    {
+      "id": "tf_003",
+      "type": "TRUE_FALSE",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "\"Ein gut\" er korrekt nynorsk — gut er hankjønn.",
+      "options": [
+        "Sant",
+        "Usant"
+      ],
+      "correctAnswer": "Sant",
+      "explanation": "Gut er hankjønn: ein gut, guten."
+    },
+    {
+      "id": "tf_004",
+      "type": "TRUE_FALSE",
+      "category": "substantiv_kjonn",
+      "difficulty": 2,
+      "text": "\"Ei bok\" er korrekt nynorsk — bok er hokjønn.",
+      "options": [
+        "Sant",
+        "Usant"
+      ],
+      "correctAnswer": "Sant",
+      "explanation": "Bok er hokjønn: ei bok, boka."
+    },
+    {
+      "id": "tf_005",
+      "type": "TRUE_FALSE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Presens av A-verb-et \"å kaste\" er \"kastar\" på nynorsk.",
+      "options": [
+        "Sant",
+        "Usant"
+      ],
+      "correctAnswer": "Sant",
+      "explanation": "A-verb i presens: kaste → kastar. Regelen: legg til -ar."
+    },
+    {
+      "id": "tf_006",
+      "type": "TRUE_FALSE",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "\"springe\" er eit A-verb på nynorsk.",
+      "options": [
+        "Sant",
+        "Usant"
+      ],
+      "correctAnswer": "Usant",
+      "explanation": "Springe er eit E-verb (sterkt verb): spring/spring/sprang/sprunge."
+    },
+    {
+      "id": "tf_007",
+      "type": "TRUE_FALSE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Infinitiv av nynorsk verb endar alltid på \"-e\".",
+      "options": [
+        "Sant",
+        "Usant"
+      ],
+      "correctAnswer": "Sant",
+      "explanation": "Alle nynorske infinitivar endar på -e: å kaste, å lese, å springe."
+    },
+    {
+      "id": "tf_008",
+      "type": "TRUE_FALSE",
+      "category": "pronomen",
+      "difficulty": 1,
+      "text": "\"Eg\" på nynorsk tyder \"jeg\" på bokmål.",
+      "options": [
+        "Sant",
+        "Usant"
+      ],
+      "correctAnswer": "Sant",
+      "explanation": "Eg = jeg. Personlege pronomen: eg, du, han, ho, vi/me, de, dei."
+    },
+    {
+      "id": "tf_009",
+      "type": "TRUE_FALSE",
+      "category": "pronomen",
+      "difficulty": 1,
+      "text": "\"Dei\" på nynorsk tyder \"vi\" på bokmål.",
+      "options": [
+        "Sant",
+        "Usant"
+      ],
+      "correctAnswer": "Usant",
+      "explanation": "Dei = de (3. person fleirtal). Vi/me = vi (1. person fleirtal)."
+    },
+    {
+      "id": "tf_010",
+      "type": "TRUE_FALSE",
+      "category": "ordforrad",
+      "difficulty": 1,
+      "text": "\"Kvar\" er eit nynorsk spørjeord som tyder \"kven\" på bokmål.",
+      "options": [
+        "Sant",
+        "Usant"
+      ],
+      "correctAnswer": "Usant",
+      "explanation": "Kvar = kvar (stad). Kven = hvem (person). Kva = hva (ting)."
+    },
+    {
+      "id": "tf_011",
+      "type": "TRUE_FALSE",
+      "category": "ordforrad",
+      "difficulty": 1,
+      "text": "\"Kva\" på nynorsk tyder \"hva\" på bokmål.",
+      "options": [
+        "Sant",
+        "Usant"
+      ],
+      "correctAnswer": "Sant",
+      "explanation": "Kva = hva. Nynorske spørjeord: kva, kven, kvar, korleis, kvifor."
+    },
+    {
+      "id": "tf_012",
+      "type": "TRUE_FALSE",
+      "category": "eiendomsord",
+      "difficulty": 1,
+      "text": "Eiendomsord kjem etter substantivet på nynorsk (t.d. \"boka mi\").",
+      "options": [
+        "Sant",
+        "Usant"
+      ],
+      "correctAnswer": "Sant",
+      "explanation": "På nynorsk står eiendomsordet etter: boka mi, huset mitt, mannen min."
+    },
+    {
+      "id": "tf_013",
+      "type": "TRUE_FALSE",
+      "category": "eiendomsord",
+      "difficulty": 2,
+      "text": "\"Boka mitt\" er korrekt nynorsk for ei hokjønnsbok.",
+      "options": [
+        "Sant",
+        "Usant"
+      ],
+      "correctAnswer": "Usant",
+      "explanation": "Bok er hokjønn → \"mi\": boka mi. \"Mitt\" brukast med inkjekjønn (eit hus → huset mitt)."
+    },
+    {
+      "id": "tf_014",
+      "type": "TRUE_FALSE",
+      "category": "substantiv_kjonn",
+      "difficulty": 2,
+      "text": "\"Eit tre\" er korrekt — tre er inkjekjønn på nynorsk.",
+      "options": [
+        "Sant",
+        "Usant"
+      ],
+      "correctAnswer": "Sant",
+      "explanation": "Tre er inkjekjønn: eit tre, treet."
+    },
+    {
+      "id": "tf_015",
+      "type": "TRUE_FALSE",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Preteritum av A-verb-et \"å kaste\" er \"kasta\" på nynorsk.",
+      "options": [
+        "Sant",
+        "Usant"
+      ],
+      "correctAnswer": "Sant",
+      "explanation": "A-verb i preteritum: kaste → kasta. E-verb: lese → las."
+    },
+    {
+      "id": "match_001",
+      "type": "MATCHING",
+      "category": "substantiv_kjonn",
+      "difficulty": 1,
+      "text": "Kople kvart ord til rett kjønn",
+      "options": [
+        "gut|Hankjønn (ein)",
+        "jente|Hokjønn (ei)",
+        "hus|Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "gut|Hankjønn (ein)",
+      "explanation": "Gut = hankjønn (ein gut), jente = hokjønn (ei jente), hus = inkjekjønn (eit hus)."
+    },
+    {
+      "id": "match_002",
+      "type": "MATCHING",
+      "category": "ordforrad",
+      "difficulty": 1,
+      "text": "Kople nynorsk spørjeord til bokmål",
+      "options": [
+        "Kven|Hvem",
+        "Kva|Hva",
+        "Kvar|Hvor"
+      ],
+      "correctAnswer": "Kven|Hvem",
+      "explanation": "Kven = hvem (person), kva = hva (ting), kvar = hvor (stad)."
+    },
+    {
+      "id": "match_003",
+      "type": "MATCHING",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Kople verb til preteritum-form",
+      "options": [
+        "å kasta|kasta",
+        "å kjøpe|kjøpte",
+        "å springe|sprang"
+      ],
+      "correctAnswer": "å kasta|kasta",
+      "explanation": "A-verb (kasta → kasta), e-verb (kjøpe → kjøpte), sterke verb (springe → sprang)."
+    },
+    {
+      "id": "match_004",
+      "type": "MATCHING",
+      "category": "pronomen",
+      "difficulty": 1,
+      "text": "Kople subjektsform til objektsform",
+      "options": [
+        "Eg|Meg",
+        "Du|Deg",
+        "Ho|Henne"
+      ],
+      "correctAnswer": "Eg|Meg",
+      "explanation": "Eg → meg, du → deg, ho → henne. Personlege pronomen i nynorsk."
+    },
+    {
+      "id": "match_005",
+      "type": "MATCHING",
+      "category": "eiendomsord",
+      "difficulty": 2,
+      "text": "Kople substantiv til rett eigedomsord-form",
+      "options": [
+        "boka|mi",
+        "huset|mitt",
+        "mannen|min"
+      ],
+      "correctAnswer": "boka|mi",
+      "explanation": "Hokjønn → mi (boka mi), inkjekjønn → mitt (huset mitt), hankjønn → min (mannen min)."
+    }
+  ]
+}
