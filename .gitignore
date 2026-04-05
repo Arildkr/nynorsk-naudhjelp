@@ -43,3 +43,9 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Sensitive filer — skal ALDRI pushast
+SECRETS.md
+android/key.properties
+android/app/*.keystore
+android/app/*.jks
