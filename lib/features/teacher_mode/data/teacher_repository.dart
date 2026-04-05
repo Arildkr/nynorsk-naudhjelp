@@ -54,6 +54,15 @@ class TeacherRepository {
         .set(data, SetOptions(merge: true));
   }
 
+  Future<void> removeStudent(String roomCode, String studentId) async {
+    await _firestore
+        .collection('rooms')
+        .doc(roomCode)
+        .collection('students')
+        .doc(studentId)
+        .delete();
+  }
+
   Stream<List<StudentProgress>> watchRoom(String roomCode) {
     return _firestore
         .collection('rooms')

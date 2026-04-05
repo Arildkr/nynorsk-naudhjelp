@@ -192,7 +192,7 @@ class TeacherDashboardScreen extends ConsumerWidget {
                             ),
                             if (s.weakCategory.isNotEmpty)
                               Padding(
-                                padding: const EdgeInsets.only(left: 16.0),
+                                padding: const EdgeInsets.only(left: 8.0),
                                 child: Chip(
                                   label: Text(
                                     'Svak: ${_formatCategory(s.weakCategory)}',
@@ -201,6 +201,30 @@ class TeacherDashboardScreen extends ConsumerWidget {
                                   backgroundColor: Colors.orange.shade100,
                                 ),
                               ),
+                            IconButton(
+                              icon: const Icon(Icons.person_remove, color: Colors.red),
+                              tooltip: 'Fjern elev',
+                              onPressed: () async {
+                                final confirm = await showDialog<bool>(
+                                  context: context,
+                                  builder: (ctx) => AlertDialog(
+                                    title: const Text('Fjern elev?'),
+                                    content: Text('Vil du fjerne ${s.name} frå rommet?'),
+                                    actions: [
+                                      TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text('Avbryt')),
+                                      ElevatedButton(
+                                        style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+                                        onPressed: () => Navigator.pop(ctx, true),
+                                        child: const Text('Fjern', style: TextStyle(color: Colors.white)),
+                                      ),
+                                    ],
+                                  ),
+                                );
+                                if (confirm == true) {
+                                  await ref.read(teacherRepositoryProvider).removeStudent(roomCode, s.id);
+                                }
+                              },
+                            ),
                           ],
                         ),
                       ),

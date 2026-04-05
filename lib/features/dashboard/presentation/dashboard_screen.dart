@@ -111,22 +111,22 @@ class DashboardScreen extends ConsumerWidget {
               Row(
                 children: [
                   Expanded(
-                    child: _buildBigButton(
-                      context, 
-                      title: 'Resultat', 
-                      subtitle: 'Di utvikling', 
-                      icon: Icons.star_rounded, 
+                    child: _buildSmallButton(
+                      context,
+                      title: 'Resultat',
+                      subtitle: 'Di utvikling',
+                      icon: Icons.star_rounded,
                       color: Colors.orange,
                       onTap: () => context.push('/results'),
                     ),
                   ),
                   const SizedBox(width: 16),
                   Expanded(
-                    child: _buildBigButton(
-                      context, 
-                      title: 'Grammatikk', 
-                      subtitle: 'Oppslagsverk', 
-                      icon: Icons.menu_book_rounded, 
+                    child: _buildSmallButton(
+                      context,
+                      title: 'Grammatikk',
+                      subtitle: 'Oppslagsverk',
+                      icon: Icons.menu_book_rounded,
                       color: Colors.teal,
                       onTap: () => context.push('/grammar'),
                     ),
@@ -164,6 +164,72 @@ class DashboardScreen extends ConsumerWidget {
                   onTap: () => context.push('/teacher'),
                 ),
               ],
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSmallButton(BuildContext context, {
+    required String title,
+    required String subtitle,
+    required IconData icon,
+    required Color color,
+    required VoidCallback onTap,
+  }) {
+    return Card(
+      elevation: 6,
+      shadowColor: color.withOpacity(0.5),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(24),
+        child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(24),
+            gradient: LinearGradient(
+              colors: [color.withOpacity(0.85), color],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+          ),
+          padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 12),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.2),
+                  shape: BoxShape.circle,
+                ),
+                child: Icon(icon, size: 28, color: Colors.white),
+              ),
+              const SizedBox(height: 10),
+              Text(
+                title,
+                style: const TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+                textAlign: TextAlign.center,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
+              const SizedBox(height: 2),
+              Text(
+                subtitle,
+                style: const TextStyle(
+                  fontSize: 12,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w500,
+                ),
+                textAlign: TextAlign.center,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
             ],
           ),
         ),
