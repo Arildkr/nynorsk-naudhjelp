@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="nn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personvernerklæring — Nynorsk naudhjelp</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f4f6f4;
+      color: #1a2e1a;
+      line-height: 1.7;
+      padding: 0 16px 64px;
+    }
+    header {
+      background: #2e7d32;
+      color: #fff;
+      text-align: center;
+      padding: 48px 16px 32px;
+      margin-bottom: 40px;
+    }
+    header h1 { font-size: 2rem; font-weight: 900; margin-bottom: 8px; }
+    header p { font-size: 1rem; opacity: 0.85; }
+    .container { max-width: 760px; margin: 0 auto; }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    }
+    h2 {
+      font-size: 1.2rem;
+      color: #2e7d32;
+      font-weight: 700;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2 .icon { font-size: 1.4rem; }
+    p { margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { margin-bottom: 6px; }
+    .highlight {
+      background: #e8f5e9;
+      border-left: 4px solid #2e7d32;
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 12px;
+    }
+    .updated {
+      text-align: center;
+      color: #888;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+    a { color: #2e7d32; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🕊️ Nynorsk naudhjelp</h1>
+    <p>Personvernerklæring</p>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h2><span class="icon">📋</span> Om appen</h2>
+      <p><strong>Nynorsk naudhjelp</strong> er ein pedagogisk app for nynorsk-opplæring. Appen er tilgjengeleg som Android-app og som webapp.</p>
+      <div class="highlight">
+        Appen er utvikla for bruk i skule og er retta mot elevar og lærarar. Me tek personvernet ditt på alvor.
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">📊</span> Kva data samlar me inn?</h2>
+      <p>Appen samlar inn svært avgrensa data:</p>
+      <ul>
+        <li><strong>Kartleggingsresultat</strong> — poengsum og kategoriresultat frå kartleggingsøkter. Lagra lokalt på eininga di (ikkje sendt til server med mindre du er kopla til eit klasserom).</li>
+        <li><strong>Eining-ID</strong> — ein anonym, tilfeldig generert ID som identifiserer eininga di i samband med klasserom-funksjonen. Denne ID-en inneheld ingen personopplysningar.</li>
+        <li><strong>Namn (valfritt)</strong> — viss du koplar deg til eit klasserom, skriv du inn eit namn (t.d. fornamn). Dette vert berre brukt til å vise eleven i lærarens oversyn og vert ikkje brukt til andre føremål.</li>
+        <li><strong>Klasseromdata</strong> — viss du deltek i ein lærar-styrt økt, vert progress (namn, poengsum, svake kategoriar) sendt til Google Firebase/Firestore og vist til læraren din i sanntid.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">🚫</span> Kva samlar me IKKJE inn?</h2>
+      <ul>
+        <li>Me samlar ikkje inn e-postadresse, telefonnummer eller andre kontaktopplysningar</li>
+        <li>Me samlar ikkje inn posisjon, kamera eller mikrofondata</li>
+        <li>Me samlar ikkje inn åtferdsdata til reklame- eller marknadsføringsføremål</li>
+        <li>Me sel ikkje data til tredjepartar</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">☁️</span> Tredjepartstenester</h2>
+      <p>Appen bruker <strong>Google Firebase</strong> (Firestore) for klasseromfunksjonen. Google Firebase er underlagt Googles eigne personvernreglar.</p>
+      <ul>
+        <li>Klasseromdata vert lagra i Firestore og er tilgjengeleg for læraren som oppretta rommet</li>
+        <li>Data som er knytt til eit klasserom vert ikkje delt med andre lærarar eller tredjepartar</li>
+        <li>Me bruker ikkje Firebase Analytics, Crashlytics eller andre sporingstenester</li>
+      </ul>
+      <p>Les meir: <a href="https://firebase.google.com/support/privacy" target="_blank">Googles personvernpolitikk for Firebase</a></p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">💾</span> Lagring og sletting</h2>
+      <ul>
+        <li><strong>Lokale data</strong> (kartleggingshistorikk, eining-ID) vert lagra på eininga di og kan slettast ved å avinstallere appen eller tøme app-data.</li>
+        <li><strong>Klasseromdata i Firebase</strong> er knytt til romkoden læraren oppretta. Læraren kan slette romet frå Firebase-konsollen.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">👶</span> Barn og personvern</h2>
+      <p>Appen er laga for bruk i skulen. Me samlar ikkje inn personopplysningar utover det som er nødvendig for klasseromfunksjonen (valfritt namn og anonym eining-ID).</p>
+      <p>Bruk i skule vert gjort under læraren sitt ansvar, og læraren er ansvarleg for at bruken er i samsvar med gjeldande regelverk (GDPR, Opplæringslova m.m.).</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">✉️</span> Kontakt</h2>
+      <p>Har du spørsmål om personvern i appen, kan du ta kontakt via <a href="https://github.com/Arildkr/nynorsk-naudhjelp/issues" target="_blank">GitHub Issues</a>.</p>
+    </div>
+
+    <p class="updated">Sist oppdatert: 5. april 2026</p>
+  </div>
+</body>
+</html>
