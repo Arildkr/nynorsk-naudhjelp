@@ -143,6 +143,15 @@ class DashboardScreen extends ConsumerWidget {
                   subtitle: const Text('Kople til læraren din si økt'),
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12), side: BorderSide(color: Colors.blueAccent.withOpacity(0.5))),
                   onTap: () => _showJoinRoomDialog(context, ref),
+                )
+              else
+                ListTile(
+                  leading: const Icon(Icons.logout, color: Colors.red),
+                  title: Text('Kopla til rom ${currentConfig.roomCode} som ${currentConfig.name}'),
+                  subtitle: const Text('Trykk for å forlate rommet'),
+                  tileColor: Colors.red.shade50,
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12), side: BorderSide(color: Colors.red.shade200)),
+                  onTap: () => ref.read(studentConfigProvider.notifier).state = null,
                 ),
               if (kIsWeb) ...[
                 const SizedBox(height: 16),

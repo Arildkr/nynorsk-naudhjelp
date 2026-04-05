@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../data/question_repository.dart';
 import '../models/question.dart';
@@ -71,18 +72,18 @@ class AssessmentController extends StateNotifier<AsyncValue<AssessmentState>> {
     }
   }
 
-  void _pushToFirebase(int score, int currentIndex, int total, bool isFinished, String weakCat) {
+  Future<void> _pushToFirebase(int score, int currentIndex, int total, bool isFinished, String weakCat) async {
     if (_studentConfig != null && _studentId != null) {
       try {
-        _teacherRepo.updateStudentProgress(_studentConfig!.roomCode, _studentId!, {
+        await _teacherRepo.updateStudentProgress(_studentConfig!.roomCode, _studentId!, {
           'name': _studentConfig!.name,
           'score': score,
           'totalQuestions': total,
           'isFinished': isFinished,
           'weakCategory': weakCat,
         });
-      } catch (_) {
-        // Ignorerer stille — Firestore har offline-støtte innebygd
+      } catch (e) {
+        debugPrint('Firebase-feil: $e');
       }
     }
   }
