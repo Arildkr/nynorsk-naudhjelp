@@ -78,12 +78,17 @@ class _SwipeChoiceWidgetState extends State<SwipeChoiceWidget> {
               }
             }
 
-            return ActionChip(
-              label: Text(opt, style: const TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.bold)),
-              padding: const EdgeInsets.all(16),
-              onPressed: _showingFeedback ? null : () => _handleAnswer(opt),
-              backgroundColor: chipColor,
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+            return Material(
+              color: chipColor,
+              borderRadius: BorderRadius.circular(16),
+              child: InkWell(
+                borderRadius: BorderRadius.circular(16),
+                onTap: _showingFeedback ? null : () => _handleAnswer(opt),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+                  child: Text(opt, style: const TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.bold)),
+                ),
+              ),
             );
           }).toList(),
         ),
