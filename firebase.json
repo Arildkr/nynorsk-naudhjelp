@@ -1,1 +1,53 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"nynorsk-kartlegger","appId":"1:22193740927:android:59d13d30921f9de7d1b34a","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"nynorsk-kartlegger","configurations":{"android":"1:22193740927:android:59d13d30921f9de7d1b34a","ios":"1:22193740927:ios:677d2642917c0f7bd1b34a","macos":"1:22193740927:ios:677d2642917c0f7bd1b34a","web":"1:22193740927:web:055e6e1bb795a4afd1b34a","windows":"1:22193740927:web:90e92171c6a2d30bd1b34a"}}}}}}
+{
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(js|css|wasm)",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        ]
+      },
+      {
+        "source": "index.html",
+        "headers": [
+          { "key": "Cache-Control", "value": "no-cache" }
+        ]
+      }
+    ]
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "nynorsk-kartlegger",
+          "appId": "1:22193740927:android:59d13d30921f9de7d1b34a",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "nynorsk-kartlegger",
+          "configurations": {
+            "android": "1:22193740927:android:59d13d30921f9de7d1b34a",
+            "ios": "1:22193740927:ios:677d2642917c0f7bd1b34a",
+            "macos": "1:22193740927:ios:677d2642917c0f7bd1b34a",
+            "web": "1:22193740927:web:055e6e1bb795a4afd1b34a",
+            "windows": "1:22193740927:web:90e92171c6a2d30bd1b34a"
+          }
+        }
+      }
+    }
+  }
+}
