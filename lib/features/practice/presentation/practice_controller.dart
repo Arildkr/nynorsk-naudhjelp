@@ -1,7 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../assessment/data/question_repository.dart';
 import '../../assessment/data/assessment_result_repository.dart';
-import '../../assessment/presentation/assessment_controller.dart'; // We reuse AssessmentState
+import '../../assessment/presentation/assessment_controller.dart';
 
 final practiceControllerProvider = StateNotifierProvider.autoDispose<PracticeController, AsyncValue<AssessmentState>>((ref) {
   final repo = ref.watch(questionRepositoryProvider);
@@ -57,7 +57,7 @@ class PracticeController extends StateNotifier<AsyncValue<AssessmentState>> {
         // standardmålinga (kartlegging). Held dei åtskilde med vilje.
         state = AsyncValue.data(s.copyWith(
           answers: newAnswers,
-          isCompleted: true,
+          status: AssessmentStatus.completed,
         ));
       }
     });

@@ -5,41 +5,45 @@ import '../data/assessment_result_repository.dart';
 import '../models/assessment_result.dart';
 import '../../teacher_mode/data/student_config_provider.dart';
 import '../../teacher_mode/data/teacher_repository.dart';
-import 'dart:math';
 
 final assessmentControllerProvider = StateNotifierProvider.autoDispose<AssessmentController, AsyncValue<AssessmentState>>((ref) {
   final repo = ref.watch(questionRepositoryProvider);
   final resultRepo = ref.watch(assessmentResultRepoProvider);
   final studentConfig = ref.watch(studentConfigProvider);
   final teacherRepo = ref.watch(teacherRepositoryProvider);
-  final studentId = studentConfig != null ? Random().nextInt(999999).toString() : null;
+  final studentId = studentConfig != null ? ref.watch(studentIdProvider) : null;
   return AssessmentController(repo, resultRepo, studentConfig, teacherRepo, studentId);
 });
+
+enum AssessmentStatus { loading, active, saving, completed }
 
 class AssessmentState {
   final List<Question> questions;
   final int currentIndex;
   final Map<String, String> answers;
-  final bool isCompleted;
+  final AssessmentStatus status;
 
   AssessmentState({
     required this.questions,
     this.currentIndex = 0,
     this.answers = const {},
-    this.isCompleted = false,
+    this.status = AssessmentStatus.active,
   });
+
+  bool get isCompleted => status == AssessmentStatus.completed;
+  bool get isSaving => status == AssessmentStatus.saving;
 
   AssessmentState copyWith({
     List<Question>? questions,
     int? currentIndex,
     Map<String, String>? answers,
-    bool? isCompleted,
+    AssessmentStatus? status,
   }) {
     return AssessmentState(
       questions: questions ?? this.questions,
       currentIndex: currentIndex ?? this.currentIndex,
       answers: answers ?? this.answers,
-      isCompleted: isCompleted ?? this.isCompleted,
+      status: status ?? this.status,
     );
   }
 
@@ -77,8 +81,8 @@ class AssessmentController extends StateNotifier<AsyncValue<AssessmentState>> {
           'isFinished': isFinished,
           'weakCategory': weakCat,
         });
-      } catch (e) {
-         // Silently ignore if offline
+      } catch (_) {
+        // Ignorerer stille — Firestore har offline-støtte innebygd
       }
     }
   }
@@ -102,6 +106,12 @@ class AssessmentController extends StateNotifier<AsyncValue<AssessmentState>> {
           currentIndex: s.currentIndex + 1,
         ));
       } else {
+        // Vis "Lagrar..."-tilstand medan me behandlar
+        state = AsyncValue.data(s.copyWith(
+          answers: newAnswers,
+          status: AssessmentStatus.saving,
+        ));
+
         // Aggreger svar per kategori — fleire spørsmål per kategori
         final Map<String, List<bool>> catAnswers = {};
         for (var q in s.questions) {
@@ -128,12 +138,14 @@ class AssessmentController extends StateNotifier<AsyncValue<AssessmentState>> {
           score: score,
           total: s.questions.length,
           categoryResults: categoryResults,
-        ));
-
-        state = AsyncValue.data(s.copyWith(
-          answers: newAnswers,
-          isCompleted: true,
-        ));
+        )).then((_) {
+          if (mounted) {
+            state = AsyncValue.data(s.copyWith(
+              answers: newAnswers,
+              status: AssessmentStatus.completed,
+            ));
+          }
+        });
       }
     });
   }

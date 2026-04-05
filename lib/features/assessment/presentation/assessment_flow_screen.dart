@@ -33,6 +33,19 @@ class AssessmentFlowScreen extends ConsumerWidget {
             return const Center(child: Text('Fann ingen spørsmål i banken.'));
           }
 
+          if (state.isSaving) {
+            return const Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  CircularProgressIndicator(color: Colors.deepPurple),
+                  SizedBox(height: 24),
+                  Text('Lagrar resultatet...', style: TextStyle(fontSize: 18, color: Colors.grey)),
+                ],
+              ),
+            );
+          }
+
           if (state.isCompleted) {
             return _buildResult(context, state);
           }
