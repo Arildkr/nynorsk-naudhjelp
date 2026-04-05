@@ -125,7 +125,7 @@ class DashboardScreen extends ConsumerWidget {
                     child: _buildBigButton(
                       context, 
                       title: 'Grammatikk', 
-                      subtitle: 'Di jukselapp', 
+                      subtitle: 'Oppslagsverk', 
                       icon: Icons.menu_book_rounded, 
                       color: Colors.teal,
                       onTap: () => context.push('/grammar'),

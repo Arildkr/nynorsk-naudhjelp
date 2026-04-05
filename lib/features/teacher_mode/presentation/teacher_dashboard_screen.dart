@@ -18,7 +18,7 @@ class TeacherDashboardScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Lærerportal', style: TextStyle(fontWeight: FontWeight.bold)),
+        title: const Text('Lærarportal', style: TextStyle(fontWeight: FontWeight.bold)),
       ),
       body: roomCode == null
           ? _buildStartScreen(context, ref)
@@ -36,14 +36,15 @@ class TeacherDashboardScreen extends ConsumerWidget {
             const Icon(Icons.co_present, size: 100, color: Colors.blueGrey),
             const SizedBox(height: 24),
             const Text(
-              'Gjør deg klar for klassen!',
+              'Gjer deg klar for klassen!',
               style: TextStyle(fontSize: 32, fontWeight: FontWeight.w900),
+              textAlign: TextAlign.center,
             ),
             const SizedBox(height: 16),
             const Text(
-              'Når du oppretter et rom, får du en firesifret kode. Be elevene skrive inn denne koden før de starter kartleggingen, så dukker de opp her i sanntid!',
+              'Når du opprettar eit rom, får du ein firesifra kode. Be elevane skrive inn denne koden før dei startar kartlegginga, så dukkar dei opp her i sanntid!',
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 18),
+              style: TextStyle(fontSize: 18, height: 1.5),
             ),
             const SizedBox(height: 48),
             ElevatedButton(
@@ -58,7 +59,7 @@ class TeacherDashboardScreen extends ConsumerWidget {
                 await ref.read(teacherRepositoryProvider).createRoom(code);
                 ref.read(currentRoomProvider.notifier).state = code;
               },
-              child: const Text('Opprett Rom', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
+              child: const Text('Opprett rom', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
             ),
           ],
         ),
@@ -92,7 +93,7 @@ class TeacherDashboardScreen extends ConsumerWidget {
             ),
           ),
           const SizedBox(height: 32),
-          const Text('Elever i arbeid:', style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold)),
+          const Text('Elevar i arbeid:', style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold)),
           const SizedBox(height: 16),
           Expanded(
             child: studentsAsync.when(
@@ -100,7 +101,13 @@ class TeacherDashboardScreen extends ConsumerWidget {
               error: (err, st) => Center(child: Text('Feil ved lesing: $err')),
               data: (students) {
                 if (students.isEmpty) {
-                  return const Center(child: Text('Venter på at elever skal koble seg til...', style: TextStyle(fontSize: 20, color: Colors.grey)));
+                  return const Center(
+                    child: Text(
+                      'Ventar på at elevar skal kople seg til...',
+                      style: TextStyle(fontSize: 20, color: Colors.grey),
+                      textAlign: TextAlign.center,
+                    ),
+                  );
                 }
 
                 return ListView.builder(
@@ -109,7 +116,7 @@ class TeacherDashboardScreen extends ConsumerWidget {
                     final s = students[index];
                     final maxQ = max(1, s.totalQuestions);
                     final pct = s.score / maxQ;
-                    
+
                     return Card(
                       margin: const EdgeInsets.only(bottom: 16),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
@@ -120,7 +127,10 @@ class TeacherDashboardScreen extends ConsumerWidget {
                             CircleAvatar(
                               radius: 30,
                               backgroundColor: Colors.blueGrey.shade200,
-                              child: Text(s.name.isNotEmpty ? s.name.substring(0, 1).toUpperCase() : '?', style: const TextStyle(fontSize: 24, color: Colors.white)),
+                              child: Text(
+                                s.name.isNotEmpty ? s.name.substring(0, 1).toUpperCase() : '?',
+                                style: const TextStyle(fontSize: 24, color: Colors.white),
+                              ),
                             ),
                             const SizedBox(width: 16),
                             Expanded(
@@ -140,10 +150,13 @@ class TeacherDashboardScreen extends ConsumerWidget {
                                   ),
                                   const SizedBox(height: 8),
                                   Text(
-                                    s.isFinished 
-                                      ? 'Ferdig! Score: ${(pct * 100).toInt()}%' 
-                                      : 'Jobber... (${s.score} riktige så langt)',
-                                    style: TextStyle(color: s.isFinished ? Colors.green : Colors.grey.shade700, fontWeight: s.isFinished ? FontWeight.bold : FontWeight.normal),
+                                    s.isFinished
+                                        ? 'Ferdig! Resultat: ${(pct * 100).toInt()}%'
+                                        : 'Jobbar... (${s.score} rette so langt)',
+                                    style: TextStyle(
+                                      color: s.isFinished ? Colors.green : Colors.grey.shade700,
+                                      fontWeight: s.isFinished ? FontWeight.bold : FontWeight.normal,
+                                    ),
                                   ),
                                 ],
                               ),
@@ -152,10 +165,13 @@ class TeacherDashboardScreen extends ConsumerWidget {
                               Padding(
                                 padding: const EdgeInsets.only(left: 16.0),
                                 child: Chip(
-                                  label: Text('Sliter med: ${s.weakCategory}', style: const TextStyle(fontWeight: FontWeight.bold)),
+                                  label: Text(
+                                    'Svak: ${_formatCategory(s.weakCategory)}',
+                                    style: const TextStyle(fontWeight: FontWeight.bold),
+                                  ),
                                   backgroundColor: Colors.orange.shade100,
                                 ),
-                              )
+                              ),
                           ],
                         ),
                       ),
@@ -168,5 +184,17 @@ class TeacherDashboardScreen extends ConsumerWidget {
         ],
       ),
     );
+  }
+
+  String _formatCategory(String key) {
+    switch (key) {
+      case 'substantiv_kjonn': return 'Substantiv (Kjønn)';
+      case 'substantiv_boying': return 'Substantiv (Bøying)';
+      case 'verb_boying': return 'Verb';
+      case 'ordforrad': return 'Ordforråd';
+      case 'pronomen': return 'Pronomen';
+      case 'eiendomsord': return 'Eigedomsord';
+      default: return key;
+    }
   }
 }
