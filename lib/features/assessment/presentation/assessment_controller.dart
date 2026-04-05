@@ -23,12 +23,14 @@ class AssessmentState {
   final int currentIndex;
   final Map<String, String> answers;
   final AssessmentStatus status;
+  final String? syncError; // synleg Firebase-feil
 
   AssessmentState({
     required this.questions,
     this.currentIndex = 0,
     this.answers = const {},
     this.status = AssessmentStatus.active,
+    this.syncError,
   });
 
   bool get isCompleted => status == AssessmentStatus.completed;
@@ -39,12 +41,15 @@ class AssessmentState {
     int? currentIndex,
     Map<String, String>? answers,
     AssessmentStatus? status,
+    String? syncError,
+    bool clearSyncError = false,
   }) {
     return AssessmentState(
       questions: questions ?? this.questions,
       currentIndex: currentIndex ?? this.currentIndex,
       answers: answers ?? this.answers,
       status: status ?? this.status,
+      syncError: clearSyncError ? null : (syncError ?? this.syncError),
     );
   }
 
@@ -66,30 +71,33 @@ class AssessmentController extends StateNotifier<AsyncValue<AssessmentState>> {
     try {
       final questions = await _repo.getQuestionsForAssessment();
       state = AsyncValue.data(AssessmentState(questions: questions));
-      _pushToFirebase(0, 0, questions.length, false, '');
+      await _pushToFirebase(0, 0, questions.length, false, '');
     } catch (e, st) {
       state = AsyncValue.error(e, st);
     }
   }
 
-  Future<void> _pushToFirebase(int score, int currentIndex, int total, bool isFinished, String weakCat) async {
-    if (_studentConfig != null && _studentId != null) {
-      try {
-        await _teacherRepo.updateStudentProgress(_studentConfig!.roomCode, _studentId!, {
-          'name': _studentConfig!.name,
-          'score': score,
-          'totalQuestions': total,
-          'isFinished': isFinished,
-          'weakCategory': weakCat,
-        });
-      } catch (e) {
-        debugPrint('Firebase-feil: $e');
-      }
+  /// Returnerer feilmelding viss push feilar, null viss ok.
+  Future<String?> _pushToFirebase(int score, int currentIndex, int total, bool isFinished, String weakCat) async {
+    if (_studentConfig == null || _studentId == null) return null;
+    try {
+      await _teacherRepo.updateStudentProgress(_studentConfig!.roomCode, _studentId!, {
+        'name': _studentConfig!.name,
+        'score': score,
+        'totalQuestions': total,
+        'isFinished': isFinished,
+        'weakCategory': weakCat,
+      });
+      debugPrint('Firebase push OK: score=$score/$total');
+      return null;
+    } catch (e) {
+      debugPrint('Firebase-feil: $e');
+      return e.toString();
     }
   }
 
   void answerCurrentQuestion(String answer) {
-    state.whenData((s) {
+    state.whenData((s) async {
       final newAnswers = Map<String, String>.from(s.answers);
       newAnswers[s.currentQuestion.id] = answer;
 
@@ -101,25 +109,31 @@ class AssessmentController extends StateNotifier<AsyncValue<AssessmentState>> {
       }
 
       if (s.currentIndex < s.questions.length - 1) {
-        _pushToFirebase(score, s.currentIndex + 1, s.questions.length, false, '');
-        state = AsyncValue.data(s.copyWith(
-          answers: newAnswers,
-          currentIndex: s.currentIndex + 1,
-        ));
+        // Mellomsteg — oppdater Firestore og gå til neste spørsmål
+        final err = await _pushToFirebase(score, s.currentIndex + 1, s.questions.length, false, '');
+        if (mounted) {
+          state = AsyncValue.data(s.copyWith(
+            answers: newAnswers,
+            currentIndex: s.currentIndex + 1,
+            syncError: err,
+            clearSyncError: err == null,
+          ));
+        }
       } else {
-        // Vis "Lagrar..."-tilstand medan me behandlar
-        state = AsyncValue.data(s.copyWith(
-          answers: newAnswers,
-          status: AssessmentStatus.saving,
-        ));
+        // Siste spørsmål
+        if (mounted) {
+          state = AsyncValue.data(s.copyWith(
+            answers: newAnswers,
+            status: AssessmentStatus.saving,
+          ));
+        }
 
-        // Aggreger svar per kategori — fleire spørsmål per kategori
+        // Aggreger svar per kategori
         final Map<String, List<bool>> catAnswers = {};
         for (var q in s.questions) {
           final isCorrect = newAnswers[q.id]?.toLowerCase() == q.correctAnswer.toLowerCase();
           catAnswers.putIfAbsent(q.category, () => []).add(isCorrect);
         }
-        // Kategorien er "meistra" om fleirtalet av svar er rette
         final categoryResults = <String, bool>{};
         catAnswers.forEach((cat, results) {
           final correct = results.where((b) => b).length;
@@ -132,21 +146,27 @@ class AssessmentController extends StateNotifier<AsyncValue<AssessmentState>> {
           if (wrongCats.isNotEmpty) weakCat = wrongCats.first;
         }
 
-        _pushToFirebase(score, s.questions.length, s.questions.length, true, weakCat);
+        final firebaseErr = await _pushToFirebase(score, s.questions.length, s.questions.length, true, weakCat);
 
-        _resultRepo.saveResult(AssessmentResult(
-          date: DateTime.now(),
-          score: score,
-          total: s.questions.length,
-          categoryResults: categoryResults,
-        )).then((_) {
-          if (mounted) {
-            state = AsyncValue.data(s.copyWith(
-              answers: newAnswers,
-              status: AssessmentStatus.completed,
-            ));
-          }
-        });
+        try {
+          await _resultRepo.saveResult(AssessmentResult(
+            date: DateTime.now(),
+            score: score,
+            total: s.questions.length,
+            categoryResults: categoryResults,
+          ));
+        } catch (e) {
+          debugPrint('Lagring av resultat feilar: $e');
+        }
+
+        if (mounted) {
+          state = AsyncValue.data(s.copyWith(
+            answers: newAnswers,
+            status: AssessmentStatus.completed,
+            syncError: firebaseErr,
+            clearSyncError: firebaseErr == null,
+          ));
+        }
       }
     });
   }

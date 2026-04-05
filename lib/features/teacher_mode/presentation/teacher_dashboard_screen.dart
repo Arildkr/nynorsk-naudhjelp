@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'dart:math';
 import '../data/teacher_repository.dart';
@@ -88,17 +89,45 @@ class TeacherDashboardScreen extends ConsumerWidget {
                     style: const TextStyle(fontSize: 100, fontWeight: FontWeight.w900, letterSpacing: 16, color: Colors.white),
                   ),
                   const Text('Skriv denne på tavla!', style: TextStyle(color: Colors.white60, fontSize: 18)),
+                  const SizedBox(height: 12),
+                  OutlinedButton.icon(
+                    onPressed: () {
+                      Clipboard.setData(ClipboardData(text: roomCode));
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(content: Text('Romkode kopiert!'), backgroundColor: Colors.green),
+                      );
+                    },
+                    icon: const Icon(Icons.copy, color: Colors.white70),
+                    label: const Text('Kopier kode', style: TextStyle(color: Colors.white70)),
+                    style: OutlinedButton.styleFrom(side: const BorderSide(color: Colors.white30)),
+                  ),
                 ],
               ),
             ),
           ),
-          const SizedBox(height: 32),
+          const SizedBox(height: 16),
+          // Firebase-test
+          _FirebaseTestBanner(repo: ref.read(teacherRepositoryProvider), roomCode: roomCode),
+          const SizedBox(height: 16),
           const Text('Elevar i arbeid:', style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold)),
           const SizedBox(height: 16),
           Expanded(
             child: studentsAsync.when(
               loading: () => const Center(child: CircularProgressIndicator()),
-              error: (err, st) => Center(child: Text('Feil ved lesing: $err')),
+              error: (err, st) => Container(
+                padding: const EdgeInsets.all(16),
+                decoration: BoxDecoration(color: Colors.red.shade50, borderRadius: BorderRadius.circular(12)),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    const Icon(Icons.error_outline, color: Colors.red, size: 40),
+                    const SizedBox(height: 8),
+                    const Text('Firebase-feil:', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red)),
+                    const SizedBox(height: 4),
+                    SelectableText(err.toString(), style: const TextStyle(fontSize: 12, color: Colors.red)),
+                  ],
+                ),
+              ),
               data: (students) {
                 if (students.isEmpty) {
                   return const Center(
@@ -186,15 +215,76 @@ class TeacherDashboardScreen extends ConsumerWidget {
     );
   }
 
-  String _formatCategory(String key) {
-    switch (key) {
-      case 'substantiv_kjonn': return 'Substantiv (Kjønn)';
-      case 'substantiv_boying': return 'Substantiv (Bøying)';
-      case 'verb_boying': return 'Verb';
-      case 'ordforrad': return 'Ordforråd';
-      case 'pronomen': return 'Pronomen';
-      case 'eiendomsord': return 'Eigedomsord';
-      default: return key;
+}
+
+class _FirebaseTestBanner extends StatefulWidget {
+  final TeacherRepository repo;
+  final String roomCode;
+  const _FirebaseTestBanner({required this.repo, required this.roomCode});
+
+  @override
+  State<_FirebaseTestBanner> createState() => _FirebaseTestBannerState();
+}
+
+class _FirebaseTestBannerState extends State<_FirebaseTestBanner> {
+  String? _status;
+  bool _testing = false;
+
+  Future<void> _test() async {
+    setState(() { _testing = true; _status = null; });
+    try {
+      await widget.repo.updateStudentProgress(widget.roomCode, '__test__', {
+        'name': 'Tilkoplingstest',
+        'score': 0,
+        'totalQuestions': 0,
+        'isFinished': false,
+        'weakCategory': '',
+      });
+      setState(() { _status = 'OK — Firebase er tilgjengeleg!'; _testing = false; });
+    } catch (e) {
+      setState(() { _status = 'FEIL: $e'; _testing = false; });
     }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        ElevatedButton.icon(
+          onPressed: _testing ? null : _test,
+          icon: _testing
+              ? const SizedBox(width: 16, height: 16, child: CircularProgressIndicator(strokeWidth: 2))
+              : const Icon(Icons.wifi_tethering),
+          label: const Text('Test Firebase-tilkopling'),
+          style: ElevatedButton.styleFrom(backgroundColor: Colors.blueGrey.shade700, foregroundColor: Colors.white),
+        ),
+        if (_status != null) ...[
+          const SizedBox(width: 12),
+          Expanded(
+            child: Text(
+              _status!,
+              style: TextStyle(
+                color: _status!.startsWith('OK') ? Colors.green.shade700 : Colors.red.shade700,
+                fontWeight: FontWeight.bold,
+                fontSize: 13,
+              ),
+            ),
+          ),
+        ],
+      ],
+    );
+  }
+
+}
+
+String _formatCategory(String key) {
+  switch (key) {
+    case 'substantiv_kjonn': return 'Substantiv (Kjønn)';
+    case 'substantiv_boying': return 'Substantiv (Bøying)';
+    case 'verb_boying': return 'Verb';
+    case 'ordforrad': return 'Ordforråd';
+    case 'pronomen': return 'Pronomen';
+    case 'eiendomsord': return 'Eigedomsord';
+    default: return key;
   }
 }

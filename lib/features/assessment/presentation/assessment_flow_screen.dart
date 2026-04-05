@@ -57,6 +57,16 @@ class AssessmentFlowScreen extends ConsumerWidget {
             child: Column(
               children: [
                 LinearProgressIndicator(value: progress, minHeight: 8, backgroundColor: Colors.grey.shade300, color: Colors.deepPurple),
+                if (state.syncError != null)
+                  Container(
+                    color: Colors.red.shade700,
+                    width: double.infinity,
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    child: Text(
+                      'Firebase-feil: ${state.syncError}',
+                      style: const TextStyle(color: Colors.white, fontSize: 12),
+                    ),
+                  ),
                 Expanded(
                   child: Padding(
                     padding: const EdgeInsets.all(24.0),
