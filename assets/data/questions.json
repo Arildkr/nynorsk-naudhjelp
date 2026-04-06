@@ -2114,6 +2114,715 @@
       ],
       "correctAnswer": "Hankjønn (ein)",
       "explanation": "'draum' er hankjønn: ein draum → draumen. Ikkje forveksla med 'drøm' (bokmål)."
+    },
+    {
+      "id": "ord_v2_01",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva er nynorsk for 'noen' (ubestemt pronomen)?",
+      "options": [
+        "nokon",
+        "noken",
+        "nogen",
+        "ingen"
+      ],
+      "correctAnswer": "nokon",
+      "explanation": "'noen' på bokmål heiter 'nokon' på nynorsk. T.d.: 'Er det nokon heime?'"
+    },
+    {
+      "id": "ord_v2_02",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva er nynorsk for 'bare'?",
+      "options": [
+        "berre",
+        "bare",
+        "bere",
+        "bærre"
+      ],
+      "correctAnswer": "berre",
+      "explanation": "'bare' på bokmål heiter 'berre' på nynorsk. T.d.: 'Det er berre eg.'"
+    },
+    {
+      "id": "ord_v2_03",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva er nynorsk for 'mye'?",
+      "options": [
+        "mykje",
+        "myke",
+        "mye",
+        "mige"
+      ],
+      "correctAnswer": "mykje",
+      "explanation": "'mye' på bokmål heiter 'mykje' på nynorsk. T.d.: 'Det er mykje snø.'"
+    },
+    {
+      "id": "ord_v2_04",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva er nynorsk for 'sammen'?",
+      "options": [
+        "saman",
+        "sommen",
+        "samen",
+        "sammer"
+      ],
+      "correctAnswer": "saman",
+      "explanation": "'sammen' på bokmål heiter 'saman' på nynorsk. T.d.: 'Me gjer det saman.'"
+    },
+    {
+      "id": "ord_v2_05",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva er nynorsk for 'selv'?",
+      "options": [
+        "sjølv",
+        "sjøl",
+        "sjølve",
+        "sjøve"
+      ],
+      "correctAnswer": "sjølv",
+      "explanation": "'selv' på bokmål heiter 'sjølv' på nynorsk. T.d.: 'Eg gjer det sjølv.'"
+    },
+    {
+      "id": "ord_v2_06",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva er nynorsk for 'helt' (adverb)?",
+      "options": [
+        "heilt",
+        "helt",
+        "healt",
+        "heit"
+      ],
+      "correctAnswer": "heilt",
+      "explanation": "'helt' på bokmål heiter 'heilt' på nynorsk. T.d.: 'Det er heilt rett.'"
+    },
+    {
+      "id": "ord_v2_07",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva er nynorsk for 'sjelden'?",
+      "options": [
+        "sjeldan",
+        "sjelden",
+        "seldndan",
+        "sjeltom"
+      ],
+      "correctAnswer": "sjeldan",
+      "explanation": "'sjelden' på bokmål heiter 'sjeldan' på nynorsk. T.d.: 'Det skjer sjeldan.'"
+    },
+    {
+      "id": "ord_v2_08",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 3,
+      "text": "Kva er nynorsk for 'fremdeles'?",
+      "options": [
+        "framleis",
+        "framleis enno",
+        "enno",
+        "framover"
+      ],
+      "correctAnswer": "framleis",
+      "explanation": "'fremdeles' på bokmål heiter 'framleis' på nynorsk. T.d.: 'Han er framleis her.'"
+    },
+    {
+      "id": "ord_v2_09",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 3,
+      "text": "Kva er nynorsk for 'ennå/enda'?",
+      "options": [
+        "endå",
+        "ennå",
+        "enda",
+        "endøy"
+      ],
+      "correctAnswer": "endå",
+      "explanation": "'ennå/enda' på bokmål heiter 'endå' på nynorsk. T.d.: 'Det er endå verre.'"
+    },
+    {
+      "id": "ord_v2_10",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva er nynorsk for 'hjem'?",
+      "options": [
+        "heim",
+        "hjem",
+        "hjeim",
+        "hem"
+      ],
+      "correctAnswer": "heim",
+      "explanation": "'hjem' på bokmål heiter 'heim' på nynorsk. T.d.: 'Eg går heim no.'"
+    },
+    {
+      "id": "ord_v2_11",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva er nynorsk for 'sted'?",
+      "options": [
+        "stad",
+        "sted",
+        "stade",
+        "stæd"
+      ],
+      "correctAnswer": "stad",
+      "explanation": "'sted' på bokmål heiter 'stad' på nynorsk. T.d.: 'Kva stad er du frå?'"
+    },
+    {
+      "id": "ord_v2_12",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva er nynorsk for 'gang' (éin gong)?",
+      "options": [
+        "gong",
+        "gang",
+        "gonge",
+        "gånge"
+      ],
+      "correctAnswer": "gong",
+      "explanation": "'gang' (i tydinga 'éin gong') heiter 'gong' på nynorsk. T.d.: 'Éin gong i tida.'"
+    },
+    {
+      "id": "ord_v2_13",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 3,
+      "text": "Kva er nynorsk for 'flere' (komparativ av mange)?",
+      "options": [
+        "fleire",
+        "fler",
+        "fleira",
+        "flerne"
+      ],
+      "correctAnswer": "fleire",
+      "explanation": "'flere' på bokmål heiter 'fleire' på nynorsk. T.d.: 'Det var fleire enn venta.'"
+    },
+    {
+      "id": "ord_v2_14",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 3,
+      "text": "Kva er nynorsk for 'dessuten'?",
+      "options": [
+        "dessutan",
+        "desutan",
+        "dessuto",
+        "derutan"
+      ],
+      "correctAnswer": "dessutan",
+      "explanation": "'dessuten' på bokmål heiter 'dessutan' på nynorsk. T.d.: 'Dessutan er det feil.'"
+    },
+    {
+      "id": "ord_v2_15",
+      "type": "TRUE_FALSE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "\"Berre\" er nynorsk for bokmåls \"bare\".",
+      "options": [
+        "Sant",
+        "Usant"
+      ],
+      "correctAnswer": "Sant",
+      "explanation": "Sant. 'bare' på bokmål = 'berre' på nynorsk."
+    },
+    {
+      "id": "ord_v2_16",
+      "type": "TRUE_FALSE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "\"Mykje\" og \"mye\" tyder det same, men \"mykje\" er nynorsk.",
+      "options": [
+        "Sant",
+        "Usant"
+      ],
+      "correctAnswer": "Sant",
+      "explanation": "Sant. 'mykje' er nynorsk, 'mye' er bokmål — same tyding."
+    },
+    {
+      "id": "ord_v2_17",
+      "type": "TRUE_FALSE",
+      "category": "ordforrad",
+      "difficulty": 3,
+      "text": "\"Framleis\" tyder det same som \"fremdeles\" på bokmål.",
+      "options": [
+        "Sant",
+        "Usant"
+      ],
+      "correctAnswer": "Sant",
+      "explanation": "Sant. Begge tyder at noko held fram."
+    },
+    {
+      "id": "ord_v2_18",
+      "type": "FILL_IN",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Me gjer det ___ (nynorsk for 'sammen').",
+      "correctAnswer": "saman",
+      "explanation": "'sammen' på bokmål = 'saman' på nynorsk."
+    },
+    {
+      "id": "ord_v2_19",
+      "type": "FILL_IN",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Eg vil gå ___ (nynorsk for 'hjem').",
+      "correctAnswer": "heim",
+      "explanation": "'hjem' på bokmål = 'heim' på nynorsk."
+    },
+    {
+      "id": "ord_v2_20",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 3,
+      "text": "Kva er nynorsk for 'annet' (nøytrum av 'annen')?",
+      "options": [
+        "anna",
+        "andre",
+        "anne",
+        "annart"
+      ],
+      "correctAnswer": "anna",
+      "explanation": "'annet' (n.) på bokmål = 'anna' på nynorsk. T.d.: 'Noko anna' = 'Noe annet'."
+    },
+    {
+      "id": "verb_v2_01",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Kva er preteritum av 'å vere' på nynorsk?",
+      "options": [
+        "var",
+        "varte",
+        "vore",
+        "vant"
+      ],
+      "correctAnswer": "var",
+      "explanation": "'å vere' er uregelmessig. Preteritum er 'var'. Mønster: vere → var → har vore."
+    },
+    {
+      "id": "verb_v2_02",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Kva er preteritum av 'å ha' på nynorsk?",
+      "options": [
+        "hadde",
+        "hatt",
+        "hav",
+        "havde"
+      ],
+      "correctAnswer": "hadde",
+      "explanation": "'å ha' er uregelmessig. Preteritum er 'hadde'. Mønster: ha → hadde → har hatt."
+    },
+    {
+      "id": "verb_v2_03",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 3,
+      "text": "Kva er preteritum av 'å verte/bli' på nynorsk?",
+      "options": [
+        "vart/blei",
+        "vert/blei",
+        "vart/ble",
+        "varta/bleia"
+      ],
+      "correctAnswer": "vart/blei",
+      "explanation": "'å verte' har preteritum 'vart', medan 'å bli' har 'blei'. Begge er gyldige på nynorsk."
+    },
+    {
+      "id": "verb_v2_04",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 3,
+      "text": "Kva er preteritum av 'å stå' på nynorsk?",
+      "options": [
+        "stod",
+        "sto",
+        "stodde",
+        "stå"
+      ],
+      "correctAnswer": "stod",
+      "explanation": "'å stå' er eit sterkt verb. Preteritum er 'stod'. Mønster: stå → stod → har stått."
+    },
+    {
+      "id": "verb_v2_05",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 3,
+      "text": "Kva er preteritum av 'å gje' (gi) på nynorsk?",
+      "options": [
+        "gav",
+        "ga",
+        "gjev",
+        "givde"
+      ],
+      "correctAnswer": "gav",
+      "explanation": "'å gje' (gi) er eit sterkt verb. Preteritum er 'gav'. Mønster: gje → gav → har gjeve."
+    },
+    {
+      "id": "verb_v2_06",
+      "type": "FILL_IN",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Fyll inn: Ho ___ (å vere) trøytt i går.",
+      "correctAnswer": "var",
+      "explanation": "Preteritum av 'å vere' er 'var'."
+    },
+    {
+      "id": "verb_v2_07",
+      "type": "FILL_IN",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Fyll inn: Me ___ (å ha) det bra.",
+      "correctAnswer": "hadde",
+      "explanation": "Preteritum av 'å ha' er 'hadde'."
+    },
+    {
+      "id": "verb_v2_08",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Kva er presens av 'å skrive' på nynorsk?",
+      "options": [
+        "skriv",
+        "skriver",
+        "skribere",
+        "skrivar"
+      ],
+      "correctAnswer": "skriv",
+      "explanation": "Sterke verb på nynorsk har kort presens: å skrive → skriv (ikkje 'skriver')."
+    },
+    {
+      "id": "verb_v2_09",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Kva er presens av 'å kome' på nynorsk?",
+      "options": [
+        "kjem",
+        "komer",
+        "komir",
+        "kommar"
+      ],
+      "correctAnswer": "kjem",
+      "explanation": "'å kome' har uregelmessig presens: kjem. Mønster: kome → kjem → kom → har kome."
+    },
+    {
+      "id": "verb_v2_10",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 3,
+      "text": "Kva er rett infinitiv i kløyvd infinitiv for 'å lese'?",
+      "options": [
+        "lesa",
+        "lese",
+        "lesja",
+        "les"
+      ],
+      "correctAnswer": "lesa",
+      "explanation": "Kløyvd infinitiv gir -a for mange verb: lesa, koma, skriva."
+    },
+    {
+      "id": "verb_v2_11",
+      "type": "TRUE_FALSE",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "\"Kjem\" er presens av \"å kome\" på nynorsk.",
+      "options": [
+        "Sant",
+        "Usant"
+      ],
+      "correctAnswer": "Sant",
+      "explanation": "Sant. 'å kome' har uregelmessig presens 'kjem'. Bokmål: å komme → kommer."
+    },
+    {
+      "id": "verb_v2_12",
+      "type": "TRUE_FALSE",
+      "category": "verb_boying",
+      "difficulty": 3,
+      "text": "\"Gav\" er preteritum av \"å gje/gi\" på nynorsk.",
+      "options": [
+        "Sant",
+        "Usant"
+      ],
+      "correctAnswer": "Sant",
+      "explanation": "Sant. Sterkt verb: å gje → gav → har gjeve."
+    },
+    {
+      "id": "pron_v2_01",
+      "type": "MULTIPLE_CHOICE",
+      "category": "pronomen",
+      "difficulty": 2,
+      "text": "Kva er nynorsk for 'vi' (subjektsform)?",
+      "options": [
+        "me/vi",
+        "me",
+        "vi berre",
+        "dykk"
+      ],
+      "correctAnswer": "me/vi",
+      "explanation": "På nynorsk kan ein seie både 'me' og 'vi'. 'me' er den meir tradisjonelle nynorskforma."
+    },
+    {
+      "id": "pron_v2_02",
+      "type": "MULTIPLE_CHOICE",
+      "category": "pronomen",
+      "difficulty": 2,
+      "text": "Kva er nynorsk for 'dere' (subjektsform)?",
+      "options": [
+        "de",
+        "dykkar",
+        "dokker",
+        "dere"
+      ],
+      "correctAnswer": "de",
+      "explanation": "'dere' på bokmål = 'de' på nynorsk (subjektsform). Objektsform er 'dykk'."
+    },
+    {
+      "id": "pron_v2_03",
+      "type": "FILL_IN",
+      "category": "pronomen",
+      "difficulty": 3,
+      "text": "Eg ser ___ (objektsform av 'de') i dag.",
+      "correctAnswer": "dykk",
+      "explanation": "Objektsform av 'de' er 'dykk' på nynorsk. Bokmål: 'dere' (same form i begge kasus)."
+    },
+    {
+      "id": "pron_v2_04",
+      "type": "MULTIPLE_CHOICE",
+      "category": "pronomen",
+      "difficulty": 3,
+      "text": "Kva er nynorsk for 'dem' (objektsform av 'de/dei')?",
+      "options": [
+        "dei",
+        "deim",
+        "dem",
+        "deirar"
+      ],
+      "correctAnswer": "dei",
+      "explanation": "Objektsform av 'dei' er òg 'dei' på nynorsk (ikkje 'dem'). T.d.: 'Eg såg dei.'"
+    },
+    {
+      "id": "pron_v2_05",
+      "type": "TRUE_FALSE",
+      "category": "pronomen",
+      "difficulty": 2,
+      "text": "\"Me\" og \"vi\" er begge godkjende subjektsformer på nynorsk.",
+      "options": [
+        "Sant",
+        "Usant"
+      ],
+      "correctAnswer": "Sant",
+      "explanation": "Sant. Begge er gyldige. 'me' er meir tradisjonell nynorsk, 'vi' er akseptert."
+    },
+    {
+      "id": "eig_v2_01",
+      "type": "MULTIPLE_CHOICE",
+      "category": "eiendomsord",
+      "difficulty": 3,
+      "text": "Kva er eigedomsord for 'de/dere' (2. person fleirtal) på nynorsk?",
+      "options": [
+        "dykkar",
+        "dykkes",
+        "deras",
+        "deires"
+      ],
+      "correctAnswer": "dykkar",
+      "explanation": "Eigedomsord for 'de' er 'dykkar' på nynorsk. T.d.: 'Boka dykkar.' Bokmål: 'deres'."
+    },
+    {
+      "id": "eig_v2_02",
+      "type": "MULTIPLE_CHOICE",
+      "category": "eiendomsord",
+      "difficulty": 3,
+      "text": "Kva er eigedomsord for 'dei' (3. person fleirtal) på nynorsk?",
+      "options": [
+        "deira",
+        "deres",
+        "deires",
+        "deirar"
+      ],
+      "correctAnswer": "deira",
+      "explanation": "Eigedomsord for 'dei' er 'deira' på nynorsk. T.d.: 'Huset deira.' Bokmål: 'deres'."
+    },
+    {
+      "id": "eig_v2_03",
+      "type": "FILL_IN",
+      "category": "eiendomsord",
+      "difficulty": 2,
+      "text": "Fyll inn: Boka ___ (eigedomsord, hokjønn, 1. pers. eintal) er blå.",
+      "correctAnswer": "mi",
+      "explanation": "Hokjønnssubstantiv + eigedomsord: boka mi. 'mi' er hokjønnsforma av 'min/mi/mitt'."
+    },
+    {
+      "id": "eig_v2_04",
+      "type": "MULTIPLE_CHOICE",
+      "category": "eiendomsord",
+      "difficulty": 2,
+      "text": "Kva er rett nynorsk setning?",
+      "options": [
+        "Boka mi er blå",
+        "Mi bok er blå",
+        "Boka min er blå",
+        "Mi boka er blå"
+      ],
+      "correctAnswer": "Boka mi er blå",
+      "explanation": "På nynorsk kjem eigedomsordet etter substantivet i bestemt form: boka mi (ikkje mi bok)."
+    },
+    {
+      "id": "eig_v2_05",
+      "type": "TRUE_FALSE",
+      "category": "eiendomsord",
+      "difficulty": 3,
+      "text": "\"Dykkar\" er nynorsk eigedomsord for 2. person fleirtal (dere).",
+      "options": [
+        "Sant",
+        "Usant"
+      ],
+      "correctAnswer": "Sant",
+      "explanation": "Sant. 'dere' → 'dykkar' på nynorsk. T.d.: 'Bøkene dykkar er fine.'"
+    },
+    {
+      "id": "sub_kj_v2_01",
+      "type": "MULTIPLE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 2,
+      "text": "Vel rett artikkel: ___ sanning er viktig.",
+      "options": [
+        "Ei",
+        "Ein",
+        "Eit",
+        "Den"
+      ],
+      "correctAnswer": "Ei",
+      "explanation": "'sanning' er hokjønn: ei sanning → sanninga."
+    },
+    {
+      "id": "sub_kj_v2_02",
+      "type": "MULTIPLE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 2,
+      "text": "Vel rett artikkel: ___ stad kan eg sitje?",
+      "options": [
+        "Ein",
+        "Ei",
+        "Eit",
+        "Kva"
+      ],
+      "correctAnswer": "Ein",
+      "explanation": "'stad' er hankjønn: ein stad → staden."
+    },
+    {
+      "id": "sub_kj_v2_03",
+      "type": "MULTIPLE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 3,
+      "text": "Kva kjønn er 'tru' (faith)?",
+      "options": [
+        "Hokjønn (ei)",
+        "Hankjønn (ein)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "'tru' er hokjønn: ei tru → trua. Ikkje forveksla med verbet 'å tru' (å tro)."
+    },
+    {
+      "id": "sub_kj_v2_04",
+      "type": "FILL_IN",
+      "category": "substantiv_kjonn",
+      "difficulty": 2,
+      "text": "Fyll inn rett artikkel: ___ språk er vakkert.",
+      "correctAnswer": "Eit",
+      "explanation": "'språk' er inkjekjønn: eit språk → språket."
+    },
+    {
+      "id": "sub_kj_v2_05",
+      "type": "FILL_IN",
+      "category": "substantiv_kjonn",
+      "difficulty": 3,
+      "text": "Fyll inn rett artikkel: ___ verd er stor.",
+      "correctAnswer": "Ei",
+      "explanation": "'verd' er hokjønn: ei verd → verda. Mange trur det er inkjekjønn."
+    },
+    {
+      "id": "sub_b_v2_01",
+      "type": "MULTIPLE_CHOICE",
+      "category": "substantiv_boying",
+      "difficulty": 2,
+      "text": "Kva er bestemt form eintal av 'sol' (ei sol)?",
+      "options": [
+        "sola",
+        "solen",
+        "solet",
+        "sol"
+      ],
+      "correctAnswer": "sola",
+      "explanation": "Hokjønnsord: ei sol → sola. Bokmål har 'solen'."
+    },
+    {
+      "id": "sub_b_v2_02",
+      "type": "MULTIPLE_CHOICE",
+      "category": "substantiv_boying",
+      "difficulty": 2,
+      "text": "Kva er bestemt form eintal av 'fjell' (eit fjell)?",
+      "options": [
+        "fjellet",
+        "fjella",
+        "fjellen",
+        "fjell"
+      ],
+      "correctAnswer": "fjellet",
+      "explanation": "Inkjekjønnsord: eit fjell → fjellet."
+    },
+    {
+      "id": "sub_b_v2_03",
+      "type": "MULTIPLE_CHOICE",
+      "category": "substantiv_boying",
+      "difficulty": 3,
+      "text": "Kva er bestemt form fleirtal av 'gut' på nynorsk?",
+      "options": [
+        "gutane",
+        "gutene",
+        "gutarna",
+        "gutena"
+      ],
+      "correctAnswer": "gutane",
+      "explanation": "Hankjønnsord i bestemt fleirtal: gutane. Bokmål: 'guttene'."
+    },
+    {
+      "id": "sub_b_v2_04",
+      "type": "FILL_IN",
+      "category": "substantiv_boying",
+      "difficulty": 2,
+      "text": "Set inn bestemt form eintal: Eg ser ___ (ei elv).",
+      "correctAnswer": "elva",
+      "explanation": "Hokjønnsord: ei elv → elva. Bokmål: 'elven'."
+    },
+    {
+      "id": "sub_b_v2_05",
+      "type": "TRUE_FALSE",
+      "category": "substantiv_boying",
+      "difficulty": 2,
+      "text": "\"Sola\" er korrekt bestemt form av \"sol\" på nynorsk.",
+      "options": [
+        "Sant",
+        "Usant"
+      ],
+      "correctAnswer": "Sant",
+      "explanation": "Sant. Hokjønnsord: ei sol → sola. Bokmål brukar 'solen'."
     }
   ]
 }
