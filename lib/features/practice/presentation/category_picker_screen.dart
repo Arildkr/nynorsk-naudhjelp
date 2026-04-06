@@ -52,27 +52,7 @@ class CategoryPickerScreen extends StatelessWidget {
                 children: _categories.map((cat) => _buildCard(context, cat)).toList(),
               ),
               const SizedBox(height: 24),
-              const Divider(),
-              const SizedBox(height: 12),
-              ListTile(
-                leading: Container(
-                  padding: const EdgeInsets.all(10),
-                  decoration: BoxDecoration(
-                    color: Colors.blueGrey.shade100,
-                    shape: BoxShape.circle,
-                  ),
-                  child: const Icon(Icons.auto_awesome, color: Colors.blueGrey),
-                ),
-                title: const Text('Skreddarsydd øving', style: TextStyle(fontWeight: FontWeight.bold)),
-                subtitle: const Text('Basert på kva du slit med frå kartlegginga'),
-                trailing: const Icon(Icons.arrow_forward_ios, size: 16),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(16),
-                  side: BorderSide(color: Colors.blueGrey.shade200),
-                ),
-                onTap: () => context.push('/practice/flow'),
-              ),
-              const SizedBox(height: 16),
+              const SizedBox(height: 8),
             ],
           ),
         ),

@@ -108,6 +108,15 @@ class DashboardScreen extends ConsumerWidget {
                 onTap: () => context.push('/practice'),
               ),
               const SizedBox(height: 16),
+              _buildBigButton(
+                context,
+                title: 'Skreddarsydd øving',
+                subtitle: 'Tilpassa basert på kva du slit med',
+                icon: Icons.auto_awesome,
+                color: Colors.teal,
+                onTap: () => context.push('/practice/flow'),
+              ),
+              const SizedBox(height: 16),
               Row(
                 children: [
                   Expanded(
