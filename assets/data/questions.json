@@ -313,14 +313,14 @@
       "type": "SWIPE_CHOICE",
       "category": "substantiv_kjonn",
       "difficulty": 1,
-      "text": "Kva kjønn er 'draume'?",
+      "text": "Kva kjønn er 'blome'?",
       "options": [
         "Hankjønn (ein)",
         "Hokjønn (ei)",
         "Inkjekjønn (eit)"
       ],
       "correctAnswer": "Hankjønn (ein)",
-      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein draume."
+      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein blome."
     },
     {
       "id": "sub_162",
@@ -679,7 +679,7 @@
         "kaste"
       ],
       "correctAnswer": "kasta",
-      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å kaste - kastear - kasta - har kasta)."
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å kaste - kastar - kasta - har kasta)."
     },
     {
       "id": "verb_a_245",
@@ -694,7 +694,7 @@
         "snakke"
       ],
       "correctAnswer": "snakka",
-      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å snakke - snakkear - snakka - har snakka)."
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å snakke - snakkar - snakka - har snakka)."
     },
     {
       "id": "verb_a_255",
@@ -709,7 +709,7 @@
         "puste"
       ],
       "correctAnswer": "pusta",
-      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å puste - pustear - pusta - har pusta)."
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å puste - pustar - pusta - har pusta)."
     },
     {
       "id": "verb_a_259",
@@ -724,7 +724,7 @@
         "leike"
       ],
       "correctAnswer": "leika",
-      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å leike - leikear - leika - har leika)."
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å leike - leikar - leika - har leika)."
     },
     {
       "id": "verb_a_263",
@@ -739,7 +739,7 @@
         "hente"
       ],
       "correctAnswer": "henta",
-      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å hente - hentear - henta - har henta)."
+      "explanation": "Dette er eit a-verb. Det får endinga -a i preteritum (å hente - hentar - henta - har henta)."
     },
     {
       "id": "verb_e_264",
@@ -1121,15 +1121,15 @@
       "type": "MULTIPLE_CHOICE",
       "category": "ordforrad",
       "difficulty": 2,
-      "text": "Kva betyr det nynorske ordet 'kjærleik'?",
+      "text": "Kva er nynorsk for bokmåls 'vanskelig'?",
       "options": [
-        "kjærlighet",
-        "glede",
-        "sorg",
-        "draum"
+        "vanskeleg",
+        "vanskelig",
+        "vanskeligen",
+        "vankeleg"
       ],
-      "correctAnswer": "kjærlighet",
-      "explanation": "'kjærleik' er nynorsk for 'kjærlighet'. Ikkje forveksla med 'glede' (joy) eller 'draum' (dream)."
+      "correctAnswer": "vanskeleg",
+      "explanation": "'vanskelig' på bokmål heiter 'vanskeleg' på nynorsk. Merk mønsteret: bokmål -ig → nynorsk -leg (t.d. vanleg, farleg, tydelig → tydeleg)."
     },
     {
       "id": "ord_290",
@@ -1270,7 +1270,7 @@
       "difficulty": 1,
       "text": "Me likar ___ (ho).",
       "correctAnswer": "henne",
-      "explanation": "Dette er objektsforma av pronomenet på nynorsk."
+      "explanation": "Tradisjonell objektsform: 'henne'. Merk at 'ho' også er godkjend objektsform i moderne nynorsk (t.d. 'Me likar ho')."
     },
     {
       "id": "pron_301",
@@ -1306,7 +1306,7 @@
       "difficulty": 1,
       "text": "Kven ropte på ___ (ho)?",
       "correctAnswer": "henne",
-      "explanation": "Dette er objektsforma av pronomenet på nynorsk."
+      "explanation": "Tradisjonell objektsform: 'henne'. Merk at 'ho' også er godkjend objektsform i moderne nynorsk (t.d. 'Kven ropte på ho?')."
     },
     {
       "id": "pron_305",
@@ -1449,13 +1449,13 @@
       "type": "TRUE_FALSE",
       "category": "verb_boying",
       "difficulty": 1,
-      "text": "Presens av A-verb-et \"å kaste\" er \"kastar\" på nynorsk.",
+      "text": "Presens av A-verb-et \"å hoppe\" er \"hoppar\" på nynorsk.",
       "options": [
         "Sant",
         "Usant"
       ],
       "correctAnswer": "Sant",
-      "explanation": "A-verb i presens: kaste → kastar. Regelen: legg til -ar."
+      "explanation": "A-verb i presens: hoppe → hoppar. Regelen: legg til -ar (ikkje -er som på bokmål)."
     },
     {
       "id": "tf_006",
@@ -1785,13 +1785,13 @@
       "type": "TRUE_FALSE",
       "category": "verb_boying",
       "difficulty": 2,
-      "text": "\"Kastar\" er presens av \"å kaste\" på nynorsk.",
+      "text": "\"Snakkar\" er presens av \"å snakke\" på nynorsk.",
       "options": [
         "Sant",
         "Usant"
       ],
       "correctAnswer": "Sant",
-      "explanation": "Sant. A-verb får -ar i presens på nynorsk. På bokmål heiter det 'kaster'."
+      "explanation": "Sant. A-verb får -ar i presens på nynorsk: snakke → snakkar. På bokmål heiter det 'snakker'."
     },
     {
       "id": "verb_tf_new_02",
@@ -1979,7 +1979,7 @@
         "bøkone"
       ],
       "correctAnswer": "bøkene",
-      "explanation": "Bestemt form fleirtal: bøkene (eller bøkane — begge er godkjente, men bøkene er vanlegast i skrift)."
+      "explanation": "Bestemt form fleirtal: bøkene eller bøkane — begge er fullt ut likestilte og gyldige former i nynorsk."
     },
     {
       "id": "sub_b_08",
@@ -2001,13 +2001,13 @@
       "type": "TRUE_FALSE",
       "category": "substantiv_boying",
       "difficulty": 2,
-      "text": "\"Boka\" er korrekt bestemt form eintal av \"bok\" på nynorsk.",
+      "text": "\"Mannen\" er korrekt bestemt form eintal av \"mann\" på nynorsk.",
       "options": [
         "Sant",
         "Usant"
       ],
       "correctAnswer": "Sant",
-      "explanation": "Sant. Hokjønnsord får -a i bestemt eintal: bok → boka. Bokmål brukar 'boken'."
+      "explanation": "Sant. Hankjønnsord: ein mann → mannen (bestemt form eintal). Merk at dobbel-n vert ståande."
     },
     {
       "id": "sub_b_10",
@@ -2525,7 +2525,7 @@
       "type": "MULTIPLE_CHOICE",
       "category": "verb_boying",
       "difficulty": 3,
-      "text": "Kva er rett infinitiv i kløyvd infinitiv for 'å lese'?",
+      "text": "Kva er a-infinitiv-forma av 'å lese' på nynorsk?",
       "options": [
         "lesa",
         "lese",
@@ -2533,7 +2533,7 @@
         "les"
       ],
       "correctAnswer": "lesa",
-      "explanation": "Kløyvd infinitiv gir -a for mange verb: lesa, koma, skriva."
+      "explanation": "I nynorsk kan alle verb ha infinitiv på -a (a-infinitiv) i tillegg til -e: lesa/lese, koma/kome, skriva/skrive. Begge formene er offisielt godkjende — ein vel konsekvent éin stil gjennom heile teksten."
     },
     {
       "id": "verb_v2_11",
@@ -2823,6 +2823,137 @@
       ],
       "correctAnswer": "Sant",
       "explanation": "Sant. Hokjønnsord: ei sol → sola. Bokmål brukar 'solen'."
+    },
+    {
+      "id": "sub_230",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 2,
+      "text": "Kva kjønn er 'medlem'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "På nynorsk er 'medlem' hankjønn: ein medlem – medlemmen. Merk at dette kan skilje seg frå dialektal bruk."
+    },
+    {
+      "id": "sub_231",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 2,
+      "text": "Kva kjønn er 'avgjerd' (beslutning)?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hokjønn (ei)",
+      "explanation": "Ord som endar på -erd er ofte hokjønn: ei avgjerd – avgjerda. Tilsvarande: ferd, lerd."
+    },
+    {
+      "id": "sub_232",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 2,
+      "text": "Kva kjønn er 'problem'?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Inkjekjønn (eit)",
+      "explanation": "Eit problem – problemet. Dette er likt på bokmål og nynorsk. Framandord på -em er gjerne inkjekjønn."
+    },
+    {
+      "id": "sub_233",
+      "type": "SWIPE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 2,
+      "text": "Kva kjønn er 'skilnad' (forskjell)?",
+      "options": [
+        "Hankjønn (ein)",
+        "Hokjønn (ei)",
+        "Inkjekjønn (eit)"
+      ],
+      "correctAnswer": "Hankjønn (ein)",
+      "explanation": "Ein skilnad – skilnaden. Ord på -nad er nesten alltid hankjønn (t.d. kostnad, tilstand, bestand)."
+    },
+    {
+      "id": "sub_m_240",
+      "type": "FILL_IN",
+      "category": "substantiv_boying",
+      "difficulty": 2,
+      "text": "Bøy ordet: Ein lunsj - lunsjen - fleire lunsjar - alle ___.",
+      "correctAnswer": "lunsjane",
+      "explanation": "Hankjønnsord som endar på -ar i ubestemt fleirtal, får alltid -ane i bestemt fleirtal: gutar → gutane, lunsjar → lunsjane."
+    },
+    {
+      "id": "sub_m_241",
+      "type": "FILL_IN",
+      "category": "substantiv_boying",
+      "difficulty": 2,
+      "text": "Bøy ordet: Eit bilde - bildet - fleire bilde - alle ___.",
+      "correctAnswer": "bilda",
+      "explanation": "Inkjekjønnsord får endinga -a i bestemt form fleirtal: alle bilda (eller bileta, frå 'bilete' som er den meir nynorske forma)."
+    },
+    {
+      "id": "verb_s_321",
+      "type": "FILL_IN",
+      "category": "verb_boying",
+      "difficulty": 3,
+      "text": "Preteritum (i går): Ho ___ (å syngje) høgt.",
+      "correctAnswer": "song",
+      "explanation": "'Å syngje' er eit sterkt verb: syngjer – song – har sunge."
+    },
+    {
+      "id": "verb_v2_13",
+      "type": "FILL_IN",
+      "category": "verb_boying",
+      "difficulty": 3,
+      "text": "Preteritum (i går): Dei ___ (å dra) til byen.",
+      "correctAnswer": "drog",
+      "explanation": "'Å dra' er eit sterkt verb: dreg – drog – har drege/dratt."
+    },
+    {
+      "id": "pron_322",
+      "type": "FILL_IN",
+      "category": "pronomen",
+      "difficulty": 2,
+      "text": "Eg gav ___ (dere) gåva.",
+      "correctAnswer": "dykk",
+      "explanation": "Objektsforma av 'de' (dere) er 'dykk' på nynorsk. Subjekt: de – objekt: dykk."
+    },
+    {
+      "id": "eig_323",
+      "type": "MULTIPLE_CHOICE",
+      "category": "eiendomsord",
+      "difficulty": 2,
+      "text": "Korleis seier du 'Deres hus' (med eigedomsord for 'dei') på nynorsk?",
+      "options": [
+        "Huset deira",
+        "Deira hus",
+        "Deira huset",
+        "Huset deires"
+      ],
+      "correctAnswer": "Huset deira",
+      "explanation": "Eigedomsordet skal stå etter substantivet i bestemt form: huset deira (ikkje 'deira hus'). Mønster: substantiv bestemt + eigedomsord."
+    },
+    {
+      "id": "ord_324",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva er det nynorske ordet for 'hvis'?",
+      "options": [
+        "viss",
+        "om",
+        "dersom",
+        "alle alternativ"
+      ],
+      "correctAnswer": "alle alternativ",
+      "explanation": "På nynorsk kan du bruke 'viss', 'om' og 'dersom' — alle tre er gyldige. 'Hvis' er ikkje lov i nynorsk."
     }
   ]
 }

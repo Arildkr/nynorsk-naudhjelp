@@ -1,8 +1,41 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+class _GameEntry {
+  final String route;
+  final String label;
+  final String subtitle;
+  final IconData icon;
+  final List<Color> gradientColors;
+  const _GameEntry(this.route, this.label, this.subtitle, this.icon, this.gradientColors);
+}
+
 class CategoryPickerScreen extends StatelessWidget {
   const CategoryPickerScreen({super.key});
+
+  static const _games = [
+    _GameEntry(
+      '/games/kjonn',
+      'Kva kjønn har substantivet?',
+      'Hankjønn, hokjønn eller inkjekjønn?',
+      Icons.sports_esports_rounded,
+      [Color(0xFF1565C0), Color(0xFF7B1FA2)],
+    ),
+    _GameEntry(
+      '/games/verb',
+      'A-verb, e-verb eller sterkt verb?',
+      'Sorter verba i rett gruppe',
+      Icons.sports_esports_rounded,
+      [Color(0xFFBF360C), Color(0xFF1B5E20)],
+    ),
+    _GameEntry(
+      '/games/finn-feil',
+      'Finn feil i teksten!',
+      'Tap bokmålsord som skal vere nynorsk',
+      Icons.find_in_page_rounded,
+      [Color(0xFF004D40), Color(0xFF1A237E)],
+    ),
+  ];
 
   static const _categories = [
     _Category('substantiv_kjonn', 'Substantiv — kjønn', 'Hankjønn, hokjønn og inkjekjønn', Icons.category_rounded, Colors.deepPurple),
@@ -51,8 +84,100 @@ class CategoryPickerScreen extends StatelessWidget {
                 childAspectRatio: 0.95,
                 children: _categories.map((cat) => _buildCard(context, cat)).toList(),
               ),
-              const SizedBox(height: 24),
+              const SizedBox(height: 28),
+              // ── Game section ──────────────────────────────────────────
+              Row(
+                children: [
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                    decoration: BoxDecoration(
+                      color: Colors.deepPurple.withOpacity(0.12),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: const [
+                        Icon(Icons.sports_esports_rounded,
+                            size: 16, color: Colors.deepPurple),
+                        SizedBox(width: 6),
+                        Text(
+                          'Spillbaserte øvingar',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.deepPurple,
+                            fontSize: 13,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 12),
+              ...(_games.map((g) => Padding(
+                    padding: const EdgeInsets.only(bottom: 12),
+                    child: _buildGameCard(context, g),
+                  ))),
               const SizedBox(height: 8),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildGameCard(BuildContext context, _GameEntry game) {
+    return Card(
+      elevation: 6,
+      shadowColor: game.gradientColors.last.withOpacity(0.5),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(20),
+        onTap: () => context.push(game.route),
+        child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20),
+            gradient: LinearGradient(
+              colors: game.gradientColors,
+              begin: Alignment.centerLeft,
+              end: Alignment.centerRight,
+            ),
+          ),
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
+          child: Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.2),
+                  shape: BoxShape.circle,
+                ),
+                child: Icon(game.icon, size: 28, color: Colors.white),
+              ),
+              const SizedBox(width: 16),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      game.label,
+                      style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                    const SizedBox(height: 3),
+                    Text(
+                      game.subtitle,
+                      style: const TextStyle(
+                          fontSize: 12, color: Colors.white70),
+                    ),
+                  ],
+                ),
+              ),
+              const Icon(Icons.chevron_right_rounded,
+                  color: Colors.white70, size: 24),
             ],
           ),
         ),

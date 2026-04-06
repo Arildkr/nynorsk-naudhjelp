@@ -8,6 +8,8 @@ import '../../features/dashboard/presentation/statistics_screen.dart';
 import '../../features/practice/presentation/practice_flow_screen.dart';
 import '../../features/practice/presentation/category_picker_screen.dart';
 import '../../features/teacher_mode/presentation/teacher_dashboard_screen.dart';
+import '../../features/games/presentation/falling_word_game_screen.dart';
+import '../../features/games/presentation/find_error_game_screen.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
   return GoRouter(
@@ -50,6 +52,20 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/teacher',
         builder: (context, state) => const TeacherDashboardScreen(),
+      ),
+      GoRoute(
+        path: '/games/kjonn',
+        builder: (context, state) =>
+            const FallingWordGameScreen(gameType: 'kjonn'),
+      ),
+      GoRoute(
+        path: '/games/verb',
+        builder: (context, state) =>
+            const FallingWordGameScreen(gameType: 'verb'),
+      ),
+      GoRoute(
+        path: '/games/finn-feil',
+        builder: (context, state) => const FindErrorGameScreen(),
       ),
     ],
   );
