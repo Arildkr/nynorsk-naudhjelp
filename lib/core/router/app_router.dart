@@ -6,6 +6,7 @@ import '../../features/assessment/presentation/assessment_flow_screen.dart';
 import '../../features/grammar/presentation/grammar_screen.dart';
 import '../../features/dashboard/presentation/statistics_screen.dart';
 import '../../features/practice/presentation/practice_flow_screen.dart';
+import '../../features/practice/presentation/category_picker_screen.dart';
 import '../../features/teacher_mode/presentation/teacher_dashboard_screen.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
@@ -33,8 +34,18 @@ final routerProvider = Provider<GoRouter>((ref) {
         builder: (context, state) => const StatisticsScreen(),
       ),
       GoRoute(
+        path: '/practice',
+        builder: (context, state) => const CategoryPickerScreen(),
+      ),
+      GoRoute(
         path: '/practice/flow',
         builder: (context, state) => const PracticeFlowScreen(),
+      ),
+      GoRoute(
+        path: '/practice/category/:cat',
+        builder: (context, state) => PracticeFlowScreen(
+          category: state.pathParameters['cat'],
+        ),
       ),
       GoRoute(
         path: '/teacher',

@@ -11,7 +11,8 @@ import '../../assessment/presentation/widgets/true_false_widget.dart';
 import '../../assessment/presentation/widgets/matching_widget.dart';
 
 class PracticeFlowScreen extends ConsumerStatefulWidget {
-  const PracticeFlowScreen({super.key});
+  final String? category;
+  const PracticeFlowScreen({super.key, this.category});
 
   @override
   ConsumerState<PracticeFlowScreen> createState() => _PracticeFlowScreenState();
@@ -45,16 +46,16 @@ class _PracticeFlowScreenState extends ConsumerState<PracticeFlowScreen> {
       });
     }
 
-    ref.read(practiceControllerProvider.notifier).answerCurrentQuestion(answer);
+    ref.read(practiceControllerProvider(widget.category).notifier).answerCurrentQuestion(answer);
   }
 
   @override
   Widget build(BuildContext context) {
-    final stateAsync = ref.watch(practiceControllerProvider);
+    final stateAsync = ref.watch(practiceControllerProvider(widget.category));
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Spesialøving'),
+        title: Text(widget.category != null ? _categoryLabel(widget.category!) : 'Spesialøving'),
         leading: IconButton(
           icon: const Icon(Icons.close),
           onPressed: () => context.go('/'),
@@ -242,17 +243,44 @@ class _PracticeFlowScreenState extends ConsumerState<PracticeFlowScreen> {
             ),
 
             const SizedBox(height: 40),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
-                backgroundColor: Colors.teal,
-              ),
-              onPressed: () => context.go('/'),
-              child: const Text('Tilbake til hjemskjermen', style: TextStyle(fontSize: 18, color: Colors.white)),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                if (widget.category != null)
+                  OutlinedButton(
+                    style: OutlinedButton.styleFrom(
+                      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+                      side: const BorderSide(color: Colors.teal, width: 2),
+                    ),
+                    onPressed: () => context.go('/practice'),
+                    child: const Text('Vel ny øving', style: TextStyle(fontSize: 16, color: Colors.teal)),
+                  ),
+                if (widget.category != null) const SizedBox(width: 16),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+                    backgroundColor: Colors.teal,
+                  ),
+                  onPressed: () => context.go('/'),
+                  child: const Text('Heim', style: TextStyle(fontSize: 16, color: Colors.white)),
+                ),
+              ],
             ),
           ],
         ),
       ),
     );
+  }
+}
+
+String _categoryLabel(String key) {
+  switch (key) {
+    case 'substantiv_kjonn': return 'Substantiv — kjønn';
+    case 'substantiv_boying': return 'Substantiv — bøying';
+    case 'verb_boying': return 'Verb';
+    case 'ordforrad': return 'Ordforråd';
+    case 'pronomen': return 'Pronomen';
+    case 'eiendomsord': return 'Eigedomsord';
+    default: return key;
   }
 }

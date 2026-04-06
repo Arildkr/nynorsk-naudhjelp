@@ -42,6 +42,12 @@ class QuestionRepository {
     return selected;
   }
 
+  Future<List<Question>> getQuestionsForCategory(String category) async {
+    final all = await getAllQuestions();
+    final filtered = List<Question>.from(all.where((q) => q.category == category))..shuffle();
+    return filtered.take(15).toList();
+  }
+
   Future<List<Question>> getQuestionsForPractice(Map<String, double> categoryMastery) async {
     final all = await getAllQuestions();
     

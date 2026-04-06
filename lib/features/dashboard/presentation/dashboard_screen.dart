@@ -100,12 +100,12 @@ class DashboardScreen extends ConsumerWidget {
               ),
               const SizedBox(height: 16),
               _buildBigButton(
-                context, 
-                title: 'Skreddarsydd øving', 
-                subtitle: 'Tren eksplisitt på det du treng', 
-                icon: Icons.fitness_center, 
+                context,
+                title: 'Øvingar',
+                subtitle: 'Vel kategori og tren på det du treng',
+                icon: Icons.fitness_center,
                 color: Colors.pink,
-                onTap: () => context.push('/practice/flow'),
+                onTap: () => context.push('/practice'),
               ),
               const SizedBox(height: 16),
               Row(
