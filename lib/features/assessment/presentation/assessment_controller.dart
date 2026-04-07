@@ -6,6 +6,7 @@ import '../data/assessment_result_repository.dart';
 import '../models/assessment_result.dart';
 import '../../teacher_mode/data/student_config_provider.dart';
 import '../../teacher_mode/data/teacher_repository.dart';
+import '../../dashboard/data/xp_provider.dart';
 
 final assessmentControllerProvider = StateNotifierProvider.autoDispose<AssessmentController, AsyncValue<AssessmentState>>((ref) {
   final repo = ref.watch(questionRepositoryProvider);
@@ -13,7 +14,8 @@ final assessmentControllerProvider = StateNotifierProvider.autoDispose<Assessmen
   final studentConfig = ref.watch(studentConfigProvider);
   final teacherRepo = ref.watch(teacherRepositoryProvider);
   final studentId = studentConfig != null ? ref.watch(studentIdProvider) : null;
-  return AssessmentController(repo, resultRepo, studentConfig, teacherRepo, studentId);
+  final xpNotifier = ref.read(xpProvider.notifier);
+  return AssessmentController(repo, resultRepo, studentConfig, teacherRepo, studentId, xpNotifier);
 });
 
 enum AssessmentStatus { loading, active, saving, completed }
@@ -62,8 +64,9 @@ class AssessmentController extends StateNotifier<AsyncValue<AssessmentState>> {
   final StudentConfig? _studentConfig;
   final TeacherRepository _teacherRepo;
   final String? _studentId;
+  final XpNotifier _xpNotifier;
 
-  AssessmentController(this._repo, this._resultRepo, this._studentConfig, this._teacherRepo, this._studentId) : super(const AsyncValue.loading()) {
+  AssessmentController(this._repo, this._resultRepo, this._studentConfig, this._teacherRepo, this._studentId, this._xpNotifier) : super(const AsyncValue.loading()) {
     _init();
   }
 
@@ -78,16 +81,18 @@ class AssessmentController extends StateNotifier<AsyncValue<AssessmentState>> {
   }
 
   /// Returnerer feilmelding viss push feilar, null viss ok.
-  Future<String?> _pushToFirebase(int score, int currentIndex, int total, bool isFinished, String weakCat) async {
+  Future<String?> _pushToFirebase(int score, int currentIndex, int total, bool isFinished, String weakCat, [Map<String, dynamic>? categoryScores]) async {
     if (_studentConfig == null || _studentId == null) return null;
     try {
-      await _teacherRepo.updateStudentProgress(_studentConfig!.roomCode, _studentId!, {
+      final data = {
         'name': _studentConfig!.name,
         'score': score,
         'totalQuestions': total,
         'isFinished': isFinished,
         'weakCategory': weakCat,
-      });
+      };
+      if (categoryScores != null) data['categoryScores'] = categoryScores;
+      await _teacherRepo.updateStudentProgress(_studentConfig!.roomCode, _studentId!, data);
       debugPrint('Firebase push OK: score=$score/$total');
       return null;
     } catch (e) {
@@ -146,7 +151,19 @@ class AssessmentController extends StateNotifier<AsyncValue<AssessmentState>> {
           if (wrongCats.isNotEmpty) weakCat = wrongCats.first;
         }
 
-        final firebaseErr = await _pushToFirebase(score, s.questions.length, s.questions.length, true, weakCat);
+        // Build per-category Firebase payload
+        final Map<String, dynamic> catPayload = {};
+        catAnswers.forEach((cat, answers) {
+          catPayload[cat] = {
+            'correct': answers.where((b) => b).length,
+            'total': answers.length,
+          };
+        });
+
+        final firebaseErr = await _pushToFirebase(score, s.questions.length, s.questions.length, true, weakCat, catPayload);
+
+        // Award XP: 5 per correct answer
+        _xpNotifier.add(score * 5);
 
         try {
           await _resultRepo.saveResult(AssessmentResult(

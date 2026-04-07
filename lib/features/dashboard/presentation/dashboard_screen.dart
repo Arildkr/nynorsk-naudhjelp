@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../teacher_mode/data/student_config_provider.dart';
+import '../data/xp_provider.dart';
 
 class DashboardScreen extends ConsumerWidget {
   const DashboardScreen({super.key});
@@ -38,14 +39,14 @@ class DashboardScreen extends ConsumerWidget {
           ElevatedButton(
             onPressed: () {
               if (nameController.text.isNotEmpty && roomController.text.isNotEmpty) {
-                 ref.read(studentConfigProvider.notifier).state = StudentConfig(
-                    roomController.text.trim(),
-                    nameController.text.trim(),
-                 );
-                 Navigator.pop(context);
-                 ScaffoldMessenger.of(context).showSnackBar(
-                   const SnackBar(content: Text('Kopla til rom! Du kan no starte kartlegginga.'), backgroundColor: Colors.green)
-                 );
+                ref.read(studentConfigProvider.notifier).set(StudentConfig(
+                  roomController.text.trim(),
+                  nameController.text.trim(),
+                ));
+                Navigator.pop(context);
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('Kopla til rom! Du kan no starte kartlegginga.'), backgroundColor: Colors.green),
+                );
               }
             },
             child: const Text('Kople til'),
@@ -58,126 +59,198 @@ class DashboardScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final currentConfig = ref.watch(studentConfigProvider);
+    final xp = ref.watch(xpProvider);
 
     return Scaffold(
       appBar: AppBar(
         title: const Text('Nynorsk naudhjelp', style: TextStyle(fontWeight: FontWeight.bold)),
         centerTitle: true,
+        actions: [
+          if (xp > 0)
+            Padding(
+              padding: const EdgeInsets.only(right: 12),
+              child: Center(
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: Colors.amber.withOpacity(0.2),
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.amber.shade400, width: 1),
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const Icon(Icons.bolt_rounded, size: 16, color: Colors.amber),
+                      const SizedBox(width: 4),
+                      Text('$xp XP', style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13, color: Colors.amber)),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+        ],
       ),
       body: SafeArea(
         child: Center(
           child: ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: 600),
             child: SingleChildScrollView(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              const SizedBox(height: 20),
-              const Text(
-                'Velkomen!',
-                style: TextStyle(fontSize: 32, fontWeight: FontWeight.w900),
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(height: 8),
-              if (currentConfig != null) 
-                 Text(
-                   'Kopla til rom: ${currentConfig.roomCode} som ${currentConfig.name}',
-                   style: const TextStyle(fontSize: 16, color: Colors.green, fontWeight: FontWeight.bold),
-                   textAlign: TextAlign.center,
-                 )
-              else
-                 const Text(
-                   'Klar for å bli ein meister i nynorsk?',
-                   style: TextStyle(fontSize: 16, color: Colors.grey),
-                   textAlign: TextAlign.center,
-                 ),
-              const SizedBox(height: 32),
-              _buildBigButton(
-                context, 
-                title: 'Start kartlegging', 
-                subtitle: 'Sjekk nivået ditt og finn svake punkt', 
-                icon: Icons.rocket_launch_rounded, 
-                color: Colors.deepPurple,
-                onTap: () => context.push('/assessment'),
-              ),
-              const SizedBox(height: 16),
-              _buildBigButton(
-                context,
-                title: 'Skreddarsydd øving',
-                subtitle: 'Tilpassa basert på kva du slit med',
-                icon: Icons.auto_awesome,
-                color: Colors.teal,
-                onTap: () => context.push('/practice/flow'),
-              ),
-              const SizedBox(height: 16),
-              _buildBigButton(
-                context,
-                title: 'Øvingar',
-                subtitle: 'Vel kategori og tren på det du treng',
-                icon: Icons.fitness_center,
-                color: Colors.pink,
-                onTap: () => context.push('/practice'),
-              ),
-              const SizedBox(height: 16),
-              Row(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Expanded(
-                    child: _buildSmallButton(
-                      context,
-                      title: 'Resultat',
-                      subtitle: 'Di utvikling',
-                      icon: Icons.star_rounded,
-                      color: Colors.orange,
-                      onTap: () => context.push('/results'),
+                  // Android app tip (web only)
+                  if (kIsWeb) ...[
+                    Card(
+                      color: Colors.green.shade700,
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                      child: InkWell(
+                        borderRadius: BorderRadius.circular(16),
+                        onTap: () {
+                          // Open Play Store link - user must handle navigation
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                          child: Row(
+                            children: [
+                              const Icon(Icons.android, color: Colors.white, size: 28),
+                              const SizedBox(width: 12),
+                              const Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text('Last ned Android-appen!', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15)),
+                                    Text('Betre oppleving på mobil — no i open testing', style: TextStyle(color: Colors.white70, fontSize: 12)),
+                                  ],
+                                ),
+                              ),
+                              SelectableText(
+                                'play.google.com/apps/testing/\ncom.nynorsk.nynorsk_kartlegger',
+                                style: const TextStyle(color: Colors.white60, fontSize: 10),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
                     ),
+                    const SizedBox(height: 12),
+                  ],
+                  const SizedBox(height: 8),
+                  const Text(
+                    'Velkomen!',
+                    style: TextStyle(fontSize: 32, fontWeight: FontWeight.w900),
+                    textAlign: TextAlign.center,
                   ),
-                  const SizedBox(width: 16),
-                  Expanded(
-                    child: _buildSmallButton(
-                      context,
-                      title: 'Grammatikk',
-                      subtitle: 'Oppslagsverk',
-                      icon: Icons.menu_book_rounded,
-                      color: Colors.teal,
-                      onTap: () => context.push('/grammar'),
+                  const SizedBox(height: 8),
+                  if (currentConfig != null)
+                    Text(
+                      'Kopla til rom: ${currentConfig.roomCode} som ${currentConfig.name}',
+                      style: const TextStyle(fontSize: 16, color: Colors.green, fontWeight: FontWeight.bold),
+                      textAlign: TextAlign.center,
+                    )
+                  else
+                    const Text(
+                      'Klar for å bli ein meister i nynorsk?',
+                      style: TextStyle(fontSize: 16, color: Colors.grey),
+                      textAlign: TextAlign.center,
                     ),
+                  const SizedBox(height: 32),
+                  _buildBigButton(
+                    context,
+                    title: 'Start kartlegging',
+                    subtitle: 'Sjekk nivået ditt og finn svake punkt',
+                    icon: Icons.rocket_launch_rounded,
+                    color: Colors.deepPurple,
+                    onTap: () => context.push('/assessment'),
                   ),
+                  const SizedBox(height: 16),
+                  _buildBigButton(
+                    context,
+                    title: 'Skreddarsydd øving',
+                    subtitle: 'Tilpassa basert på kva du slit med',
+                    icon: Icons.auto_awesome,
+                    color: Colors.teal,
+                    onTap: () => context.push('/practice/flow'),
+                  ),
+                  const SizedBox(height: 16),
+                  _buildBigButton(
+                    context,
+                    title: 'Øvingar',
+                    subtitle: 'Vel kategori og tren på det du treng',
+                    icon: Icons.fitness_center,
+                    color: Colors.pink,
+                    onTap: () => context.push('/practice'),
+                  ),
+                  const SizedBox(height: 16),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: _buildSmallButton(
+                          context,
+                          title: 'Resultat',
+                          subtitle: 'Di utvikling',
+                          icon: Icons.star_rounded,
+                          color: Colors.orange,
+                          onTap: () => context.push('/results'),
+                        ),
+                      ),
+                      const SizedBox(width: 16),
+                      Expanded(
+                        child: _buildSmallButton(
+                          context,
+                          title: 'Grammatikk',
+                          subtitle: 'Oppslagsverk',
+                          icon: Icons.menu_book_rounded,
+                          color: Colors.teal,
+                          onTap: () => context.push('/grammar'),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 32),
+                  const Divider(),
+                  const SizedBox(height: 16),
+                  if (currentConfig == null)
+                    ListTile(
+                      leading: const Icon(Icons.login, color: Colors.blueAccent),
+                      title: const Text('Bli med i klasserom (Romkode)'),
+                      subtitle: const Text('Kople til læraren din si økt'),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12), side: BorderSide(color: Colors.blueAccent.withOpacity(0.5))),
+                      onTap: () => _showJoinRoomDialog(context, ref),
+                    )
+                  else
+                    ListTile(
+                      leading: const Icon(Icons.logout, color: Colors.red),
+                      title: Text('Kopla til rom ${currentConfig.roomCode} som ${currentConfig.name}'),
+                      subtitle: const Text('Trykk for å forlate rommet'),
+                      tileColor: Colors.red.shade50,
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12), side: BorderSide(color: Colors.red.shade200)),
+                      onTap: () => ref.read(studentConfigProvider.notifier).set(null),
+                    ),
+                  if (!kIsWeb) ...[
+                    const SizedBox(height: 12),
+                    ListTile(
+                      leading: const Icon(Icons.co_present, color: Colors.blueGrey),
+                      title: const Text('Lærarportal'),
+                      subtitle: const Text('For lærarar: start ein klasseromsøkt'),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12), side: BorderSide(color: Colors.blueGrey.withOpacity(0.3))),
+                      onTap: () => context.push('/teacher'),
+                    ),
+                  ],
+                  if (kIsWeb) ...[
+                    const SizedBox(height: 12),
+                    ListTile(
+                      leading: const Icon(Icons.co_present, color: Colors.blueGrey),
+                      title: const Text('Lærarportal'),
+                      subtitle: const Text('Start ein klasseromsøkt'),
+                      tileColor: Colors.blueGrey.shade50,
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                      onTap: () => context.push('/teacher'),
+                    ),
+                  ],
+                  const SizedBox(height: 16),
                 ],
               ),
-              const SizedBox(height: 32),
-              const Divider(),
-              const SizedBox(height: 16),
-              if (currentConfig == null)
-                ListTile(
-                  leading: const Icon(Icons.login, color: Colors.blueAccent),
-                  title: const Text('Bli med i klasserom (Romkode)'),
-                  subtitle: const Text('Kople til læraren din si økt'),
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12), side: BorderSide(color: Colors.blueAccent.withOpacity(0.5))),
-                  onTap: () => _showJoinRoomDialog(context, ref),
-                )
-              else
-                ListTile(
-                  leading: const Icon(Icons.logout, color: Colors.red),
-                  title: Text('Kopla til rom ${currentConfig.roomCode} som ${currentConfig.name}'),
-                  subtitle: const Text('Trykk for å forlate rommet'),
-                  tileColor: Colors.red.shade50,
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12), side: BorderSide(color: Colors.red.shade200)),
-                  onTap: () => ref.read(studentConfigProvider.notifier).state = null,
-                ),
-              if (kIsWeb) ...[
-                const SizedBox(height: 16),
-                ListTile(
-                  leading: const Icon(Icons.co_present, color: Colors.blueGrey),
-                  title: const Text('Lærarportal'),
-                  subtitle: const Text('Start ein klasseromsøkt'),
-                  tileColor: Colors.blueGrey.shade50,
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                  onTap: () => context.push('/teacher'),
-                ),
-              ],
-            ],
-          ),
             ),
           ),
         ),
@@ -214,37 +287,18 @@ class DashboardScreen extends ConsumerWidget {
             children: [
               Container(
                 padding: const EdgeInsets.all(12),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
-                  shape: BoxShape.circle,
-                ),
+                decoration: BoxDecoration(color: Colors.white.withOpacity(0.2), shape: BoxShape.circle),
                 child: Icon(icon, size: 28, color: Colors.white),
               ),
               const SizedBox(height: 10),
               FittedBox(
                 fit: BoxFit.scaleDown,
-                child: Text(
-                  title,
-                  style: const TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
+                child: Text(title, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white), textAlign: TextAlign.center),
               ),
               const SizedBox(height: 2),
               FittedBox(
                 fit: BoxFit.scaleDown,
-                child: Text(
-                  subtitle,
-                  style: const TextStyle(
-                    fontSize: 12,
-                    color: Colors.white,
-                    fontWeight: FontWeight.w500,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
+                child: Text(subtitle, style: const TextStyle(fontSize: 12, color: Colors.white, fontWeight: FontWeight.w500), textAlign: TextAlign.center),
               ),
             ],
           ),
@@ -281,10 +335,7 @@ class DashboardScreen extends ConsumerWidget {
             children: [
               Container(
                 padding: const EdgeInsets.all(12),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
-                  shape: BoxShape.circle,
-                ),
+                decoration: BoxDecoration(color: Colors.white.withOpacity(0.2), shape: BoxShape.circle),
                 child: Icon(icon, size: 32, color: Colors.white),
               ),
               const SizedBox(width: 16),
@@ -292,23 +343,9 @@ class DashboardScreen extends ConsumerWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      title,
-                      style: const TextStyle(
-                        fontSize: 20, 
-                        fontWeight: FontWeight.bold, 
-                        color: Colors.white,
-                      ),
-                    ),
+                    Text(title, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white)),
                     const SizedBox(height: 4),
-                    Text(
-                      subtitle,
-                      style: const TextStyle(
-                        fontSize: 13, 
-                        color: Colors.white,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
+                    Text(subtitle, style: const TextStyle(fontSize: 13, color: Colors.white, fontWeight: FontWeight.w500)),
                   ],
                 ),
               ),

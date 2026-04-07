@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'package:flutter/material.dart';
 import '../../models/question.dart';
 import 'feedback_panel.dart';
@@ -22,6 +23,13 @@ class _SwipeChoiceWidgetState extends State<SwipeChoiceWidget> {
   String? _selectedOption;
   bool _showingFeedback = false;
   bool _wasCorrect = false;
+  late List<String> _shuffledOptions;
+
+  @override
+  void initState() {
+    super.initState();
+    _shuffledOptions = List.from(widget.question.options)..shuffle(Random());
+  }
 
   void _handleAnswer(String option) {
     if (_showingFeedback) return;
@@ -47,6 +55,7 @@ class _SwipeChoiceWidgetState extends State<SwipeChoiceWidget> {
       _selectedOption = null;
       _showingFeedback = false;
       _wasCorrect = false;
+      _shuffledOptions = List.from(widget.question.options)..shuffle(Random());
     }
   }
 
@@ -66,7 +75,7 @@ class _SwipeChoiceWidgetState extends State<SwipeChoiceWidget> {
           spacing: 16,
           runSpacing: 16,
           alignment: WrapAlignment.center,
-          children: widget.question.options.map((opt) {
+          children: _shuffledOptions.map((opt) {
             Color chipColor = Colors.deepPurple;
             if (_showingFeedback) {
               if (opt.toLowerCase() == widget.question.correctAnswer.toLowerCase()) {

@@ -81,7 +81,7 @@ class _FillInWidgetState extends State<FillInWidget> {
           decoration: InputDecoration(
             hintText: 'Skriv inn ordet her...',
             filled: true,
-            fillColor: _showingFeedback ? borderColor.withOpacity(0.1) : Colors.white,
+            fillColor: _showingFeedback ? borderColor.withOpacity(0.1) : null,
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(16),
               borderSide: BorderSide(color: borderColor, width: _showingFeedback ? 3 : 1),

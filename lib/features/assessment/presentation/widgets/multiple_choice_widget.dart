@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'package:flutter/material.dart';
 import '../../models/question.dart';
 import 'feedback_panel.dart';
@@ -22,6 +23,13 @@ class _MultipleChoiceWidgetState extends State<MultipleChoiceWidget> {
   String? _selectedOption;
   bool _showingFeedback = false;
   bool _wasCorrect = false;
+  late List<String> _shuffledOptions;
+
+  @override
+  void initState() {
+    super.initState();
+    _shuffledOptions = List.from(widget.question.options)..shuffle(Random());
+  }
 
   void _handleAnswer(String option) {
     if (_showingFeedback) return;
@@ -34,7 +42,6 @@ class _MultipleChoiceWidgetState extends State<MultipleChoiceWidget> {
       _wasCorrect = isCorrect;
     });
 
-    // Give extra time to read the explanation when wrong in practice mode
     final delay = (widget.isPractice && !isCorrect) ? 2800 : 1400;
     Future.delayed(Duration(milliseconds: delay), () {
       if (mounted) widget.onAnswered(option);
@@ -48,6 +55,7 @@ class _MultipleChoiceWidgetState extends State<MultipleChoiceWidget> {
       _selectedOption = null;
       _showingFeedback = false;
       _wasCorrect = false;
+      _shuffledOptions = List.from(widget.question.options)..shuffle(Random());
     }
   }
 
@@ -69,10 +77,10 @@ class _MultipleChoiceWidgetState extends State<MultipleChoiceWidget> {
         Expanded(
           flex: 4,
           child: ListView.separated(
-            itemCount: widget.question.options.length,
+            itemCount: _shuffledOptions.length,
             separatorBuilder: (_, __) => const SizedBox(height: 16),
             itemBuilder: (context, index) {
-              final option = widget.question.options[index];
+              final option = _shuffledOptions[index];
               Color buttonColor = Colors.deepPurple;
 
               if (_showingFeedback) {
@@ -81,7 +89,7 @@ class _MultipleChoiceWidgetState extends State<MultipleChoiceWidget> {
                 } else if (option == _selectedOption) {
                   buttonColor = Colors.red.shade600;
                 } else {
-                  buttonColor = Colors.grey.shade400;
+                  buttonColor = Colors.grey.shade500;
                 }
               }
 

@@ -70,12 +70,12 @@ class _TrueFalseWidgetState extends State<TrueFalseWidget> {
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
           decoration: BoxDecoration(
-            color: Colors.deepPurple.shade50,
+            color: Theme.of(context).colorScheme.primaryContainer.withOpacity(0.4),
             borderRadius: BorderRadius.circular(8),
           ),
-          child: const Text(
+          child: Text(
             'Sant eller usant?',
-            style: TextStyle(fontSize: 14, color: Colors.deepPurple, fontWeight: FontWeight.w600),
+            style: TextStyle(fontSize: 14, color: Theme.of(context).colorScheme.primary, fontWeight: FontWeight.w600),
             textAlign: TextAlign.center,
           ),
         ),
