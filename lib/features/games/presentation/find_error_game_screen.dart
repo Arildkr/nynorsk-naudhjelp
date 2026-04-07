@@ -88,11 +88,11 @@ class _FindErrorGameScreenState extends State<FindErrorGameScreen>
     _TextEntry('Katten',
         '[Jeg|Eg] har ein katt. Han vil [ikke|ikkje] inn. [Jeg|eg] må [være|vere] tolmodig [hvis|viss] han skal kome.'),
     _TextEntry('Bussen',
-        '[Jeg|Eg] ser bussen no. Han er [ikke|ikkje] langt unna. [Jeg|eg] må springe [mer|meir] for å rekke han. [Da|Då] rekk eg det.'),
+        '[Jeg|Eg] ser bussen no. Han er [ikke|ikkje] langt unna. [Jeg|eg] må [løpe|springe] [mer|meir] for å rekke han.'),
     _TextEntry('Vennen',
         '[Jeg|Eg] skal møte ein ven. Me skal [være|vere] på biblioteket. Han er [ikke|ikkje] der [enda|endå]. [Jeg|eg] gler meg.'),
     _TextEntry('Trening',
-        '[Jeg|Eg] skal springe ein tur. Det er [ikke|ikkje] tungt. [Jeg|eg] vil [være|vere] i god form til sommaren. [Da|Då] er eg klar.'),
+        '[Jeg|Eg] skal springe ein tur. Det er [ikke|ikkje] tungt. [Jeg|eg] vil [være|vere] i god form til [sommeren|sommaren].'),
     _TextEntry('Kino',
         '[Jeg|Eg] skal på kino. Filmen er [ikke|ikkje] begynt [enda|endå]. [Jeg|eg] må [være|vere] der før klokka sju.'),
     _TextEntry('Hagen',
@@ -103,7 +103,7 @@ class _FindErrorGameScreenState extends State<FindErrorGameScreen>
     _TextEntry('Hytta',
         '[Jeg|Eg] skal på hytta. Der skal eg [være|vere] [sammen|saman] med familien. [Hvis|Viss] det er snø, skal me gå [mye|mykje] på ski. [Jeg|eg] har [ikke|ikkje] [noen|nokon] ski som passar [enda|endå]. De må hjelpe meg å finne [noen|nokon] meir.'),
     _TextEntry('Sommar',
-        '[Jeg|Eg] gler meg til ferie. [Da|Då] skal [jeg|eg] [være|vere] ved sjøen. [Hvis|Viss] det blir varmt, skal eg bade [mye|mykje]. [Jeg|eg] har [ikke|ikkje] sett [noen|nokon] krabbar her. De må [være|vere] med ut.'),
+        '[Jeg|Eg] gler meg til ferie. Da skal [jeg|eg] [være|vere] ved sjøen. [Hvis|Viss] det blir varmt, skal eg bade [mye|mykje]. [Jeg|eg] har [ikke|ikkje] sett [noen|nokon] krabbar her [enda|endå]. De må [være|vere] med ut.'),
     _TextEntry('Byen',
         'Det er [mye|mykje] folk i byen. [Jeg|Eg] likar [ikke|ikkje] å [være|vere] der når det er kaos. [Hvis|Viss] man skal handle, må man ha [mer|meir] tid. [Jeg|eg] ser [ikke|ikkje] [noen|nokon] ledige plassar [enda|endå].'),
     _TextEntry('Skogen',
@@ -115,7 +115,7 @@ class _FindErrorGameScreenState extends State<FindErrorGameScreen>
     _TextEntry('Reisa',
         '[Jeg|Eg] har pakka bagen. [Jeg|eg] skal [være|vere] borte lenge. [Hvis|Viss] [jeg|eg] gløymer noko, er det [ikke|ikkje] [noen|nokon] krise. [Jeg|eg] har [enda|endå] [mye|mykje] plass. De må ikkje seinke meg.'),
     _TextEntry('Vinter',
-        '[Jeg|Eg] ser ut på snøen. Det er [ikke|ikkje] [noen|nokon] som går ute. [Hvis|Viss] det blir [mer|meir] kaldt, må me [være|vere] inne. [Jeg|eg] har [enda|endå] [ikke|ikkje] funne vottane. [Da|Då] vert eg lei.'),
+        '[Jeg|Eg] ser ut på snøen. Det er [ikke|ikkje] [noen|nokon] som går ute. [Hvis|Viss] det blir [mer|meir] kaldt, må me [være|vere] inne. [Jeg|eg] har [enda|endå] [ikke|ikkje] [funnet|funne] vottane. Da vert eg lei.'),
     _TextEntry('Biblioteket',
         '[Jeg|Eg] skal låne [noen|nokon] bøker. [Jeg|eg] har [ikke|ikkje] lese [mer|meir] enn to. [Hvis|Viss] [jeg|eg] finn [noen|nokon] gode, skal eg [være|vere] her lenge. Eg har [enda|endå] mykje å lære.'),
     _TextEntry('Heime',
@@ -130,19 +130,19 @@ class _FindErrorGameScreenState extends State<FindErrorGameScreen>
     _TextEntry('Oppdrag 3',
         '[Jeg|Eg] sit på kafé. Det er [ikke|ikkje] [noen|nokon] ledige bord [enda|endå]. [Jeg|eg] ser [mye|mykje] folk som skal [være|vere] sosiale. [Hvis|Viss] [jeg|eg] finn ein plass, skal eg sitje der [mer|meir]. [Jeg|eg] har [ikke|ikkje] fått kaffien min [enda|endå]. De må [være|vere] klare til å gå [sammen|saman].'),
     _TextEntry('Oppdrag 4',
-        '[Jeg|Eg] skal på fjellet. Det skal [være|vere] ein lang tur. [Hvis|Viss] det blir dårleg ver, må me [være|vere] forsiktige. [Jeg|eg] har [enda|endå] [ikke|ikkje] pakka [noen|nokon] ekstra klede. De må [ikke|ikkje] gløyme noko [mer|meir]. [Da|Då] blir det vanskeleg. Det er [ikke|ikkje] [noen|nokon] spøk å [være|vere] på vidda [sammen|saman].'),
+        '[Jeg|Eg] skal på fjellet. Det skal [være|vere] ein lang tur. [Hvis|Viss] det blir dårleg ver, må me [være|vere] forsiktige. [Jeg|eg] har [enda|endå] [ikke|ikkje] pakka [noen|nokon] ekstra klede. De må [ikke|ikkje] [glemme|gløyme] noko [mer|meir]. Da blir det vanskeleg. Det er [ikke|ikkje] [noen|nokon] spøk å [være|vere] på vidda [sammen|saman].'),
     _TextEntry('Oppdrag 5',
         '[Jeg|Eg] ser på nyheitene. Det skjer [mye|mykje] i verda. [Hvis|Viss] man [ikke|ikkje] følgjer med, veit man [ikke|ikkje] [noen|nokon] ting. [Jeg|eg] skal [være|vere] flinkare til å lese [mer|meir]. [Bare|Berre] ved å øve kan man bli meir kritisk. [Jeg|eg] ser [ikke|ikkje] [noen|nokon] grunn til å gje opp [enda|endå]. Det er [ikke|ikkje] berre spøk.'),
     _TextEntry('Oppdrag 6',
         '[Jeg|Eg] skal pusse opp huset. Det blir [mye|mykje] arbeid. [Hvis|Viss] [jeg|eg] skal [være|vere] ferdig til jul, må eg jobbe [mer|meir]. [Jeg|eg] har [enda|endå] [ikke|ikkje] kjøpt [noen|nokon] maling. De må [være|vere] med og hjelpe. Det er [ikke|ikkje] [noen|nokon] veg utanom [hvis|viss] me skal bli ferdige [sammen|saman].'),
     _TextEntry('Oppdrag 7',
-        '[Jeg|Eg] skal på konsert. Det skal [være|vere] [mye|mykje] folk der. [Hvis|Viss] [jeg|eg] [ikke|ikkje] finn billetten, blir eg sprø. [Jeg|eg] har [enda|endå] [ikke|ikkje] sett [noen|nokon] som har ein ekstra. De må [være|vere] klare. Det er [ikke|ikkje] [noen|nokon] vits i å vente [mer|meir]. [Da|Då] er det for seint.'),
+        '[Jeg|Eg] skal på konsert. Det skal [være|vere] [mye|mykje] folk der. [Hvis|Viss] [jeg|eg] [ikke|ikkje] [finner|finn] billetten, blir eg sprø. [Jeg|eg] har [enda|endå] [ikke|ikkje] sett [noen|nokon] som har ein ekstra. De må [være|vere] klare. Det er [ikke|ikkje] [noen|nokon] vits i å vente [mer|meir]. Da er det for seint.'),
     _TextEntry('Oppdrag 8',
         '[Jeg|Eg] skal lære meg å kode. Det er [ikke|ikkje] så vanskeleg [hvis|viss] man har [noen|nokon] å spørje. [Jeg|eg] vil [være|vere] ein ekspert. [Jeg|eg] har [enda|endå] [mye|mykje] å lære. De må [være|vere] tolmodige med meg. [Jeg|eg] ser [ikke|ikkje] [noen|nokon] hindringar [mer|meir]. [Bare|Berre] vent og sjå.'),
     _TextEntry('Oppdrag 9',
-        '[Jeg|Eg] skal reise med tog. Det skal [være|vere] ein fin tur. [Hvis|Viss] toget er i rute, skal eg [være|vere] framme klokka åtte. [Jeg|eg] har [enda|endå] [ikke|ikkje] kjøpt [noen|nokon] mat. De må [ikke|ikkje] gløyme å ta med [mer|meir] vatn. Me skal sitje [sammen|saman] og [være|vere] glade. [Jeg|eg] gler meg [mye|mykje]. [Da|Då] blir det bra.'),
+        '[Jeg|Eg] skal reise med tog. Det skal [være|vere] ein fin tur. [Hvis|Viss] toget er i rute, skal eg [være|vere] framme klokka åtte. [Jeg|eg] har [enda|endå] [ikke|ikkje] kjøpt [noen|nokon] mat. De må [ikke|ikkje] [glemme|gløyme] å ta med [mer|meir] vatn. Me skal sitje [sammen|saman] og [være|vere] glade. [Jeg|eg] gler meg [mye|mykje]. Da blir det bra.'),
     _TextEntry('Oppdrag 10',
-        '[Jeg|Eg] ser ut over havet. Det er [ikke|ikkje] [noen|nokon] båtar der [enda|endå]. [Hvis|Viss] det blir vind, skal me [være|vere] inne. [Jeg|eg] har [enda|endå] [mye|mykje] arbeid å gjere. De må [være|vere] flinke og hjelpe til [mer|meir]. Det er [ikke|ikkje] [noen|nokon] veg utanom [hvis|viss] me skal rekke det. [Da|Då] kjem me i mål.'),
+        '[Jeg|Eg] ser ut over havet. Det er [ikke|ikkje] [noen|nokon] båtar der [enda|endå]. [Hvis|Viss] det blir vind, skal me [være|vere] inne. [Jeg|eg] har [enda|endå] [mye|mykje] arbeid å [gjøre|gjere]. De må [være|vere] flinke og hjelpe til [mer|meir]. Det er [ikke|ikkje] [noen|nokon] veg utanom [hvis|viss] me skal rekke det. Da kjem me i mål.'),
   ];
 
   // ── Game phase ─────────────────────────────────────────────────────────────
@@ -570,7 +570,7 @@ class _FindErrorGameScreenState extends State<FindErrorGameScreen>
   Widget _buildTextArea() {
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.all(18),
+      padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: Colors.white.withOpacity(0.08),
         borderRadius: BorderRadius.circular(20),
@@ -585,18 +585,12 @@ class _FindErrorGameScreenState extends State<FindErrorGameScreen>
             final token = _tokens[i];
             final currentErrorIdx = token.isError ? errorIdx : -1;
             if (token.isError) errorIdx++;
+            // Attach trailing punctuation inside the chip widget
             widgets.add(_buildChip(token, i, currentErrorIdx));
-            if (token.trailing != null) {
-              widgets.add(Text(
-                token.trailing!,
-                style: const TextStyle(
-                    color: Colors.white70, fontSize: 17, height: 1.5),
-              ));
-            }
           }
           return Wrap(
-            spacing: 4,
-            runSpacing: 6,
+            spacing: 2,
+            runSpacing: 10,
             crossAxisAlignment: WrapCrossAlignment.center,
             children: widgets,
           );
@@ -610,60 +604,69 @@ class _FindErrorGameScreenState extends State<FindErrorGameScreen>
         errorIdx >= 0 &&
         _chipStates[errorIdx] == _ChipState.correct;
     final isFlashing = _flashingTokenIndex == tokenIndex;
-
-    Color bgColor;
-    Color textColor;
-    String displayText;
+    final trailing = token.trailing ?? '';
 
     if (isFound) {
-      bgColor = Colors.green.shade600;
-      textColor = Colors.white;
-      displayText = '${token.display} → ${token.correction ?? ''}';
-    } else if (isFlashing) {
-      final t = _flashCtrl.value;
-      bgColor =
-          Color.lerp(Colors.red.shade500, Colors.white.withOpacity(0.10), t)!;
-      textColor = Colors.white;
-      displayText = token.display;
-    } else {
-      bgColor = Colors.white.withOpacity(0.10);
-      textColor = Colors.white.withOpacity(0.9);
-      displayText = token.display;
-    }
-
-    return GestureDetector(
-      onTap: () => _onChipTap(tokenIndex),
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-        decoration: BoxDecoration(
-          color: bgColor,
-          borderRadius: BorderRadius.circular(10),
-          border: Border.all(
-            color: isFound
-                ? Colors.green.shade400
-                : Colors.white.withOpacity(0.1),
-            width: 1,
+      // Green pill showing correction
+      return GestureDetector(
+        onTap: () => _onChipTap(tokenIndex),
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+          decoration: BoxDecoration(
+            color: Colors.green.shade600,
+            borderRadius: BorderRadius.circular(8),
+          ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Icon(Icons.check_circle_rounded, color: Colors.white, size: 13),
+              const SizedBox(width: 4),
+              Text(
+                '${token.display} → ${token.correction ?? ''}$trailing',
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 17,
+                  fontWeight: FontWeight.w600,
+                  height: 1.5,
+                ),
+              ),
+            ],
           ),
         ),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            if (isFound) ...[
-              const Icon(Icons.check_circle_rounded,
-                  color: Colors.white, size: 14),
-              const SizedBox(width: 4),
-            ],
-            Text(
-              displayText,
-              style: TextStyle(
-                color: textColor,
-                fontSize: 17,
-                fontWeight:
-                    isFound ? FontWeight.w600 : FontWeight.w400,
-                height: 1.4,
-              ),
-            ),
-          ],
+      );
+    }
+
+    if (isFlashing) {
+      // Red flash on wrong tap
+      final bg = Color.lerp(Colors.red.shade400, Colors.transparent, _flashCtrl.value)!;
+      return GestureDetector(
+        onTap: () => _onChipTap(tokenIndex),
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+          decoration: BoxDecoration(
+            color: bg,
+            borderRadius: BorderRadius.circular(6),
+          ),
+          child: Text(
+            '${token.display}$trailing',
+            style: const TextStyle(color: Colors.white, fontSize: 18, height: 1.5),
+          ),
+        ),
+      );
+    }
+
+    // Normal word — plain inline text, no background
+    return GestureDetector(
+      onTap: () => _onChipTap(tokenIndex),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 2),
+        child: Text(
+          '${token.display}$trailing',
+          style: TextStyle(
+            color: Colors.white.withOpacity(0.92),
+            fontSize: 18,
+            height: 1.5,
+          ),
         ),
       ),
     );

@@ -65,7 +65,10 @@ class DashboardScreen extends ConsumerWidget {
         centerTitle: true,
       ),
       body: SafeArea(
-        child: SingleChildScrollView(
+        child: Center(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 600),
+            child: SingleChildScrollView(
           padding: const EdgeInsets.all(16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -174,6 +177,8 @@ class DashboardScreen extends ConsumerWidget {
                 ),
               ],
             ],
+          ),
+            ),
           ),
         ),
       ),
