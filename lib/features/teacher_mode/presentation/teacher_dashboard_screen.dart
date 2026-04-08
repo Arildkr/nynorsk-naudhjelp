@@ -1,10 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:math';
 import '../data/teacher_repository.dart';
+import '../../../../main.dart';
 
-final currentRoomProvider = StateProvider<String?>((ref) => null);
+final currentRoomProvider =
+    StateNotifierProvider<_RoomNotifier, String?>(
+  (ref) => _RoomNotifier(ref.watch(sharedPreferencesProvider)),
+);
+
+class _RoomNotifier extends StateNotifier<String?> {
+  final SharedPreferences _prefs;
+  static const _key = 'teacher_room_code';
+
+  _RoomNotifier(this._prefs) : super(_prefs.getString(_key));
+
+  void set(String? code) {
+    state = code;
+    if (code != null) {
+      _prefs.setString(_key, code);
+    } else {
+      _prefs.remove(_key);
+    }
+  }
+}
 final roomStreamProvider = StreamProvider.autoDispose.family<List<StudentProgress>, String>((ref, roomCode) {
   final repo = ref.watch(teacherRepositoryProvider);
   return repo.watchRoom(roomCode);
@@ -59,7 +80,7 @@ class TeacherDashboardScreen extends ConsumerWidget {
               onPressed: () async {
                 final code = (Random().nextInt(9000) + 1000).toString();
                 await ref.read(teacherRepositoryProvider).createRoom(code);
-                ref.read(currentRoomProvider.notifier).state = code;
+                ref.read(currentRoomProvider.notifier).set(code);
               },
               child: const Text('Opprett rom', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
             ),
@@ -175,7 +196,7 @@ class TeacherDashboardScreen extends ConsumerWidget {
                   ),
                   const SizedBox(height: 8),
                   OutlinedButton.icon(
-                    onPressed: () => ref.read(currentRoomProvider.notifier).state = null,
+                    onPressed: () => ref.read(currentRoomProvider.notifier).set(null),
                     icon: const Icon(Icons.close, color: Colors.white38, size: 18),
                     label: const Text('Avslutt rom', style: TextStyle(color: Colors.white38, fontSize: 13)),
                     style: OutlinedButton.styleFrom(side: const BorderSide(color: Colors.white12)),

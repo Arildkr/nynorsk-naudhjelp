@@ -124,7 +124,7 @@
         "Inkjekjønn (eit)"
       ],
       "correctAnswer": "Hokjønn (ei)",
-      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei verd."
+      "explanation": "Verd er hokjønn: ei verd → verda. 'Verd' er nynorsk for 'verden' på bokmål — merk stavemåten utan -en."
     },
     {
       "id": "sub_116",
@@ -138,7 +138,7 @@
         "Inkjekjønn (eit)"
       ],
       "correctAnswer": "Hokjønn (ei)",
-      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei sanning."
+      "explanation": "Sanning er hokjønn: ei sanning → sanninga. Tips: ord som sluttar på -ing er alltid hokjønn på nynorsk (t.d. meining, melding, løysing)."
     },
     {
       "id": "sub_117",
@@ -180,7 +180,7 @@
         "Inkjekjønn (eit)"
       ],
       "correctAnswer": "Hokjønn (ei)",
-      "explanation": "Eit klassisk hokjønnsord, hugsar me: ei avis."
+      "explanation": "Avis er hokjønn: ei avis → avisa. På bokmål heiter det 'avisen' (hankjønn), men på nynorsk brukar me 'avisa'."
     },
     {
       "id": "sub_136",
@@ -278,7 +278,7 @@
         "Inkjekjønn (eit)"
       ],
       "correctAnswer": "Hankjønn (ein)",
-      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein skule."
+      "explanation": "Skule er hankjønn: ein skule → skulen. 'Skule' er nynorsk for 'skole' — legg merke til u-en i staden for o."
     },
     {
       "id": "sub_151",
@@ -320,7 +320,7 @@
         "Inkjekjønn (eit)"
       ],
       "correctAnswer": "Hankjønn (ein)",
-      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein blome."
+      "explanation": "Blome er hankjønn: ein blome → blomen. 'Blome' er nynorsk for 'blomst' på bokmål — merk at nynorsk droppar -st."
     },
     {
       "id": "sub_162",
@@ -334,7 +334,7 @@
         "Inkjekjønn (eit)"
       ],
       "correctAnswer": "Hankjønn (ein)",
-      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein song."
+      "explanation": "Song er hankjønn: ein song → songen. 'Song' er nynorsk for 'sang' — vokalskiftet o/a er typisk nynorsk."
     },
     {
       "id": "sub_163",
@@ -404,7 +404,7 @@
         "Inkjekjønn (eit)"
       ],
       "correctAnswer": "Hankjønn (ein)",
-      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein leik."
+      "explanation": "Leik er hankjønn: ein leik → leiken. 'Leik' er nynorsk for 'lek' på bokmål."
     },
     {
       "id": "sub_182",
@@ -418,7 +418,7 @@
         "Inkjekjønn (eit)"
       ],
       "correctAnswer": "Hankjønn (ein)",
-      "explanation": "Slik kan me lære at dette er eit hankjønnsord: ein draum."
+      "explanation": "Draum er hankjønn: ein draum → draumen. 'Draum' er nynorsk for 'drøm' på bokmål — ei vakker nynorsk ordform."
     },
     {
       "id": "sub_183",
@@ -754,7 +754,7 @@
         "kjøpe"
       ],
       "correctAnswer": "kjøpte",
-      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å kjøpe - kjøper - kjøpte)."
+      "explanation": "E-verb: å kjøpe → kjøper → kjøpte. E-verb får -te eller -de i preteritum (ikkje -a som A-verb)."
     },
     {
       "id": "verb_e_265",
@@ -769,7 +769,7 @@
         "lyse"
       ],
       "correctAnswer": "lyste",
-      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å lyse - lyser - lyste)."
+      "explanation": "E-verb: å lyse → lyser → lyste. Får -te i preteritum, ikkje -a."
     },
     {
       "id": "verb_e_266",
@@ -784,7 +784,7 @@
         "høyre"
       ],
       "correctAnswer": "høyrde",
-      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å høyre - høyrer - høyrde)."
+      "explanation": "E-verb: å høyre → høyrer → høyrde. Verb som sluttar på -re/-le/-ve/-ne får gjerne -de i preteritum."
     },
     {
       "id": "verb_e_267",
@@ -799,7 +799,7 @@
         "køyre"
       ],
       "correctAnswer": "køyrde",
-      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å køyre - køyrer - køyrde)."
+      "explanation": "E-verb: å køyre → køyrer → køyrde. Same mønster som høyre → høyrde (-re-verb får -de)."
     },
     {
       "id": "verb_e_268",
@@ -814,7 +814,7 @@
         "dømme"
       ],
       "correctAnswer": "dømde",
-      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å dømme - dømmer - dømde)."
+      "explanation": "E-verb: å dømme → dømmer → dømde. Legg merke til at dobbel-m fell vekk i preteritum: døm-de."
     },
     {
       "id": "verb_e_269",
@@ -829,7 +829,7 @@
         "gløyme"
       ],
       "correctAnswer": "gløymde",
-      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å gløyme - gløymer - gløymde)."
+      "explanation": "E-verb: å gløyme → gløymer → gløymde. Ikkje forveksl med 'gløymte' — rett preteritum er 'gløymde'."
     },
     {
       "id": "verb_e_270",
@@ -844,7 +844,7 @@
         "lære"
       ],
       "correctAnswer": "lærte",
-      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å lære - lærer - lærte)."
+      "explanation": "E-verb: å lære → lærer → lærte. Rett preteritum er 'lærte', ikkje 'lærde' eller 'lærsa'."
     },
     {
       "id": "verb_e_271",
@@ -859,7 +859,7 @@
         "leve"
       ],
       "correctAnswer": "levde",
-      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å leve - lever - levde)."
+      "explanation": "E-verb: å leve → lever → levde. Verb på -ve får -de i preteritum: levde, søyvde."
     },
     {
       "id": "verb_e_272",
@@ -874,7 +874,7 @@
         "kjenne"
       ],
       "correctAnswer": "kjende",
-      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å kjenne - kjenner - kjende)."
+      "explanation": "E-verb: å kjenne → kjenner → kjende. Legg merke til at nn → nd i preteritum: kjen-de."
     },
     {
       "id": "verb_e_273",
@@ -889,7 +889,7 @@
         "drøyme"
       ],
       "correctAnswer": "drøymde",
-      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å drøyme - drøymer - drøymde)."
+      "explanation": "E-verb: å drøyme → drøymer → drøymde. 'Drøyme' er nynorsk for 'drømme' — same preteritum-mønster som gløyme."
     },
     {
       "id": "verb_e_274",
@@ -904,7 +904,7 @@
         "vise"
       ],
       "correctAnswer": "viste",
-      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å vise - viser - viste)."
+      "explanation": "E-verb: å vise → viser → viste. Får -te i preteritum. Perfektum: har vist."
     },
     {
       "id": "verb_e_275",
@@ -919,7 +919,7 @@
         "reise"
       ],
       "correctAnswer": "reiste",
-      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å reise - reiser - reiste)."
+      "explanation": "E-verb: å reise → reiser → reiste. Preteritum 'reiste' er same form på nynorsk og bokmål!"
     },
     {
       "id": "verb_e_276",
@@ -934,7 +934,7 @@
         "bygge"
       ],
       "correctAnswer": "bygde",
-      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å bygge - bygger - bygde)."
+      "explanation": "E-verb: å bygge → bygger → bygde. Dobbel-g fell vekk i preteritum: byg-de. Perfektum: har bygd."
     },
     {
       "id": "verb_e_277",
@@ -944,12 +944,12 @@
       "text": "Kva er preteritum (fortid) av å sende?",
       "options": [
         "sende",
+        "sente",
         "sendea",
-        "sendeet",
-        "sende"
+        "sendte"
       ],
       "correctAnswer": "sende",
-      "explanation": "Dette er eit verb som fell under e-verb eller j-verb klassen med eiga ending. (å sende - sender - sende)."
+      "explanation": "E-verb: å sende → sender → sende → har sendt. Preteritum er 'sende' (ikkje 'sendte' som på bokmål)."
     },
     {
       "id": "ord_278",
@@ -964,7 +964,7 @@
         "når"
       ],
       "correctAnswer": "hvorfor",
-      "explanation": "'kvifor' oversettast primært til 'hvorfor' på bokmål."
+      "explanation": "'kvifor' = 'hvorfor'. Hugs nynorske spørjeord: kva (hva), kven (hvem), kvar (hvor), korleis (hvordan), kvifor (hvorfor)."
     },
     {
       "id": "ord_279",
@@ -979,7 +979,7 @@
         "aldri"
       ],
       "correctAnswer": "hvordan",
-      "explanation": "'korleis' oversettast primært til 'hvordan' på bokmål."
+      "explanation": "'korleis' = 'hvordan'. Tips: på nynorsk finn du aldri 'hv' — det vert kv (kvifor, kven, kvar, korleis)."
     },
     {
       "id": "ord_280",
@@ -1099,7 +1099,7 @@
         "rom"
       ],
       "correctAnswer": "hemmelighet",
-      "explanation": "'løyndom' oversettast primært til 'hemmelighet' på bokmål."
+      "explanation": "'løyndom' = 'hemmelighet'. Merk: 'løyn-' kjem av å løyne (å skjule). Samanlikn: røyndom (virkelighet), løyndom (hemmelighet)."
     },
     {
       "id": "ord_288",
@@ -1159,7 +1159,7 @@
         "kanskje"
       ],
       "correctAnswer": "fordi",
-      "explanation": "'av di' oversettast primært til 'fordi' på bokmål."
+      "explanation": "'av di' = 'fordi'. Kan òg skrivast 'fordi' på nynorsk, men 'av di' er den særnynorske varianten."
     },
     {
       "id": "ord_292",
@@ -1468,20 +1468,20 @@
         "Usant"
       ],
       "correctAnswer": "Usant",
-      "explanation": "Springe er eit E-verb (sterkt verb): spring/spring/sprang/sprunge."
+      "explanation": "Springe er eit sterkt verb: springe → spring → sprang → har sprunge. Sterke verb bøyer seg med vokalskifte, ikkje berre -a eller -te."
     },
     {
       "id": "tf_007",
       "type": "TRUE_FALSE",
       "category": "verb_boying",
       "difficulty": 1,
-      "text": "Infinitiv av nynorsk verb endar alltid på \"-e\".",
+      "text": "På nynorsk kan infinitiv av verb enda på både \"-e\" og \"-a\" (t.d. å kaste / å kasta).",
       "options": [
         "Sant",
         "Usant"
       ],
       "correctAnswer": "Sant",
-      "explanation": "Alle nynorske infinitivar endar på -e: å kaste, å lese, å springe."
+      "explanation": "Sant! Dette kallast kløyvd infinitiv. Begge formene er gyldige: å kaste/å kasta, å lese/å lesa. Kva form ein brukar, avheng av dialekt og stil."
     },
     {
       "id": "tf_008",
@@ -1551,7 +1551,7 @@
     {
       "id": "tf_013",
       "type": "TRUE_FALSE",
-      "category": "eiendomsord",
+      "category": "verb_boying",
       "difficulty": 2,
       "text": "\"Infinitiv av nynorsk verb endar alltid på -e\" — er dette sant?",
       "options": [
@@ -2954,6 +2954,164 @@
       ],
       "correctAnswer": "alle alternativ",
       "explanation": "På nynorsk kan du bruke 'viss', 'om' og 'dersom' — alle tre er gyldige. 'Hvis' er ikkje lov i nynorsk."
+    },
+    {
+      "id": "new_325",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva er nynorsk for 'utenfor'?",
+      "options": [
+        "utanfor",
+        "utenfor",
+        "utafor",
+        "ytanfor"
+      ],
+      "correctAnswer": "utanfor",
+      "explanation": "'utenfor' på bokmål heiter 'utanfor' på nynorsk. Mønster: bokmål -en- → nynorsk -an- (utanfor, innanfor, nedanfor, ovanfor)."
+    },
+    {
+      "id": "new_326",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva er nynorsk for 'plutselig'?",
+      "options": [
+        "plutseleg",
+        "plutselig",
+        "plutsleg",
+        "brå"
+      ],
+      "correctAnswer": "plutseleg",
+      "explanation": "'plutselig' på bokmål heiter 'plutseleg' på nynorsk. Hugs mønsteret: -ig → -leg (vanleg, farleg, tydeleg, plutseleg)."
+    },
+    {
+      "id": "new_327",
+      "type": "FILL_IN",
+      "category": "substantiv_boying",
+      "difficulty": 2,
+      "text": "Bøy ordet: Ein båt - båten - fleire ___ - alle båtane.",
+      "correctAnswer": "båtar",
+      "explanation": "Hankjønnsord i ubestemt fleirtal: båtar. Mønster: ein båt → båten → båtar → båtane."
+    },
+    {
+      "id": "new_328",
+      "type": "TRUE_FALSE",
+      "category": "eiendomsord",
+      "difficulty": 3,
+      "text": "I setninga \"Han les boka si\" tyder \"si\" at boka tilhøyrer han sjølv (refleksivt eigedomsord).",
+      "options": [
+        "Sant",
+        "Usant"
+      ],
+      "correctAnswer": "Sant",
+      "explanation": "Sant. Refleksivt eigedomsord sin/si/sitt viser at eigaren er subjektet i setninga. 'Boka si' = hans eiga bok. 'Boka hans' = ei annan persons bok."
+    },
+    {
+      "id": "new_329",
+      "type": "FILL_IN",
+      "category": "verb_boying",
+      "difficulty": 3,
+      "text": "Preteritum (i går): Ho ___ (å springe) forbi meg.",
+      "correctAnswer": "sprang",
+      "explanation": "'å springe' er eit sterkt verb: spring → sprang → har sprunge. Vokalskiftet i → a er typisk for sterke verb."
+    },
+    {
+      "id": "new_330",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 3,
+      "text": "Kva er det mest typisk nynorske uttrykket for 'omtrent/cirka'?",
+      "options": [
+        "om lag",
+        "omtrent",
+        "ca.",
+        "rundleg"
+      ],
+      "correctAnswer": "om lag",
+      "explanation": "'om lag' er den typisk nynorske forma for 'omtrent'. T.d.: 'Det er om lag ti kilometer.' 'Omtrent' er òg tillate, men 'om lag' er meir særnynorsk."
+    },
+    {
+      "id": "new_331",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 1,
+      "text": "Kva er nynorsk for 'uten'?",
+      "options": [
+        "utan",
+        "uten",
+        "utne",
+        "uton"
+      ],
+      "correctAnswer": "utan",
+      "explanation": "'uten' på bokmål heiter 'utan' på nynorsk. T.d.: 'Utan deg er livet keisamt.' Mønster: bokmål -ten → nynorsk -tan (utan, nutan)."
+    },
+    {
+      "id": "new_332",
+      "type": "TRUE_FALSE",
+      "category": "pronomen",
+      "difficulty": 2,
+      "text": "\"Seg\" er det refleksive pronomenet på nynorsk (t.d. \"Ho kledte på seg\").",
+      "options": [
+        "Sant",
+        "Usant"
+      ],
+      "correctAnswer": "Sant",
+      "explanation": "Sant. Det refleksive pronomenet er 'seg' for 3. person eintal og fleirtal. T.d.: Han vaskar seg. Ho kledte på seg. Dei kosa seg."
+    },
+    {
+      "id": "new_333",
+      "type": "MULTIPLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Kva er presens av 'å syngje' på nynorsk?",
+      "options": [
+        "syngjer",
+        "synger",
+        "syngjar",
+        "syng"
+      ],
+      "correctAnswer": "syngjer",
+      "explanation": "'å syngje' er eit sterkt j-verb. Presens: syngjer. Fullt mønster: syngje → syngjer → song → har sunge."
+    },
+    {
+      "id": "new_334",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva er nynorsk for 'allikevel'?",
+      "options": [
+        "likevel",
+        "allikevel",
+        "alikevel",
+        "likevæl"
+      ],
+      "correctAnswer": "likevel",
+      "explanation": "'allikevel' på bokmål vert 'likevel' på nynorsk. 'Allikevel' med dobbel-l og 'ali-' er bokmål, ikkje nynorsk."
+    },
+    {
+      "id": "new_335",
+      "type": "FILL_IN",
+      "category": "eiendomsord",
+      "difficulty": 3,
+      "text": "Fyll inn rett refleksivt eigedomsord: Ho tek med boka ___ (si eiga bok).",
+      "correctAnswer": "si",
+      "explanation": "Refleksivt eigedomsord for hokjønnssubstantiv: 'si'. 'Boka si' = ho si eiga bok. For hankjønn: bilen sin. For inkjekjønn: huset sitt."
+    },
+    {
+      "id": "new_336",
+      "type": "MULTIPLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva er det mest brukte nynorske ordet for 'riktig'?",
+      "options": [
+        "rett",
+        "riktig",
+        "rikteg",
+        "rikleg"
+      ],
+      "correctAnswer": "rett",
+      "explanation": "'riktig' på bokmål heiter vanlegvis 'rett' på nynorsk. T.d.: 'Det er rett svar' (ikkje 'riktig svar'). 'riktig' er òg tillate som variant, men 'rett' er meir særnynorsk."
     }
   ]
 }
