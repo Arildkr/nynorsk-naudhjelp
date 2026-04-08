@@ -10,6 +10,8 @@ import '../../features/practice/presentation/category_picker_screen.dart';
 import '../../features/teacher_mode/presentation/teacher_dashboard_screen.dart';
 import '../../features/games/presentation/falling_word_game_screen.dart';
 import '../../features/games/presentation/find_error_game_screen.dart';
+import '../../features/games/presentation/swipe_classify_screen.dart';
+import '../../features/games/presentation/tunnel_game_screen.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
   return GoRouter(
@@ -66,6 +68,14 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/games/finn-feil',
         builder: (context, state) => const FindErrorGameScreen(),
+      ),
+      GoRoute(
+        path: '/games/sveip',
+        builder: (context, state) => const SwipeClassifyScreen(),
+      ),
+      GoRoute(
+        path: '/games/tunnel',
+        builder: (context, state) => const TunnelGameScreen(),
       ),
     ],
   );

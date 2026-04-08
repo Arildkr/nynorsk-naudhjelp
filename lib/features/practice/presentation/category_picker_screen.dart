@@ -35,6 +35,20 @@ class CategoryPickerScreen extends StatelessWidget {
       Icons.find_in_page_rounded,
       [Color(0xFF004D40), Color(0xFF1A237E)],
     ),
+    _GameEntry(
+      '/games/sveip',
+      'Nynorsk eller bokmål?',
+      'Sveip kortet rett — kjenn att nynorske ord',
+      Icons.swipe_rounded,
+      [Color(0xFF1B5E20), Color(0xFF006064)],
+    ),
+    _GameEntry(
+      '/games/tunnel',
+      'Ending-tunnelen',
+      'Styr ordet til rett bøyingsending',
+      Icons.subway_rounded,
+      [Color(0xFF311B92), Color(0xFF1A237E)],
+    ),
   ];
 
   static const _categories = [
