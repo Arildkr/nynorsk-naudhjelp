@@ -147,6 +147,7 @@ class _TunnelGameScreenState extends State<TunnelGameScreen>
   bool _roundPaused = false; // true briefly after hit (success or fail)
   bool _wordComplete = false;
   List<String> _lastWordForms = [];
+  String _lastSuccessForm = ''; // form shown in green flash
 
   // Collected forms: [wordIdx][roundIdx]
   late List<List<String?>> _collected;
@@ -248,6 +249,7 @@ class _TunnelGameScreenState extends State<TunnelGameScreen>
       HapticFeedback.mediumImpact();
       _score += 10;
       _collected[_wordIdx][_roundIdx] = round.resultForm;
+      _lastSuccessForm = round.resultForm;
       _successCtrl.forward(from: 0);
 
       Future.delayed(const Duration(milliseconds: 550), () {
@@ -609,14 +611,7 @@ class _TunnelGameScreenState extends State<TunnelGameScreen>
                             BorderRadius.circular(16),
                       ),
                       child: Text(
-                        _roundIdx > 0
-                            ? _words[_wordIdx]
-                                .rounds[_roundIdx - 1]
-                                .resultForm
-                            : _collected[_wordIdx]
-                                    .whereType<String>()
-                                    .lastOrNull ??
-                                '✓',
+                        _lastSuccessForm.isEmpty ? '✓' : _lastSuccessForm,
                         style: const TextStyle(
                           color: Colors.white,
                           fontSize: 32,

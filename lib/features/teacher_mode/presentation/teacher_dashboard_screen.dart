@@ -41,14 +41,14 @@ class TeacherDashboardScreen extends ConsumerWidget {
       appBar: AppBar(
         title: const Text('Lærarportal', style: TextStyle(fontWeight: FontWeight.bold)),
       ),
-      body: Center(
-        child: ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 700),
-          child: roomCode == null
-              ? _buildStartScreen(context, ref)
-              : _buildLiveDashboard(context, ref, roomCode),
-        ),
-      ),
+      body: roomCode == null
+          ? Center(
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 700),
+                child: _buildStartScreen(context, ref),
+              ),
+            )
+          : _buildLiveDashboard(context, ref, roomCode),
     );
   }
 
@@ -110,9 +110,19 @@ class TeacherDashboardScreen extends ConsumerWidget {
       data: (students) {
         return CustomScrollView(
           slivers: [
-            SliverToBoxAdapter(child: _buildRoomCodeCard(context, ref, roomCode)),
             SliverToBoxAdapter(
-              child: Padding(
+              child: Center(
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(maxWidth: 700),
+                  child: _buildRoomCodeCard(context, ref, roomCode),
+                ),
+              ),
+            ),
+            SliverToBoxAdapter(
+              child: Center(
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(maxWidth: 700),
+                  child: Padding(
                 padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
                 child: Row(
                   children: [
@@ -123,6 +133,8 @@ class TeacherDashboardScreen extends ConsumerWidget {
                       backgroundColor: Colors.blueGrey.shade100,
                     ),
                   ],
+                ),
+              ),
                 ),
               ),
             ),
