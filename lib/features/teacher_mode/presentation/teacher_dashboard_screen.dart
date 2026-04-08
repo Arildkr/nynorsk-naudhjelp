@@ -159,25 +159,25 @@ class TeacherDashboardScreen extends ConsumerWidget {
         color: Colors.blueGrey.shade800,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
           child: Row(
             children: [
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text('Romkode', style: TextStyle(fontSize: 14, color: Colors.white60)),
-                    const SizedBox(height: 4),
+                    const Text('Romkode', style: TextStyle(fontSize: 13, color: Colors.white60)),
+                    const SizedBox(height: 2),
                     Text(
                       roomCode,
                       style: const TextStyle(
-                        fontSize: 52,
+                        fontSize: 36,
                         fontWeight: FontWeight.w900,
-                        letterSpacing: 10,
+                        letterSpacing: 8,
                         color: Colors.white,
                       ),
                     ),
-                    const Text('Skriv denne på tavla!', style: TextStyle(color: Colors.white54, fontSize: 13)),
+                    const Text('Skriv denne på tavla!', style: TextStyle(color: Colors.white54, fontSize: 12)),
                   ],
                 ),
               ),

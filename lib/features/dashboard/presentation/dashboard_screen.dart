@@ -91,11 +91,11 @@ class DashboardScreen extends ConsumerWidget {
         ],
       ),
       body: SafeArea(
-        child: Center(
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 600),
-            child: SingleChildScrollView(
-              padding: const EdgeInsets.all(16.0),
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.all(16.0),
+          child: Center(
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 600),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [

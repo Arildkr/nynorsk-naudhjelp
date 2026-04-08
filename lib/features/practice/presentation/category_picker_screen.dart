@@ -71,12 +71,12 @@ class CategoryPickerScreen extends StatelessWidget {
         ),
       ),
       body: SafeArea(
-        child: Center(
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 600),
-            child: SingleChildScrollView(
+        child: SingleChildScrollView(
           padding: const EdgeInsets.all(16),
-          child: Column(
+          child: Center(
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 600),
+              child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               const SizedBox(height: 8),
