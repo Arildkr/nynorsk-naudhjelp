@@ -141,7 +141,7 @@ class _TunnelGameScreenState extends State<TunnelGameScreen>
   // Fall progress: 0.0 (top) → 1.0 (at vehicle)
   double _fallingY = 0.0;
   int _lastTickMs = 0;
-  static const _fallMs = 2200; // ms to reach vehicle
+  static const _fallMs = 4500; // ms to reach vehicle
 
   // Phase within playing
   bool _roundPaused = false; // true briefly after hit (success or fail)
@@ -534,49 +534,52 @@ class _TunnelGameScreenState extends State<TunnelGameScreen>
             size: Size(w, h),
           ),
 
-          // Falling ending boxes
+          // Falling ending boxes — follow perspective lines from vp
           if (!_roundPaused && !_wordComplete)
             ...List.generate(4, (lane) {
+              // Each lane's bottom-centre x
               final bottomX = laneW * lane + laneW / 2;
+              // Vanishing point is top-centre
               final vp = w / 2;
-              final curX =
-                  vp + (bottomX - vp) * _fallingY;
-              final curY = (h - 90) * _fallingY;
-              final scale = 0.22 + 0.78 * _fallingY;
+              // Interpolate along perspective line: vp at t=0, bottomX at t=1
+              final curX = vp + (bottomX - vp) * _fallingY;
+              // y travels from near top to just above vehicle
+              final curY = (h - 100) * _fallingY;
+              // Scale: tiny at top, full-size at bottom
+              final scale = 0.15 + 0.85 * _fallingY;
+              final boxW = laneW * 0.84;
               final opt = _laneOptions[lane];
               final isCorrect = opt ==
                   _words[_wordIdx].rounds[_roundIdx].correctOption;
-              final showHint =
-                  _hintColor != null && isCorrect;
+              final showHint = _hintColor != null && isCorrect;
 
               return Positioned(
-                left: curX - laneW / 2 * scale,
+                // Centre box on curX, accounting for scaled width
+                left: curX - (boxW * scale) / 2,
                 top: curY,
                 child: Transform.scale(
                   scale: scale,
-                  alignment: Alignment.topCenter,
+                  alignment: Alignment.topLeft,
                   child: Container(
-                    width: laneW * 0.82,
-                    height: 48,
+                    width: boxW,
+                    height: 46,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                       color: showHint
-                          ? _hintColor!.withOpacity(0.25)
-                          : Colors.white.withOpacity(0.10),
-                      borderRadius:
-                          BorderRadius.circular(10),
+                          ? _hintColor!.withOpacity(0.28)
+                          : Colors.white.withOpacity(0.11),
+                      borderRadius: BorderRadius.circular(10),
                       border: Border.all(
                         color: showHint
                             ? _hintColor!
-                            : Colors.white.withOpacity(0.22),
+                            : Colors.white.withOpacity(0.25),
                         width: showHint ? 2 : 1,
                       ),
                     ),
                     child: Text(
                       opt,
                       style: TextStyle(
-                        color:
-                            showHint ? _hintColor : Colors.white,
+                        color: showHint ? _hintColor : Colors.white,
                         fontSize: 17,
                         fontWeight: FontWeight.bold,
                       ),
@@ -693,70 +696,79 @@ class _TunnelGameScreenState extends State<TunnelGameScreen>
 
     return Container(
       color: const Color(0xFF111111),
-      padding: const EdgeInsets.fromLTRB(12, 10, 12, 8),
+      padding: const EdgeInsets.fromLTRB(12, 8, 12, 8),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // Current step label
-          if (!_wordComplete)
-            Text(
-              '${currentWord.fullBase}  ·  ${currentWord.rounds[safeRoundIdx].label}',
-              style: const TextStyle(
-                  color: Colors.white38, fontSize: 11),
-            )
-          else
-            const Text('Neste ord...',
-                style:
-                    TextStyle(color: Colors.white38, fontSize: 11)),
-          const SizedBox(height: 8),
+          Text(
+            _wordComplete
+                ? 'Neste ord...'
+                : '${currentWord.fullBase}  ·  ${currentWord.rounds[safeRoundIdx].label}',
+            style: const TextStyle(color: Colors.white38, fontSize: 11),
+          ),
+          const SizedBox(height: 6),
 
-          // Scrollable word cards
+          // Scrollable word rows — one row per word, forms horizontal
           Expanded(
             child: ListView.builder(
-              scrollDirection: Axis.horizontal,
-              itemCount: _words.length,
+              scrollDirection: Axis.vertical,
+              itemCount: _wordIdx + 1, // only show words reached so far
               itemBuilder: (ctx, wi) {
                 final word = _words[wi];
-                final isCurrent = wi == safeWordIdx &&
-                    !_wordComplete;
+                final isCurrent = wi == safeWordIdx && !_wordComplete;
+                final forms = wi < _collected.length
+                    ? _collected[wi]
+                    : <String?>[];
+
                 return Container(
-                  width: 130,
-                  margin: const EdgeInsets.only(right: 8),
-                  padding: const EdgeInsets.all(8),
+                  margin: const EdgeInsets.only(bottom: 4),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
                   decoration: BoxDecoration(
                     color: isCurrent
                         ? const Color(0xFF222222)
                         : Colors.transparent,
-                    borderRadius: BorderRadius.circular(12),
+                    borderRadius: BorderRadius.circular(10),
                     border: Border.all(
                         color: isCurrent
                             ? Colors.white24
                             : Colors.transparent),
                   ),
-                  child: Column(
-                    crossAxisAlignment:
-                        CrossAxisAlignment.start,
+                  child: Row(
                     children: [
-                      Text(word.fullBase,
+                      // Word base label
+                      SizedBox(
+                        width: 90,
+                        child: Text(
+                          word.fullBase,
                           style: const TextStyle(
-                              color: Colors.white38,
-                              fontSize: 10)),
-                      const SizedBox(height: 4),
-                      ...List.generate(word.rounds.length,
-                          (ri) {
-                        final form = wi < _collected.length
-                            ? _collected[wi][ri]
-                            : null;
-                        return Padding(
-                          padding:
-                              const EdgeInsets.only(bottom: 2),
+                              color: Colors.white54, fontSize: 11),
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                      const SizedBox(width: 4),
+                      // Forms horizontally
+                      ...List.generate(word.rounds.length, (ri) {
+                        final form =
+                            ri < forms.length ? forms[ri] : null;
+                        return Container(
+                          margin: const EdgeInsets.only(right: 6),
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 8, vertical: 3),
+                          decoration: BoxDecoration(
+                            color: form != null
+                                ? Colors.green.shade800.withOpacity(0.5)
+                                : Colors.white.withOpacity(0.05),
+                            borderRadius: BorderRadius.circular(6),
+                          ),
                           child: Text(
-                            form ?? '———',
+                            form ?? word.rounds[ri].label.split(' ').first,
                             style: TextStyle(
                               color: form != null
                                   ? Colors.white
                                   : Colors.white24,
-                              fontSize: 13,
+                              fontSize: 12,
                               fontWeight: form != null
                                   ? FontWeight.bold
                                   : FontWeight.normal,

@@ -124,7 +124,7 @@ class _SwipeClassifyScreenState extends State<SwipeClassifyScreen>
 
     _feedbackCtrl = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 600),
+      duration: const Duration(milliseconds: 2400),
     );
 
     _throwCtrl.addListener(() => setState(() {}));
@@ -265,40 +265,44 @@ class _SwipeClassifyScreenState extends State<SwipeClassifyScreen>
               ),
             ),
 
-            // Feedback banner
+            // Feedback banner — full opacity until last 20% of animation
             AnimatedBuilder(
               animation: _feedbackCtrl,
               builder: (ctx, _) {
                 final t = _feedbackCtrl.value;
-                final show = t > 0 && t < 1;
-                if (!show) return const SizedBox.shrink();
-                final opacity = (1 - (t - 0.5).abs() * 2).clamp(0.0, 1.0);
+                if (t == 0 || t >= 1) return const SizedBox.shrink();
+                // Hold fully visible until t=0.8, then fade out
+                final opacity = t < 0.8 ? 1.0 : ((1.0 - t) / 0.2).clamp(0.0, 1.0);
                 return Opacity(
                   opacity: opacity,
                   child: Container(
+                    width: double.infinity,
                     margin: const EdgeInsets.symmetric(
-                        horizontal: 24, vertical: 4),
+                        horizontal: 16, vertical: 4),
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 16, vertical: 8),
+                        horizontal: 16, vertical: 10),
                     decoration: BoxDecoration(
                       color: _lastWasCorrect
                           ? Colors.green.shade800
-                          : Colors.red.shade800,
+                          : Colors.red.shade900,
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Row(
-                      mainAxisSize: MainAxisSize.min,
                       children: [
                         Icon(
-                          _lastWasCorrect ? Icons.check : Icons.close,
+                          _lastWasCorrect ? Icons.check_circle : Icons.cancel,
                           color: Colors.white,
-                          size: 16,
+                          size: 20,
                         ),
-                        const SizedBox(width: 8),
-                        Flexible(
-                          child: Text(_lastHint,
-                              style: const TextStyle(
-                                  color: Colors.white, fontSize: 13)),
+                        const SizedBox(width: 10),
+                        Expanded(
+                          child: Text(
+                            _lastHint,
+                            style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 14,
+                                fontWeight: FontWeight.w500),
+                          ),
                         ),
                       ],
                     ),
