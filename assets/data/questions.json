@@ -3112,6 +3112,458 @@
       ],
       "correctAnswer": "rett",
       "explanation": "'riktig' på bokmål heiter vanlegvis 'rett' på nynorsk. T.d.: 'Det er rett svar' (ikkje 'riktig svar'). 'riktig' er òg tillate som variant, men 'rett' er meir særnynorsk."
+    },
+    {
+      "id": "bc_001",
+      "type": "BUBBLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva er nynorsk for 'erfaring'?",
+      "options": ["røynsle", "røynd", "oppleving", "kunnskap"],
+      "correctAnswer": "røynsle",
+      "explanation": "'Røynsle' er det nynorske ordet for 'erfaring'. 'Røynd' tyder noko anna: ein røynd person = ein person med mykje røynsle (adjektiv, ikkje substantiv)."
+    },
+    {
+      "id": "bc_002",
+      "type": "BUBBLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva tyder 'gagnleg'?",
+      "options": ["nyttig", "farleg", "vakkert", "sterk"],
+      "correctAnswer": "nyttig",
+      "explanation": "'Gagnleg' tyder 'nyttig' eller 'til gagn'. Det kjem av substantivet 'gagn' = nytte. Gagnleg = noko som gjev gagn (nytte)."
+    },
+    {
+      "id": "bc_003",
+      "type": "BUBBLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 1,
+      "text": "Kva er nynorsk for 'ikke'?",
+      "options": ["ikkje", "inte", "ei", "aldri"],
+      "correctAnswer": "ikkje",
+      "explanation": "'Ikkje' er nynorsk for 'ikke'. 'Ei' tyder 'ikkje' berre i gamle uttrykk som 'eg veit ei' (eg veit ikkje). 'Aldri' tyder 'never'."
+    },
+    {
+      "id": "bc_004",
+      "type": "BUBBLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva tyder 'dugande'?",
+      "options": ["dyktig", "feig", "lat", "stille"],
+      "correctAnswer": "dyktig",
+      "explanation": "'Dugande' tyder 'dyktig' eller 'som duger'. Kjem av verbet 'duge' = å vere god nok, å strekke til."
+    },
+    {
+      "id": "bc_005",
+      "type": "BUBBLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 1,
+      "text": "Kva er nynorsk for 'noe'?",
+      "options": ["noko", "nokke", "noe", "noken"],
+      "correctAnswer": "noko",
+      "explanation": "'Noko' er nynorsk for 'noe' (inkjekjønn) og 'noen' (som i 'har du noko å ete?'). Hugs: bokmål 'noe' = nynorsk 'noko'."
+    },
+    {
+      "id": "bc_006",
+      "type": "BUBBLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 3,
+      "text": "Kva er nynorsk for 'mulighet'?",
+      "options": ["høve", "muligheit", "sjanse", "tid"],
+      "correctAnswer": "høve",
+      "explanation": "'Høve' er det nynorske ordet for 'mulighet'. 'Muligheit' er ikkje godkjent — det er ei blanding av bokmål 'mulig' og nynorsk '-heit'. Nynorsk adjektiv er 'mogleg', substantiv er 'høve'."
+    },
+    {
+      "id": "tc_001",
+      "type": "TILE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er presens av 'å kaste' (a-verb)?",
+      "options": ["kast-", "-ar", "-er", "-a", "-te"],
+      "correctAnswer": "kastar",
+      "explanation": "A-verb i presens får endinga -ar: kaste → kastar. Hugs: a-verb = ar-verb i presens!"
+    },
+    {
+      "id": "tc_002",
+      "type": "TILE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 1,
+      "text": "Kva er preteritum av 'å kaste' (a-verb)?",
+      "options": ["kast-", "-a", "-et", "-te", "(vokal)"],
+      "correctAnswer": "kasta",
+      "explanation": "A-verb i preteritum får endinga -a: kaste → kasta. Samanlikn: bokmål 'kastet', nynorsk 'kasta'."
+    },
+    {
+      "id": "tc_003",
+      "type": "TILE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Kva er presens av 'å kjøpe' (e-verb)?",
+      "options": ["kjøp-", "-ar", "-er", "-a", "-te"],
+      "correctAnswer": "kjøper",
+      "explanation": "E-verb i presens får endinga -er: kjøpe → kjøper. E-verb = er-verb i presens (same som bokmål)."
+    },
+    {
+      "id": "tc_004",
+      "type": "TILE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Kva er preteritum av 'å høyre' (e-verb)?",
+      "options": ["høyr-", "-a", "-et", "-de", "(vokal)"],
+      "correctAnswer": "høyrde",
+      "explanation": "Høyre er eit e-verb som får -de i preteritum: høyre → høyrde. Liknande: leve → levde, love → lovde."
+    },
+    {
+      "id": "tc_005",
+      "type": "TILE_CHOICE",
+      "category": "substantiv_boying",
+      "difficulty": 1,
+      "text": "Bestemt eintal av 'ein gut'?",
+      "options": ["gut", "-en", "-a", "-et", "-"],
+      "correctAnswer": "guten",
+      "explanation": "Hankjønnsord (ein-ord) får -en i bestemt eintal: gut → guten. Samanlikn bokmål: gutten (dobbel-t, men ikkje i nynorsk)."
+    },
+    {
+      "id": "tc_006",
+      "type": "TILE_CHOICE",
+      "category": "substantiv_boying",
+      "difficulty": 1,
+      "text": "Bestemt eintal av 'ei jente'?",
+      "options": ["jente", "-en", "-a", "-et", "-"],
+      "correctAnswer": "jenta",
+      "explanation": "Hokjønnsord (ei-ord) får -a i bestemt eintal: jente → jenta. Dette er ein viktig skilnad frå bokmål (jenten/jenta)."
+    },
+    {
+      "id": "tc_007",
+      "type": "TILE_CHOICE",
+      "category": "substantiv_boying",
+      "difficulty": 1,
+      "text": "Bestemt eintal av 'eit hus'?",
+      "options": ["hus", "-en", "-a", "-et", "-"],
+      "correctAnswer": "huset",
+      "explanation": "Inkjekjønnsord (eit-ord) får -et i bestemt eintal: hus → huset. Same som bokmål."
+    },
+    {
+      "id": "tc_008",
+      "type": "TILE_CHOICE",
+      "category": "substantiv_boying",
+      "difficulty": 2,
+      "text": "Ubestemt fleirtal av 'ein bil'?",
+      "options": ["bil", "-er", "-ar", "-", "-ane"],
+      "correctAnswer": "bilar",
+      "explanation": "Hankjønnsord i ubestemt fleirtal får oftast -ar i nynorsk: bil → bilar. Bokmål: biler. Dette er ein klassisk nynorsk-ending."
+    },
+    {
+      "id": "wm_001",
+      "type": "WORD_MATCH",
+      "category": "ordforrad",
+      "difficulty": 3,
+      "text": "Kople saman bokmålsorda og dei nynorske",
+      "options": [
+        "erfaring|røynsle",
+        "mulighet|høve",
+        "dyktig|dugande",
+        "nyttig|gagnleg",
+        "_|røynd",
+        "_|sjanse"
+      ],
+      "correctAnswer": "erfaring|røynsle,mulighet|høve,dyktig|dugande,nyttig|gagnleg",
+      "explanation": "Røynd = adjektiv (ein røynd person). Røynsle = substantiv (etter lang røynsle). Sjanse er eit lånord — høve er meir nynorsk."
+    },
+    {
+      "id": "wm_003",
+      "type": "WORD_MATCH",
+      "category": "ordforrad",
+      "difficulty": 3,
+      "text": "Kople saman bokmålsorda og dei nynorske",
+      "options": [
+        "fornøyd|nøgd",
+        "sint|harm",
+        "modig|djerv",
+        "skremt|ottesam",
+        "_|glad",
+        "_|tøff"
+      ],
+      "correctAnswer": "fornøyd|nøgd,sint|harm,modig|djerv,skremt|ottesam",
+      "explanation": "Nøgd = fornøyd/tilfreds. Harm = sint/vred. Djerv = modig/uredd. Ottesam = redd/skremt (av 'otte' = frykt). 'Glad' finst i nynorsk, men tyder 'blid', ikkje 'fornøyd'."
+    },
+
+    {
+      "id": "wm_006",
+      "type": "WORD_MATCH",
+      "category": "eiendomsord",
+      "difficulty": 2,
+      "text": "Kople saman substantivet og rett eigedomsord for 'min/mi/mitt'",
+      "options": [
+        "bilen|min",
+        "boka|mi",
+        "huset|mitt",
+        "handa|mi",
+        "_|min",
+        "_|minn"
+      ],
+      "correctAnswer": "bilen|min,boka|mi,huset|mitt,handa|mi",
+      "explanation": "Eigedomsord bøyer seg etter kjønn: hankjønn → min, hokjønn → mi, inkjekjønn → mitt. 'Minn' finst ikkje i nynorsk."
+    },
+
+    {
+      "id": "wm_013",
+      "type": "WORD_MATCH",
+      "category": "ordforrad",
+      "difficulty": 4,
+      "text": "Byt ut bokmålsord som har 'an-' eller 'be-' med gode nynorske ord",
+      "options": [
+        "anbefale|tilrå",
+        "begynne|byrje",
+        "beslutte|avgjere",
+        "benytte|bruke",
+        "_|starte",
+        "_|anmelde"
+      ],
+      "correctAnswer": "anbefale|tilrå,begynne|byrje,beslutte|avgjere,benytte|bruke",
+      "explanation": "Nynorsk unngår ofte førestavingane 'an-' og 'be-'. 'Tilrå', 'byrje', 'avgjere' og 'bruke' er gode nynorske alternativ."
+    },
+    {
+      "id": "wm_014",
+      "type": "WORD_MATCH",
+      "category": "ordforrad",
+      "difficulty": 3,
+      "text": "Kople saman bokmålsorda og dei nynorske",
+      "options": [
+        "hvis|dersom",
+        "leilighet|leilegheit",
+        "kanskje|kan hende",
+        "fortsatt|framleis",
+        "_|endå",
+        "_|alltid"
+      ],
+      "correctAnswer": "hvis|dersom,leilighet|leilegheit,kanskje|kan hende,fortsatt|framleis",
+      "explanation": "'Dersom' er den mest særnynorske forma for 'hvis'. 'Framleis' og 'enno' er vanlege for 'fortsatt'. 'Kan hende' er eit meir særnynorsk uttrykk enn 'kanskje'. 'Endå' tyder 'ennå/enda', ikkje 'framleis'."
+    },
+    {
+      "id": "wm_021",
+      "type": "WORD_MATCH",
+      "category": "ordforrad",
+      "difficulty": 4,
+      "text": "Kople saman orda som ofte blir forveksla",
+      "options": [
+        "virkelighet|røynd",
+        "erfaring|røynsle",
+        "bevissthet|medvit",
+        "forstand|vit",
+        "_|røyndom",
+        "_|vitskap"
+      ],
+      "correctAnswer": "virkelighet|røynd,erfaring|røynsle,bevissthet|medvit,forstand|vit",
+      "explanation": "'Røyndom' tyder òg 'virkelighet', men 'røynd' er det mest brukte. 'Røynsle' (erfaring) og 'røynd' (virkelighet) er lette å blande. 'Vitskap' tyder 'vitenskap', ikkje 'forstand' — 'vit' er rett for forstand/sans."
+    },
+    {
+      "id": "wm_025",
+      "type": "WORD_MATCH",
+      "category": "pronomen",
+      "difficulty": 3,
+      "text": "Kople saman subjektsform og objektsform for pronomen",
+      "options": [
+        "vi|oss",
+        "dere|dykk",
+        "de|dei",
+        "man|ein",
+        "_|dokkar",
+        "_|deim"
+      ],
+      "correctAnswer": "vi|oss,dere|dykk,de|dei,man|ein",
+      "explanation": "'Dykk' er objektsforma av 'de/dere'. 'Dokkar' er eigedomsform (dykkar/dokkar). 'Deim' er ein dialektal objektsform for 'dei', men ikkje godkjent skriftleg nynorsk. 'Ein' er den einaste nynorske forma for 'man'."
+    },
+    {
+      "id": "bc_007",
+      "type": "BUBBLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva er nynorsk for 'hvordan'?",
+      "options": ["korleis", "korfra", "kvifor", "kor"],
+      "correctAnswer": "korleis",
+      "explanation": "'Korleis' er nynorsk for 'hvordan'. 'Kvifor' = hvorfor. 'Kor' = hvor. 'Korfra' = hvorfra. Legg merke til at alle desse nynorske spørjeorda startar med 'k' der bokmål brukar 'hv'."
+    },
+    {
+      "id": "bc_008",
+      "type": "BUBBLE_CHOICE",
+      "category": "pronomen",
+      "difficulty": 2,
+      "text": "Korleis skriv ein 'hennes' på nynorsk?",
+      "options": ["hennar", "hennes", "henne", "sin"],
+      "correctAnswer": "hennar",
+      "explanation": "'Hennar' er nynorsk eigedomspronomen: 'boka hennar' = 'boken hennes'. Ikkje forveksle med 'henne' (objektsform: 'eg ser henne') eller 'sin' (refleksivt: 'ho tok boka si')."
+    },
+    {
+      "id": "bc_009",
+      "type": "BUBBLE_CHOICE",
+      "category": "pronomen",
+      "difficulty": 1,
+      "text": "Kva er nynorsk for 'de' (3. person fleirtal)?",
+      "options": ["dei", "de", "dom", "deim"],
+      "correctAnswer": "dei",
+      "explanation": "'Dei' er nynorsk for 'de' (dei gjekk heim). Som objekt heiter det 'dei' òg, men i dagleg tale: 'dei' (subjekt) og 'dei/deim' (objekt). 'Dom' er talespråk."
+    },
+    {
+      "id": "bc_010",
+      "type": "BUBBLE_CHOICE",
+      "category": "eiendomsord",
+      "difficulty": 2,
+      "text": "Kva er rett eigedomsord for hokjønn: 'boka er ___'?",
+      "options": ["mi", "min", "mitt", "meg"],
+      "correctAnswer": "mi",
+      "explanation": "Hokjønnssubstantiv krev eigedomsordet 'mi': boka mi, sola mi, jenta mi. Hankjønn: bilen min. Inkjekjønn: huset mitt."
+    },
+    {
+      "id": "bc_011",
+      "type": "BUBBLE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 2,
+      "text": "Kva kjønn er 'verd' (verden) i nynorsk?",
+      "options": ["hankjønn", "hokjønn", "inkjekjønn", "varierer"],
+      "correctAnswer": "hokjønn",
+      "explanation": "'Verd' er hokjønn i nynorsk: verda (bestemt form). Samanlikn: 'heile verda' — ikkje 'verden'. Bokmål har hankjønn ('verden'), nynorsk har hokjønn ('verda')."
+    },
+    {
+      "id": "bc_012",
+      "type": "BUBBLE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 2,
+      "text": "Kva kjønn er 'tid' i nynorsk?",
+      "options": ["hokjønn", "hankjønn", "inkjekjønn", "varierer"],
+      "correctAnswer": "hokjønn",
+      "explanation": "'Tid' er hokjønn: tida (bestemt form). 'I si tid', 'på den tida'. Mange abstrakte ord som endar på konsonant er hokjønn i nynorsk."
+    },
+    {
+      "id": "bc_015",
+      "type": "BUBBLE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 3,
+      "text": "Kva er rett fortid (preteritum) av verbet 'å fortelje'?",
+      "options": ["fortalde", "fortalte", "fortellet", "fortalst"],
+      "correctAnswer": "fortalde",
+      "explanation": "Mange verb som har 't' i fortid på bokmål, har 'd' på nynorsk: fortalde, spelde, levde."
+    },
+    {
+      "id": "bc_016",
+      "type": "BUBBLE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 2,
+      "text": "Kva er rett bøyging av 'ei dør' i ubestemt fleirtal?",
+      "options": ["dører", "dørar", "dørene", "dørane"],
+      "correctAnswer": "dører",
+      "explanation": "Hokjønnssubstantiv som 'dør' får -er i ubestemt fleirtal: dører. Bestemt fleirtal: dørene. Hankjønnsord (som hestar) får -ar og -ane."
+    },
+    {
+      "id": "bc_017",
+      "type": "BUBBLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 3,
+      "text": "Kva er det nynorske ordet for 'oppmerksomhet'?",
+      "options": ["merksemd", "oppmerksomheit", "oppmerking", "merkelse"],
+      "correctAnswer": "merksemd",
+      "explanation": "Ord som på bokmål endar på '-het' endar ofte på '-heit' eller '-semd' på nynorsk. 'Merksemd' er det klassiske nynorskordet."
+    },
+    {
+      "id": "bc_018",
+      "type": "BUBBLE_CHOICE",
+      "category": "eiendomsord",
+      "difficulty": 4,
+      "text": "Kva er rett form av 'deres' på nynorsk når ein snakkar til fleire personar?",
+      "options": ["dykkar", "deira", "dokkar", "dokkers"],
+      "correctAnswer": "dykkar",
+      "explanation": "'Dykkar' er eigedomsordet for 2. person fleirtal (your). 'Deira' betyr 'deres' om ein snakkar om andre (their)."
+    },
+    {
+      "id": "bc_019",
+      "type": "BUBBLE_CHOICE",
+      "category": "ordforrad",
+      "difficulty": 2,
+      "text": "Kva er nynorsk for 'hvorfor'?",
+      "options": ["kvifor", "hvorfor", "korfor", "kvi"],
+      "correctAnswer": "kvifor",
+      "explanation": "'Kvifor' er det korrekte ordet. 'Korfor' er tillate i bokmål, men ikkje i offisiell nynorsk rettskriving."
+    },
+    {
+      "id": "bc_020",
+      "type": "BUBBLE_CHOICE",
+      "category": "substantiv_kjonn",
+      "difficulty": 3,
+      "text": "Kva kjønn er ordet 'kjensle' (følelse) i nynorsk?",
+      "options": ["hokjønn", "hankjønn", "inkjekjønn", "varierer"],
+      "correctAnswer": "hokjønn",
+      "explanation": "Dei fleste ord som endar på '-sle' er hokjønn i nynorsk: kjensla, røynsla, gardsla."
+    },
+
+    {
+      "id": "tc_009",
+      "type": "TILE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Kva er presens av 'å snakke' (a-verb)?",
+      "options": ["snakk-", "-ar", "-er", "-a", "-te"],
+      "correctAnswer": "snakkar",
+      "explanation": "Snakke er eit a-verb: snakkar (presens), snakka (preteritum), har snakka (perfektum). A-verb er den største verbklassen i nynorsk."
+    },
+    {
+      "id": "tc_010",
+      "type": "TILE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 2,
+      "text": "Kva er preteritum av 'å leve' (e-verb)?",
+      "options": ["lev-", "-a", "-et", "-de", "(vokal)"],
+      "correctAnswer": "levde",
+      "explanation": "Leve er eit e-verb som får -de i preteritum: leve → levde. Samanlikn: høyre → høyrde, love → lovde."
+    },
+    {
+      "id": "tc_011",
+      "type": "TILE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 3,
+      "text": "Kva er perfektum av 'å reise' (e-verb)?",
+      "options": ["reis-", "-a", "-t", "-d", "(vokal)"],
+      "correctAnswer": "reist",
+      "explanation": "Reise er eit e-verb med -t i perfektum: reise → har reist. Samanlikn: kjøpe → har kjøpt. E-verb med -te i preteritum får -t i perfektum."
+    },
+    {
+      "id": "tc_012",
+      "type": "TILE_CHOICE",
+      "category": "substantiv_boying",
+      "difficulty": 2,
+      "text": "Bestemt fleirtal av 'ein gut'?",
+      "options": ["gut-", "-ene", "-ane", "-a", "-"],
+      "correctAnswer": "gutane",
+      "explanation": "Hankjønnsord i bestemt fleirtal får -ane i nynorsk: gutane, bilane, vegane. Bokmål har -ene (guttene). Dette er ein av dei tydelegaste skilnadene!"
+    },
+    {
+      "id": "tc_013",
+      "type": "TILE_CHOICE",
+      "category": "substantiv_boying",
+      "difficulty": 2,
+      "text": "Bestemt fleirtal av 'ei jente'?",
+      "options": ["jente-", "-ene", "-ane", "-a", "-"],
+      "correctAnswer": "jentene",
+      "explanation": "Hokjønnsord i bestemt fleirtal får -ene: jentene, solene, elvene. Hugs: hankjønn → -ane (gutane), hokjønn → -ene (jentene), inkjekjønn → -a (husa)."
+    },
+    {
+      "id": "tc_014",
+      "type": "TILE_CHOICE",
+      "category": "substantiv_boying",
+      "difficulty": 2,
+      "text": "Bestemt fleirtal av 'eit hus'?",
+      "options": ["hus", "-ene", "-ane", "-a", "-"],
+      "correctAnswer": "husa",
+      "explanation": "Inkjekjønnsord i bestemt fleirtal får -a: husa, fjella, borda. Hugs tripletten: gutane / jentene / husa."
+    },
+    {
+      "id": "tc_015",
+      "type": "TILE_CHOICE",
+      "category": "verb_boying",
+      "difficulty": 3,
+      "text": "Kva er preteritum av 'å jobbe' (a-verb)?",
+      "options": ["jobb-", "-a", "-et", "-te", "(vokal)"],
+      "correctAnswer": "jobba",
+      "explanation": "Jobbe er eit a-verb trass i at det endar på -e: jobbe → jobba (preteritum). Mange slangord og lånord følgjer a-verb-mønsteret i nynorsk."
     }
   ]
 }

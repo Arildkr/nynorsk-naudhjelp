@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../../teacher_mode/data/student_config_provider.dart';
 import '../data/xp_provider.dart';
 
@@ -99,42 +100,6 @@ class DashboardScreen extends ConsumerWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  // Android app tip (web only)
-                  if (kIsWeb) ...[
-                    Card(
-                      color: Colors.green.shade700,
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-                      child: InkWell(
-                        borderRadius: BorderRadius.circular(16),
-                        onTap: () {
-                          // Open Play Store link - user must handle navigation
-                        },
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                          child: Row(
-                            children: [
-                              const Icon(Icons.android, color: Colors.white, size: 28),
-                              const SizedBox(width: 12),
-                              const Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text('Last ned Android-appen!', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15)),
-                                    Text('Betre oppleving på mobil — no i open testing', style: TextStyle(color: Colors.white70, fontSize: 12)),
-                                  ],
-                                ),
-                              ),
-                              SelectableText(
-                                'play.google.com/apps/testing/\ncom.nynorsk.nynorsk_kartlegger',
-                                style: const TextStyle(color: Colors.white60, fontSize: 10),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(height: 12),
-                  ],
                   const SizedBox(height: 8),
                   const Text(
                     'Velkomen!',
@@ -246,6 +211,37 @@ class DashboardScreen extends ConsumerWidget {
                       tileColor: Colors.blueGrey.shade50,
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                       onTap: () => context.push('/teacher'),
+                    ),
+                    const SizedBox(height: 24),
+                    InkWell(
+                      borderRadius: BorderRadius.circular(14),
+                      onTap: () => launchUrl(
+                        Uri.parse('https://play.google.com/apps/testing/com.nynorsk.nynorsk_kartlegger'),
+                        mode: LaunchMode.externalApplication,
+                      ),
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                        decoration: BoxDecoration(
+                          color: Colors.green.shade700,
+                          borderRadius: BorderRadius.circular(14),
+                        ),
+                        child: Row(
+                          children: [
+                            const Icon(Icons.android, color: Colors.white, size: 24),
+                            const SizedBox(width: 12),
+                            const Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text('Last ned Android-appen', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 14)),
+                                  Text('Betre oppleving på mobil — no i open testing', style: TextStyle(color: Colors.white70, fontSize: 12)),
+                                ],
+                              ),
+                            ),
+                            const Icon(Icons.open_in_new, color: Colors.white54, size: 16),
+                          ],
+                        ),
+                      ),
                     ),
                   ],
                   const SizedBox(height: 16),

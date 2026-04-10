@@ -9,6 +9,9 @@ import '../../assessment/presentation/widgets/swipe_choice_widget.dart';
 import '../../assessment/presentation/widgets/fill_in_widget.dart';
 import '../../assessment/presentation/widgets/true_false_widget.dart';
 import '../../assessment/presentation/widgets/matching_widget.dart';
+import '../../assessment/presentation/widgets/bubble_choice_widget.dart';
+import '../../assessment/presentation/widgets/tile_choice_widget.dart';
+import '../../assessment/presentation/widgets/laser_match_widget.dart';
 
 class PracticeFlowScreen extends ConsumerStatefulWidget {
   final String? category;
@@ -164,6 +167,24 @@ class _PracticeFlowScreenState extends ConsumerState<PracticeFlowScreen> {
         );
       case QuestionType.matching:
         return MatchingWidget(
+          question: q,
+          isPractice: true,
+          onAnswered: (answer) => _handleAnswer(answer, q),
+        );
+      case QuestionType.bubbleChoice:
+        return BubbleChoiceWidget(
+          question: q,
+          isPractice: true,
+          onAnswered: (answer) => _handleAnswer(answer, q),
+        );
+      case QuestionType.tileChoice:
+        return TileChoiceWidget(
+          question: q,
+          isPractice: true,
+          onAnswered: (answer) => _handleAnswer(answer, q),
+        );
+      case QuestionType.wordMatch:
+        return LaserMatchWidget(
           question: q,
           isPractice: true,
           onAnswered: (answer) => _handleAnswer(answer, q),

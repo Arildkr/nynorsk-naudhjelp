@@ -4,6 +4,9 @@ enum QuestionType {
   fillIn,
   trueOrFalse,
   matching,
+  bubbleChoice,
+  tileChoice,
+  wordMatch,
 }
 
 class Question {
@@ -38,6 +41,12 @@ class Question {
           return QuestionType.trueOrFalse;
         case 'MATCHING':
           return QuestionType.matching;
+        case 'BUBBLE_CHOICE':
+          return QuestionType.bubbleChoice;
+        case 'TILE_CHOICE':
+          return QuestionType.tileChoice;
+        case 'WORD_MATCH':
+          return QuestionType.wordMatch;
         case 'MULTIPLE_CHOICE':
         default:
           return QuestionType.multipleChoice;

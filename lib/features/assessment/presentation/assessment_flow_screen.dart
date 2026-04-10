@@ -9,6 +9,9 @@ import 'widgets/swipe_choice_widget.dart';
 import 'widgets/fill_in_widget.dart';
 import 'widgets/true_false_widget.dart';
 import 'widgets/matching_widget.dart';
+import 'widgets/bubble_choice_widget.dart';
+import 'widgets/tile_choice_widget.dart';
+import 'widgets/laser_match_widget.dart';
 
 class AssessmentFlowScreen extends ConsumerWidget {
   const AssessmentFlowScreen({super.key});
@@ -105,6 +108,21 @@ class AssessmentFlowScreen extends ConsumerWidget {
         );
       case QuestionType.matching:
         return MatchingWidget(
+          question: q,
+          onAnswered: (answer) => ref.read(assessmentControllerProvider.notifier).answerCurrentQuestion(answer),
+        );
+      case QuestionType.bubbleChoice:
+        return BubbleChoiceWidget(
+          question: q,
+          onAnswered: (answer) => ref.read(assessmentControllerProvider.notifier).answerCurrentQuestion(answer),
+        );
+      case QuestionType.tileChoice:
+        return TileChoiceWidget(
+          question: q,
+          onAnswered: (answer) => ref.read(assessmentControllerProvider.notifier).answerCurrentQuestion(answer),
+        );
+      case QuestionType.wordMatch:
+        return LaserMatchWidget(
           question: q,
           onAnswered: (answer) => ref.read(assessmentControllerProvider.notifier).answerCurrentQuestion(answer),
         );

@@ -79,6 +79,48 @@ const _substantivWords = [
     _TunnelRound('Best. fleirtal', '-a', 'fjella',
         ['-ene', '-ane', '-a', '-']),
   ]),
+  _TunnelWord('veg', 'ein veg', _kBlue, [
+    _TunnelRound('Bestemt eintal', '-en', 'vegen', ['-en', '-a', '-et', '-']),
+    _TunnelRound('Ubest. fleirtal', '-ar', 'vegar',
+        ['-er', '-ar', '-', '-a']),
+    _TunnelRound('Best. fleirtal', '-ane', 'vegane',
+        ['-ene', '-ane', '-a', '-']),
+  ]),
+  _TunnelWord('arm', 'ein arm', _kBlue, [
+    _TunnelRound('Bestemt eintal', '-en', 'armen', ['-en', '-a', '-et', '-']),
+    _TunnelRound('Ubest. fleirtal', '-ar', 'armar',
+        ['-er', '-ar', '-', '-a']),
+    _TunnelRound('Best. fleirtal', '-ane', 'armane',
+        ['-ene', '-ane', '-a', '-']),
+  ]),
+  _TunnelWord('elv', 'ei elv', _kPink, [
+    _TunnelRound('Bestemt eintal', '-a', 'elva', ['-en', '-a', '-et', '-']),
+    _TunnelRound('Ubest. fleirtal', '-er', 'elver',
+        ['-er', '-ar', '-', '-a']),
+    _TunnelRound('Best. fleirtal', '-ene', 'elvene',
+        ['-ene', '-ane', '-a', '-']),
+  ]),
+  _TunnelWord('dør', 'ei dør', _kPink, [
+    _TunnelRound('Bestemt eintal', '-a', 'døra', ['-en', '-a', '-et', '-']),
+    _TunnelRound('Ubest. fleirtal', '-er', 'dører',
+        ['-er', '-ar', '-', '-a']),
+    _TunnelRound('Best. fleirtal', '-ene', 'dørene',
+        ['-ene', '-ane', '-a', '-']),
+  ]),
+  _TunnelWord('bord', 'eit bord', _kOrange, [
+    _TunnelRound('Bestemt eintal', '-et', 'bordet', ['-en', '-a', '-et', '-']),
+    _TunnelRound('Ubest. fleirtal', '-', 'bord',
+        ['-er', '-ar', '-', '-a']),
+    _TunnelRound('Best. fleirtal', '-a', 'borda',
+        ['-ene', '-ane', '-a', '-']),
+  ]),
+  _TunnelWord('skip', 'eit skip', _kOrange, [
+    _TunnelRound('Bestemt eintal', '-et', 'skipet', ['-en', '-a', '-et', '-']),
+    _TunnelRound('Ubest. fleirtal', '-', 'skip',
+        ['-er', '-ar', '-', '-a']),
+    _TunnelRound('Best. fleirtal', '-a', 'skipa',
+        ['-ene', '-ane', '-a', '-']),
+  ]),
 ];
 
 const _verbWords = [
@@ -109,6 +151,34 @@ const _verbWords = [
         ['-a', '-et', '-de', '(vokal)']),
     _TunnelRound('Perfektum', '-d', 'høyrd',
         ['-a', '-d', '-', '(vokal)']),
+  ]),
+  _TunnelWord('jobb-', 'å jobbe (a-verb)', _kGreen, [
+    _TunnelRound('Presens', '-ar', 'jobbar', ['-ar', '-er', '-', '-a']),
+    _TunnelRound('Preteritum', '-a', 'jobba',
+        ['-a', '-et', '-te', '(vokal)']),
+    _TunnelRound('Perfektum', '-a', 'jobba',
+        ['-a', '-t', '-', '(vokal)']),
+  ]),
+  _TunnelWord('prat-', 'å prate (a-verb)', _kGreen, [
+    _TunnelRound('Presens', '-ar', 'pratar', ['-ar', '-er', '-', '-a']),
+    _TunnelRound('Preteritum', '-a', 'prata',
+        ['-a', '-et', '-te', '(vokal)']),
+    _TunnelRound('Perfektum', '-a', 'prata',
+        ['-a', '-t', '-', '(vokal)']),
+  ]),
+  _TunnelWord('lev-', 'å leve (e-verb)', _kCyan, [
+    _TunnelRound('Presens', '-er', 'lever', ['-ar', '-er', '-', '-a']),
+    _TunnelRound('Preteritum', '-de', 'levde',
+        ['-a', '-et', '-de', '(vokal)']),
+    _TunnelRound('Perfektum', '-d', 'levd',
+        ['-a', '-d', '-', '(vokal)']),
+  ]),
+  _TunnelWord('reis-', 'å reise (e-verb)', _kCyan, [
+    _TunnelRound('Presens', '-er', 'reiser', ['-ar', '-er', '-', '-a']),
+    _TunnelRound('Preteritum', '-te', 'reiste',
+        ['-a', '-et', '-te', '(vokal)']),
+    _TunnelRound('Perfektum', '-t', 'reist',
+        ['-a', '-t', '-', '(vokal)']),
   ]),
 ];
 
@@ -147,10 +217,15 @@ class _TunnelGameScreenState extends State<TunnelGameScreen>
   bool _roundPaused = false; // true briefly after hit (success or fail)
   bool _wordComplete = false;
   List<String> _lastWordForms = [];
-  String _lastSuccessForm = ''; // form shown in green flash
+  // Flash — only ever set by correct hits, never mutated by timers
+  bool _showSuccessFlash = false;
+  String _flashForm = '';
 
   // Collected forms: [wordIdx][roundIdx]
   late List<List<String?>> _collected;
+
+  // Keyboard
+  late FocusNode _focusNode;
 
   // Animations
   late Ticker _ticker;
@@ -167,6 +242,7 @@ class _TunnelGameScreenState extends State<TunnelGameScreen>
   void initState() {
     super.initState();
 
+    _focusNode = FocusNode();
     _ticker = createTicker(_tick);
 
     _tiltCtrl = AnimationController(
@@ -188,6 +264,7 @@ class _TunnelGameScreenState extends State<TunnelGameScreen>
 
   @override
   void dispose() {
+    _focusNode.dispose();
     _ticker.dispose();
     _tiltCtrl.dispose();
     _shakeCtrl.dispose();
@@ -199,7 +276,7 @@ class _TunnelGameScreenState extends State<TunnelGameScreen>
 
   void _startGame(List<_TunnelWord> words) {
     setState(() {
-      _words = List.from(words);
+      _words = List.from(words)..shuffle(Random());
       _wordIdx = 0;
       _roundIdx = 0;
       _lives = 3;
@@ -210,6 +287,8 @@ class _TunnelGameScreenState extends State<TunnelGameScreen>
       _lastTickMs = 0;
       _roundPaused = false;
       _wordComplete = false;
+      _showSuccessFlash = false;
+      _flashForm = '';
       _collected = [for (final _ in words) List.filled(3, null)];
       _mode = _TunnelMode.playing;
     });
@@ -249,11 +328,13 @@ class _TunnelGameScreenState extends State<TunnelGameScreen>
       HapticFeedback.mediumImpact();
       _score += 10;
       _collected[_wordIdx][_roundIdx] = round.resultForm;
-      _lastSuccessForm = round.resultForm;
+      _showSuccessFlash = true;
+      _flashForm = round.resultForm; // captured NOW, never changes
       _successCtrl.forward(from: 0);
 
       Future.delayed(const Duration(milliseconds: 550), () {
         if (!mounted) return;
+        _showSuccessFlash = false;
         _hintColor = null;
         _roundIdx++;
 
@@ -296,6 +377,7 @@ class _TunnelGameScreenState extends State<TunnelGameScreen>
     } else {
       // ── Wrong ──
       HapticFeedback.heavyImpact();
+      _showSuccessFlash = false;
       _lives--;
       _hintColor = _words[_wordIdx].genderColor;
 
@@ -411,7 +493,7 @@ class _TunnelGameScreenState extends State<TunnelGameScreen>
             const SizedBox(height: 40),
             _modeBtn(
               'Substantiv',
-              '6 ord — hankjønn, hokjønn og inkjekjønn',
+              '12 ord — hankjønn, hokjønn og inkjekjønn',
               _kBlue,
               Icons.abc,
               () => _startGame(_substantivWords),
@@ -419,7 +501,7 @@ class _TunnelGameScreenState extends State<TunnelGameScreen>
             const SizedBox(height: 14),
             _modeBtn(
               'Verb',
-              '4 verb — a-verb og e-verb',
+              '8 verb — a-verb og e-verb',
               _kGreen,
               Icons.edit_rounded,
               () => _startGame(_verbWords),
@@ -427,13 +509,13 @@ class _TunnelGameScreenState extends State<TunnelGameScreen>
             const SizedBox(height: 14),
             _modeBtn(
               'Begge',
-              'Substantiv + verb — alle 10 ord',
+              'Substantiv + verb — alle 20 ord',
               Colors.purple,
               Icons.shuffle_rounded,
               () => _startGame([
                 ..._substantivWords,
                 ..._verbWords,
-              ]..shuffle(Random())),
+              ]),
             ),
           ],
         ),
@@ -487,7 +569,19 @@ class _TunnelGameScreenState extends State<TunnelGameScreen>
     final tilt =
         _tiltCtrl.isAnimating ? _tiltAnim.value : 0.0;
 
-    return Column(
+    return KeyboardListener(
+      focusNode: _focusNode,
+      autofocus: true,
+      onKeyEvent: (event) {
+        if (event is! KeyDownEvent) return;
+        if (_roundPaused || _wordComplete) return;
+        if (event.logicalKey == LogicalKeyboardKey.arrowLeft) {
+          _moveLane(-1);
+        } else if (event.logicalKey == LogicalKeyboardKey.arrowRight) {
+          _moveLane(1);
+        }
+      },
+      child: Column(
       children: [
         // Tunnel (65%)
         Expanded(
@@ -515,6 +609,7 @@ class _TunnelGameScreenState extends State<TunnelGameScreen>
           child: _buildDashboard(),
         ),
       ],
+      ),
     );
   }
 
@@ -591,37 +686,38 @@ class _TunnelGameScreenState extends State<TunnelGameScreen>
               );
             }),
 
-          // Success flash
-          if (_roundPaused && !_wordComplete)
+          // Success flash — _flashForm captured at hit time, never changes
+          if (_showSuccessFlash)
             AnimatedBuilder(
               animation: _successCtrl,
-              builder: (ctx, _) => Opacity(
-                opacity:
-                    (1 - _successCtrl.value).clamp(0.0, 1.0),
-                child: Container(
-                  color: Colors.greenAccent.withOpacity(0.15),
-                  child: Center(
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 24, vertical: 14),
-                      decoration: BoxDecoration(
-                        color: Colors.green.shade800
-                            .withOpacity(0.9),
-                        borderRadius:
-                            BorderRadius.circular(16),
-                      ),
-                      child: Text(
-                        _lastSuccessForm.isEmpty ? '✓' : _lastSuccessForm,
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 32,
-                          fontWeight: FontWeight.w900,
+              builder: (ctx, _) {
+                final opacity = (1 - _successCtrl.value).clamp(0.0, 1.0);
+                if (opacity == 0) return const SizedBox.shrink();
+                return Opacity(
+                  opacity: opacity,
+                  child: Container(
+                    color: Colors.greenAccent.withOpacity(0.15),
+                    child: Center(
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 24, vertical: 14),
+                        decoration: BoxDecoration(
+                          color: Colors.green.shade800.withOpacity(0.9),
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        child: Text(
+                          _flashForm,
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 32,
+                            fontWeight: FontWeight.w900,
+                          ),
                         ),
                       ),
                     ),
                   ),
-                ),
-              ),
+                );
+              },
             ),
 
           // Word complete overlay
